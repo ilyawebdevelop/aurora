@@ -1,5 +1,116 @@
-.price {
+.price-sect {
+    position: relative;
+
     .section-title {
         max-width: 1115px;
+        margin-bottom: 70px;
+    }
+
+    .price {
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            column-gap: 80px;
+            row-gap: 65px;
+        }
+
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            grid-column: 6 span;
+            column-gap: 20px;
+
+            &__img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            &__title {
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+
+            &__content {
+                display: grid;
+                grid-template-columns: 100px auto;
+                column-gap: 20px;
+                align-items: center;
+            }
+
+            &__text {
+                max-width: 385px;
+            }
+
+            &__action {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                row-gap: 20px;
+            }
+
+            &__link {
+                &-text {
+                    transform: translateX(-100%);
+                }
+
+                &:hover {
+                    .btn-arrow-wrapper {
+                        background: $brown-color;
+                    }
+                }
+
+                .btn-arrow-wrapper {
+                    background: rgba(251, 248, 243, 0.62);
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background .2s linear;
+                }
+
+                .btn-arrow {
+                    fill: #D0B5A9;
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+        }
+
+        strong {
+            font-size: 26px;
+            line-height: 26px;
+        }
+
+        span {
+            font-size: 26px;
+        }
+
+        &-params {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 5px;
+            column-gap: 10px;
+        }
+
+        &-param {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 16px;
+            position: relative;
+
+            &::after {
+                content: '|';
+            }
+        }
+    }
+
+    .flower--right {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
 }

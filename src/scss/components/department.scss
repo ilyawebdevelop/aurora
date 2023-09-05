@@ -71,20 +71,14 @@
             column-gap: 24px;
         }
 
-        &__price {
-            color: $brown-color;
-            font-size: 16px;
+        &__price {         
 
-            strong {
-                font-weight: 500;
+            strong {               
                 font-size: 36px;
-                line-height: 70px;
-                font-family: $font-family-title;
+                line-height: 36px;               
             }
-
             span {
                 font-size: 36px;
-
             }
         }
     }
