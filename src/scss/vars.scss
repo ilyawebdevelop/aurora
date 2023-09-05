@@ -1,0 +1,33 @@
+// Colors
+$main-color: #57565C;
+$brown-color: #9F694F;
+$brown-dark-color: #91614A;
+$gray-color: #9EA6B3;
+$white-color: #fff;
+
+$bg-dark: #231F20;
+$bg-white: #fff;
+
+// Fonts
+$font-family: 'Mont';
+$font-family-title: 'FoglihtenNo06_076';
+$font-family-lighthouse: 'Lighthaus';
+
+
+// Font-weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+ // Containers
+:root { 
+  --content-width: 1820px;
+  --content-fluid-width: 1700px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --container-fluid-width: calc(var(--content-fluid-width) + (var(--container-offset) * 2));
+}

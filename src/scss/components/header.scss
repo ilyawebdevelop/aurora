@@ -1,0 +1,91 @@
+// Header
+.header {
+    position: absolute;
+    // padding-top: 17px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    z-index: 2;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        // align-items: center;
+    }
+
+    &__nav {
+        padding-top: 39px;
+        grid-column: 5 span;
+
+        &-list {
+            display: flex;
+            column-gap: 33px;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    transition: color .2s linear;
+                    &:hover {
+                        color: $brown-color;
+                    }
+                }
+            }
+        }
+    }
+
+    &__logo {
+        grid-column: 2 span;
+        padding-top: 17px;
+
+        img {
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__right {
+        grid-column: 5 span;
+        display: flex;
+        justify-content: flex-end;
+        // align-items: center;
+    }
+
+    &__address {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 152px;
+        padding-top: 30px;
+        margin-right: 88px;
+        transition: color .2s linear;
+        &:hover {
+            color: $brown-color;
+        }
+    }
+    &__action {
+        display: flex;
+        column-gap: 38px;
+        // align-items: center;
+    }
+    &__phone {
+        font-size: 24px;
+        transition: color .2s linear;
+        &:hover {
+            color: $brown-color;
+        }
+        &-wrapper {
+            padding-top: 30px;
+        }
+    }
+    &__social {
+        color: $brown-dark-color;
+        font-size: 15px;
+        transition: color .2s linear;
+        &:hover {
+            color: $white-color;
+        }
+    }
+}

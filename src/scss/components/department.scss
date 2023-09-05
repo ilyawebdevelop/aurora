@@ -1,0 +1,97 @@
+.department {
+    position: relative;
+
+    .section-title {
+        max-width: 1115px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .count-number {
+        text-align: end;
+        font-size: 86px;
+        font-weight: 400;
+        line-height: 70px;
+        position: absolute;
+        top: 92px;
+        right: 15px;
+        z-index: 1;
+        font-family: $font-family-lighthouse;
+        color: #9EA6B3;
+
+
+        span {
+            font-size: 20px;
+            line-height: 20px;
+            color: rgba(158, 166, 179, 0.76);
+            position: absolute;
+            top: 0;        
+            right: -11px;
+        }
+    }
+
+    &-slide {
+
+        &__content {
+            padding-top: 75px;
+            max-width: 630px;
+            position: relative;
+            z-index: 1;
+            padding-bottom: 100px;
+
+            p {
+                margin-top: 27px;
+                margin-bottom: 30px;
+                line-height: 30px;
+                max-width: 560px;
+            }
+        }
+
+        &__image {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: calc(100% - 455px);
+            height: auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &__title {
+            font-family: $font-family-title;
+            color: $brown-color;
+            font-size: 64px;
+            line-height: 70px;
+            letter-spacing: 3.2px;
+            text-transform: uppercase;
+        }
+
+        .btn-wrapper {
+            margin-top: 40px;
+            column-gap: 24px;
+        }
+
+        &__price {
+            color: $brown-color;
+            font-size: 16px;
+
+            strong {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 70px;
+                font-family: $font-family-title;
+            }
+
+            span {
+                font-size: 36px;
+
+            }
+        }
+    }
+
+    &-flower {
+        position: absolute;
+        top: 0px;
+        left: -220px;
+    }
+}
