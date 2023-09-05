@@ -106,6 +106,7 @@
 
 .intro-main__video-btn {
     width: 155px;
+    min-width: 155px;
     height: 155px;
     position: relative;
     background: url('@img/intro/bg-btn.svg') no-repeat center center / cover;
