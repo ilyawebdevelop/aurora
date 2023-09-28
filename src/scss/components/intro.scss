@@ -5,9 +5,17 @@
     background-repeat: no-repeat;
     position: relative;
 
+    @media(max-width: 991px) {
+        background-position: center;
+    }
+
     .title-wrapper {
         position: relative;
         bottom: 30px;
+
+        @media(max-width: 991px) {
+            bottom: 15px;
+        }
 
     }
 
@@ -33,33 +41,55 @@
 
         img {
             width: 1200px;
-            @media(max-width: 1500px){
+
+            @media(max-width: 1500px) {
                 width: 950px;
             }
-            @media(max-width: 1199px){
+
+            @media(max-width: 1199px) {
                 width: 600px;
             }
+
+            @media(max-width: 991px) {
+                width: 420px;
+            }
         }
-     
+
 
         img {
             &:first-child {
                 position: relative;
                 top: 13px;
+
+                @media(max-width: 991px) {}
             }
         }
     }
 
     &__rate {
         column-gap: 12px;
-        img {
-            @media(max-width: 1199px){
+
+        &>img {
+            @media(max-width: 1199px) {
                 width: 80px;
-            }
+            }        
         }
 
         &-name {
             max-width: 223px;
+
+            @media(max-width: 1199px) {
+                max-width: 170px;
+            }
+            @media(max-width: 575px){
+                max-width: 156px;
+            }
+        }
+
+        span {
+            @media(max-width: 1199px) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -68,16 +98,33 @@
             position: relative;
             bottom: 22px;
 
+            @media(max-width: 991px) {
+                bottom: 7px;
+            }
+
             p {
                 font-size: 64px;
                 line-height: 82px;
+                font-weight: 200;
                 color: #fff;
                 display: initial;
-                @media(max-width: 1500px){
+
+                @media(max-width: 1500px) {
                     font-size: 40px;
                     line-height: 50px;
                     max-width: 640px;
                     display: block;
+                }
+
+                @media(max-width: 1199px) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                @media(max-width: 991px) {
+                    font-size: 22px;
+                    line-height: 30px;
+                    max-width: 350px;
                 }
             }
 
@@ -85,9 +132,13 @@
                 display: inline-flex;
                 position: relative;
                 bottom: 12px;
-                @media(max-width: 1500px){
+
+                @media(max-width: 1500px) {
                     bottom: 0;
                     margin-top: 10px;
+                }
+                @media(max-width: 450px){
+                    max-width: 230px;
                 }
             }
         }
@@ -101,8 +152,14 @@
         justify-content: flex-end;
         min-height: 100vh;
         padding-bottom: 95px;
-        @media(max-width: 1500px){
+
+        @media(max-width: 1500px) {
             padding-bottom: 20px;
+        }
+        @media(max-width: 991px){
+            padding-bottom: 70px;
+            min-height: unset;
+            padding-top: 337px;
         }
     }
 }
@@ -113,12 +170,16 @@
         fill: #9F694F;
         width: 26px;
         height: 24px;
+        @media(max-width: 991px){
+            width: 15px;
+            height: 17px;
+        }
     }
 }
 
 .video-text-btn__content {
     animation-name: rotate;
-    animation-duration: 8s;
+    animation-duration: 18s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     text-transform: uppercase;
@@ -146,9 +207,22 @@
     margin-left: 20px;
     font-family: $font-family;
     right: 200px;
-    right: 200px;
-    @media(max-width: 1500px){
+
+    @media(max-width: 1500px) {
         right: 178px;
+    }
+
+    @media(max-width: 1199px) {
+        right: 122px;
+    }
+
+    @media(max-width: 991px) {
+        position: relative;
+        right: unset;
+        width: 100px;
+        height: 100px;
+        min-width: 100px;
+        margin-left: 9px;
     }
 }
 
@@ -159,6 +233,11 @@
     &>div {
         &>span:first-child {
             padding-left: 3px;
+        }
+    }
+    img {
+        @media(max-width: 991px){
+            width: 87px;
         }
     }
 }
@@ -177,6 +256,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    @media(max-width: 991px){
+        width: 44px;
+        height: 44px;
+    }
 
     svg {
         position: relative;

@@ -16,7 +16,7 @@
                   
                  
                 </div><!-- /intro-main__title -->
-                <button class="intro-main__video-btn video-text-btn">
+                <button class="intro-main__video-btn video-text-btn d-none d-lg-block">
                     <div class="video-text-btn__content">
                        <img src="@img/icons/video-btn-text.svg" alt="text" class="video-text__img">
                     </div>
@@ -31,8 +31,7 @@
                 <p class="">
                     Клиника квалифицированной стоматологии
                 </p>
-
-                <button class="btn btn--dark">
+                <button class="btn btn--dark d-none d-xl-inline-flex">
                     <span> Забронировать время консультации</span>                   
                     <div class="btn-arrow-wrapper">
                         <svg class="btn-arrow">
@@ -40,6 +39,28 @@
                         </svg>
                     </div>
                 </button>
+
+                <div class="d-flex d-xl-none align-items-center">
+                    <button class="btn btn--dark">
+                        <span> Забронировать время консультации</span>                   
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <button class="intro-main__video-btn video-text-btn d-block d-lg-none">
+                        <div class="video-text-btn__content">
+                           <img src="@img/icons/video-btn-text.svg" alt="text" class="video-text__img">
+                        </div>
+                        <div class="video-text-btn__arrow">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#play"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+             
 
             </div>
 

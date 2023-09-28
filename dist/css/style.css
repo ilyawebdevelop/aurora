@@ -11295,6 +11295,16 @@ h3 {
   border: none;
   transition: color 0.2s linear, background-color 0.2s linear;
 }
+@media (max-width: 1199px) {
+  .btn {
+    height: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .btn {
+    column-gap: 10px;
+  }
+}
 .btn .btn-arrow {
   width: 14px;
   height: 41px;
@@ -11305,15 +11315,33 @@ h3 {
   background: rgba(255, 255, 255, 0.1);
   width: 41px;
   height: 41px;
+  min-width: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: background-color 0.2s linear;
 }
+@media (max-width: 767px) {
+  .btn .btn-arrow-wrapper {
+    width: 31px;
+    height: 31px;
+    min-width: 31px;
+  }
+}
 .btn--dark {
   background: linear-gradient(93deg, #191919 6.67%, #57565C 68.53%, #191919 94.65%), #191919;
   transition: background 0.2s linear;
+}
+.btn--dark span {
+  transition: color 0.2s linear;
+}
+@media (max-width: 767px) {
+  .btn--dark span {
+    font-size: 12px;
+    min-width: 147px;
+    text-align: start;
+  }
 }
 .btn--dark:hover .btn-arrow-wrapper {
   background-color: #fff;
@@ -11323,6 +11351,9 @@ h3 {
 }
 .btn--dark:focus .btn-arrow-wrapper {
   background-color: #9EA6B3;
+}
+.btn--dark:focus span {
+  color: #9EA6B3;
 }
 .btn--brown {
   color: #9F694F;
@@ -11849,9 +11880,19 @@ h3 {
   background-repeat: no-repeat;
   position: relative;
 }
+@media (max-width: 991px) {
+  .intro-main {
+    background-position: center;
+  }
+}
 .intro-main .title-wrapper {
   position: relative;
   bottom: 30px;
+}
+@media (max-width: 991px) {
+  .intro-main .title-wrapper {
+    bottom: 15px;
+  }
 }
 .intro-main::before {
   content: "";
@@ -11884,6 +11925,11 @@ h3 {
     width: 600px;
   }
 }
+@media (max-width: 991px) {
+  .intro-main__title img {
+    width: 420px;
+  }
+}
 .intro-main__title img:first-child {
   position: relative;
   top: 13px;
@@ -11892,20 +11938,41 @@ h3 {
   column-gap: 12px;
 }
 @media (max-width: 1199px) {
-  .intro-main__rate img {
+  .intro-main__rate > img {
     width: 80px;
   }
 }
 .intro-main__rate-name {
   max-width: 223px;
 }
+@media (max-width: 1199px) {
+  .intro-main__rate-name {
+    max-width: 170px;
+  }
+}
+@media (max-width: 575px) {
+  .intro-main__rate-name {
+    max-width: 156px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro-main__rate span {
+    font-size: 16px;
+  }
+}
 .intro-main__descr-wrapper {
   position: relative;
   bottom: 22px;
 }
+@media (max-width: 991px) {
+  .intro-main__descr-wrapper {
+    bottom: 7px;
+  }
+}
 .intro-main__descr-wrapper p {
   font-size: 64px;
   line-height: 82px;
+  font-weight: 200;
   color: #fff;
   display: initial;
 }
@@ -11917,6 +11984,19 @@ h3 {
     display: block;
   }
 }
+@media (max-width: 1199px) {
+  .intro-main__descr-wrapper p {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .intro-main__descr-wrapper p {
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 350px;
+  }
+}
 .intro-main__descr-wrapper .btn {
   display: inline-flex;
   position: relative;
@@ -11926,6 +12006,11 @@ h3 {
   .intro-main__descr-wrapper .btn {
     bottom: 0;
     margin-top: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .intro-main__descr-wrapper .btn {
+    max-width: 230px;
   }
 }
 .intro-main .container {
@@ -11942,16 +12027,29 @@ h3 {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 991px) {
+  .intro-main .container {
+    padding-bottom: 70px;
+    min-height: unset;
+    padding-top: 337px;
+  }
+}
 
 .video-text-btn__arrow svg {
   fill: #9F694F;
   width: 26px;
   height: 24px;
 }
+@media (max-width: 991px) {
+  .video-text-btn__arrow svg {
+    width: 15px;
+    height: 17px;
+  }
+}
 
 .video-text-btn__content {
   animation-name: rotate;
-  animation-duration: 8s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   text-transform: uppercase;
@@ -11978,11 +12076,25 @@ h3 {
   margin-left: 20px;
   font-family: "Mont";
   right: 200px;
-  right: 200px;
 }
 @media (max-width: 1500px) {
   .intro-main__video-btn {
     right: 178px;
+  }
+}
+@media (max-width: 1199px) {
+  .intro-main__video-btn {
+    right: 122px;
+  }
+}
+@media (max-width: 991px) {
+  .intro-main__video-btn {
+    position: relative;
+    right: unset;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    margin-left: 9px;
   }
 }
 
@@ -11991,6 +12103,11 @@ h3 {
 }
 .video-text-btn__content > div > span:first-child {
   padding-left: 3px;
+}
+@media (max-width: 991px) {
+  .video-text-btn__content img {
+    width: 87px;
+  }
 }
 
 .video-text-btn__arrow {
@@ -12007,6 +12124,12 @@ h3 {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+@media (max-width: 991px) {
+  .video-text-btn__arrow {
+    width: 44px;
+    height: 44px;
+  }
 }
 .video-text-btn__arrow svg {
   position: relative;
@@ -16040,4 +16163,81 @@ h3 {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.mobile-nav {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 6px;
+  background-color: #fff;
+  background: url("../img/footer/nav-fixed.svg") no-repeat center center/375px;
+  box-shadow: 0px -4px 9px 0px rgba(87, 86, 92, 0.1);
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+.mobile-nav__list {
+  display: flex;
+  column-gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+.mobile-nav__item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 7px;
+}
+.mobile-nav__item-main .mobile-nav__img {
+  width: 28px;
+  height: 28px;
+  background: url("../img/footer/home.svg") no-repeat center center/28px;
+}
+.mobile-nav__item-services .mobile-nav__img {
+  width: 28px;
+  height: 28px;
+  background: url("../img/footer/services.svg") no-repeat center center/28px;
+}
+.mobile-nav__item-clinics .mobile-nav__img {
+  width: 28px;
+  height: 28px;
+  background: url("../img/footer/clinics.svg") no-repeat center center/28px;
+}
+.mobile-nav__name {
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  font-weight: 300;
+  color: #9EA6B3;
+}
+.mobile-nav::before {
+  content: "";
+  position: absolute;
+  left: 98%;
+  top: 12px;
+  height: 100%;
+  width: 100vw;
+  background-color: #fff;
+}
+.mobile-nav::after {
+  content: "";
+  position: absolute;
+  right: 96%;
+  top: 12px;
+  background-color: #fff;
+  width: 100vw;
+  height: 100%;
+}
+.mobile-nav--fixed {
+  position: fixed;
+  bottom: -3px;
+  left: 0;
+  z-index: 1;
+}
+.mobile-nav .rec {
+  position: absolute;
+  right: 21px;
+  bottom: 25px;
 }
