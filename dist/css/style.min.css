@@ -10921,7 +10921,6 @@ section {
   flex-direction: column;
   min-height: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 .main {
@@ -14050,6 +14049,9 @@ h3 {
   top: 40px;
 }
 
+.gallery {
+  overflow: hidden;
+}
 .gallery-slider {
   overflow: visible;
 }
@@ -15710,6 +15712,10 @@ h3 {
   font-weight: 300;
   line-height: 60px;
   max-width: 460px;
+}
+
+.doctor {
+  overflow: hidden;
 }
 
 .doctor-slider {
