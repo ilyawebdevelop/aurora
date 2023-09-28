@@ -50,7 +50,7 @@
                         </a>
                     </li>
                 </ul>
-                <img src="img/header/logo-sm.svg" alt="logo" class="logo--sm">
+                <img src="img/header/logo-sm.svg" alt="logo" class="logo--sm d-block d-xl-none">
             </nav>
             <a class="header__logo" href="/">
                 <img class="d-none d-xl-block" src="img/header/logo.svg" alt="logo">
@@ -63,7 +63,15 @@
                         <a href="tel:+78612114830" class="header__phone">+7 (861) 211-48-30</a>
                         <a href="#" class="header__social" target="_blank">Спросить по WhatsApp</a>
                     </div>
-                    <button class="header__btn-catalog">
+                    <button class="header__btn-catalog d-none d-xl-flex" id="btn-catalog--lg">
+                        <!-- Hamburger Menu -->
+                        <div class="hamburger" id="toggle">
+                            <div class="top-bun"></div>
+                            <div class="meat"></div>
+                            <div class="bottom-bun"></div>
+                        </div><!-- /Hamburger Menu -->
+                    </button>
+                    <button class="header__btn-catalog d-flex d-xl-none" id="btn-catalog--sm">
                         <!-- Hamburger Menu -->
                         <div class="hamburger" id="toggle">
                             <div class="top-bun"></div>
