@@ -1,0 +1,42 @@
+.error-404 {
+    background: linear-gradient(180deg, #231F20 0%, #302B2C 100%);
+    position: relative;
+
+    &__name {
+        background: radial-gradient(50% 50% at 50% 50%, #9F694F 0%, rgba(159, 105, 79, 0.24) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;
+        font-family: $font-family-title;
+        font-size: 368px;
+        line-height: 368px;
+        // padding-left: 150px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 30px;
+    }
+    &__left {
+        grid-column: 7 span;
+        padding-left: 40px;
+    }
+    &__right {
+        grid-column: 5 span;
+    }
+    &__text {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        // margin-left: 50px;
+        margin-bottom: 25px;
+    }
+    &__logo {
+        position: absolute;
+        right: 0;
+        top: 185px;
+    }
+}

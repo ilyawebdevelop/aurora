@@ -1,0 +1,59 @@
+.intro-services {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: radial-gradient(48.98% 54.97% at 70.36% 48.94%, rgba(35, 31, 32, 0.35) 0%, rgba(35, 31, 32, 0.10) 0.01%, rgba(35, 31, 32, 0.74) 100%);
+
+}
+  .intro-footer {
+    margin-top: 65px;
+  }
+}
+.service-about {
+  position: relative;
+  overflow: hidden;
+  .flower {
+    position: absolute;
+    right: -20px;
+    top: -50px;
+    z-index: 0;
+  }
+}
+
+.service-about__title {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.service-about__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  column-gap: 55px;
+  .btn {
+    column-gap: 32px;
+  }
+}
+.service-about__img {
+  grid-column: 5 span;
+  width: 100%;
+  height: 522px;
+  object-fit: cover;
+}
+.service-about__content {
+  grid-column: 7 span;
+}

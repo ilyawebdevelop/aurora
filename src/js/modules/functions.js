@@ -22,9 +22,13 @@ AOS.init();
 
 // Реализация табов
 let tabsSection = document.querySelector('.tabs');
+let resultSection = document.querySelector('.result');
 
 	import GraphTabs from 'graph-tabs';
 
 	if(tabsSection) {
 		const tabs = new GraphTabs('popup');
+	}
+	if(resultSection) {
+		const tabs = new GraphTabs('result');
 	}

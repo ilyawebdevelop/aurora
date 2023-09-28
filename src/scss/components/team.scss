@@ -1,0 +1,323 @@
+.team {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 0;
+
+    &-text-slider {
+        padding-bottom: 40px;
+        grid-column: 4 span;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 100px;
+    }
+
+    &-photo-slider {
+        grid-column: 8 span;
+        width: 100%;
+    }
+
+    .nav-arrow {
+        cursor: pointer;
+
+        &--prev {
+            background: rgb(0 0 0 / 7%) url('../img/team/team-prev.svg') no-repeat center center/contain;
+        }
+
+        &--next {
+            background: rgb(0 0 0 / 7%) url('../img/team/team-next.svg') no-repeat center center/contain;
+        }
+
+        &.swiper-button-disabled {
+            opacity: .5;
+            pointer-events: none;
+        }
+
+        svg {
+            fill: #fff;
+        }
+    }
+
+    .text-slide {
+        &__title {
+            font-size: 48px;
+            line-height: 70px;
+            color: #fff;
+            margin-bottom: 15px;
+            letter-spacing: 1.44px;
+            font-weight: 100;
+
+            span {
+                color: $brown-color;
+                font-weight: 600;
+            }
+        }
+
+        &__work {
+            display: block;
+            margin-bottom: 14px;
+            font-size: 24px;
+            line-height: 20px;
+            color: $gray-color;
+        }
+
+        &__year {
+            display: block;
+            font-size: 24px;
+            line-height: 20px;
+            color: $gray-color;
+        }
+
+        &__descr {
+            margin-top: 47px;
+            line-height: 30px;
+            color: #fff;
+        }
+    }
+
+    .photo-slide {
+        &__img {
+            height: 760px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .flower {
+        position: absolute;
+        left: 0;
+        bottom: -250px;
+    }
+
+    .btn--brown {
+        padding-left: 30px;
+        column-gap: 24px;
+    }
+
+    .order-contacts__social {
+        width: 200px;
+    }
+
+    .contacts-social__img {
+        width: fit-content;
+
+        img {
+            min-width: 47px;
+        }
+    }
+
+    .contacts-social {
+        height: 89px;
+        column-gap: 3px;
+        padding-left: 22px;
+
+        &:before {
+            width: 89px;
+            height: 89px;
+        }
+
+        &:after {
+            width: 91px;
+            height: 91px;
+        }
+    }
+
+    .contacts-social__name span {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .btn-wrapper {
+        display: flex;
+        column-gap: 30px;
+        margin-top: 50px;
+    }
+
+    .contacts-social:hover:after {
+        width: 100%;
+    }
+
+    .contacts-social:hover:before {
+        width: 100%;
+    }
+
+    .slider-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: flex-end;
+    }
+
+    .count-number {
+        text-align: end;
+        font-size: 86px;
+        font-weight: 400;
+        line-height: 70px;
+        position: absolute;
+        bottom: 40px;
+        right: 15px;
+        z-index: 1;
+        font-family: $font-family-lighthouse;
+        color: #9EA6B3;
+
+
+        span {
+            font-size: 20px;
+            line-height: 20px;
+            color: rgba(158, 166, 179, 0.76);
+            position: absolute;
+            top: 0;
+            left: calc(100% + 4px);
+        }
+    }
+
+}
+
+.team-page {
+    position: relative;
+
+    .flower {
+        position: absolute;
+        left: -200px;
+        top: 0;
+    }
+}
+
+.team-page {
+    &__list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 24px;
+        row-gap: 24px;
+    }
+
+    &__item {
+        background: linear-gradient(180deg, #231F20 0%, #545454 100%);
+        grid-column: 4 span;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.team-page__item-img {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 330px;
+    height: 415px;
+}
+
+.team-page__item-bottom {
+    position: relative;
+}
+
+.team-page__item-bottom-wrapper {
+    background: linear-gradient(180deg, rgba(35, 31, 32, 0.00) 0%, rgba(35, 31, 32, 0.69) 100%);
+    backdrop-filter: blur(4px);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.team-page__item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-page__item-top {
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 24px;
+    color: $gray-color;
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.team-page__item-year {
+    height: 50px;
+    padding-left: 23px;
+    padding-right: 23px;
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    span {
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // border: 1px solid #9EA6B3;
+        border-radius: 40px;
+        z-index: 0;
+        background: linear-gradient(90deg, rgba(158, 166, 179, 1) 0%, rgba(158, 166, 179, 0) 100%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: calc(100% - 1px);
+        height: calc(100% - 2px);
+        border-radius: 40px;
+        left: 1px;
+        top: 1px;
+        z-index: 1;
+        background-color: #2F2B2C;
+        // backdrop-filter: blur(10px);
+    }
+}
+
+.team-page__item-title {
+    margin-bottom: 11px;
+
+    span {
+        color: #fff;
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 0.84px;
+
+        &:nth-child(1) {
+            display: block;
+            font-weight: 600;
+        }
+
+        &:nth-child(2) {
+            font-weight: 100;
+        }
+    }
+}
+
+.team-page__item-descr {
+    color: $gray-color;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.team-page__item-logo {
+    position: absolute;
+    right: 14px;
+    top: 0;
+}

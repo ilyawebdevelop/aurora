@@ -1,0 +1,80 @@
+.quality {
+    position: relative;
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 22px;
+
+        .input-wrapper {
+            grid-column: 3 span;
+        }
+
+        .form-btn {
+            grid-column: 3 span;
+            // padding-left: 34px;
+            column-gap: 16px;
+            padding-right: 22px;
+            height: 90px;
+
+            &:nth-child(2) {
+                padding-left: 50px;
+            }
+        }
+
+        .form-input {
+            font-size: 18px;
+            height: 90px;
+        }
+
+        .btn--bg-brown {
+            padding-left: 32px;
+        }
+    }
+
+    &__contacts {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        margin-top: 55px;
+    }
+
+    &__left {
+        grid-column: 4 span;
+        padding-right: 110px;
+    }
+
+    &__right {
+        grid-column: 8 span;
+    }
+    .agreement {
+        display: flex;
+        column-gap: 9px;
+        color: $gray-color;
+        font-size: 14px;
+        letter-spacing: 0.14px;      
+        padding-left: 45px;
+        position: relative;
+        font-weight: 200;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: url('@img/icons/star.svg') no-repeat center center / 20px;
+            width: 20px;
+            height: 20px;
+            left: 20px;
+            top: 3px;
+        }
+
+        a {
+            color: #9F694F;
+            font-size: 14px;
+            text-decoration-line: underline;
+            display: inline-block;
+        }
+    }
+    .flower {
+        position: absolute;
+        left: 0;
+        top: 40px;
+    }
+}

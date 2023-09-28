@@ -1,0 +1,88 @@
+.baner {
+    .container {
+        position: relative;
+        .flower {
+            position: absolute;
+            left: -150px;
+            top: 0;
+            z-index: 0;
+        }
+    }
+    &-slide {
+        padding: 12px;
+        padding-bottom: 40px;
+
+        &__subtitle {
+            font-size: 30px;
+            line-height: 40px;
+            color: $brown-color;
+            position: relative;
+            bottom: 18px;
+            left: 25px;
+            background-color: #231F20;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        &__content {
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &__title {
+            background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(rgba(255, 255, 255, 0.21)));
+            background: -o-linear-gradient(top, #FFF 0%, rgba(255, 255, 255, 0.21) 100%);
+            background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.21) 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 67px;           
+            font-weight: 600;
+            line-height: 67px;
+            text-transform: uppercase;     
+            text-align: center;     
+            margin-top: 0px;
+            margin-bottom: 2px;  
+        }
+        &__descr {
+            color: $gray-color;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: 0.917px;
+            position: relative;
+            top: 15px;
+            left: 38px;
+            background-color: #231F20;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+        &__inner {
+            box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.16);
+            border: 12px solid #fff;
+            background-color: #231F20;
+            position: relative;
+            padding-top: 57px;
+            padding-bottom: 20px;
+            padding-left: 65px;
+        }
+
+        &__img {
+            position: absolute;
+            right: 0;
+            top: -12px;
+            width: 100%;
+            height: calc(100% + 24px);
+            object-fit: cover;
+            object-position: right;
+        }
+
+        &__border {
+            margin-bottom: 30px;
+            border: 0.958px solid #9F694F;
+            padding-left: 20px;
+            padding-right: 30px;
+        }
+    }
+}

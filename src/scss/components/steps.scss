@@ -1,0 +1,25 @@
+.steps {
+  position: relative;
+
+  .flower {
+    position: absolute;
+    left: -200px;
+    top: 0;
+  }
+}
+
+.steps-slide__title {
+  color: #9EA6B3;
+  font-size: 40px;
+  line-height: 70px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.steps-slide__subtitle {
+  color: #9F694F;  
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  max-width: 460px;
+}

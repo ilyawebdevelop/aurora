@@ -1,0 +1,77 @@
+// .adv-cards {
+//   &__list {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     column-gap: 24px;
+//     row-gap: 24px;
+//   }
+
+//   &__item {
+//     box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.14);
+//     display: flex;
+//     grid-column: 4 span;
+//     padding: 35px 25px 60px 24px;
+//     background: #FFF;
+//   }
+// }
+
+.adv-cards{
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  .bg {
+    position: absolute;
+    right: 0;
+    top: -100px;
+  }
+}
+.adv-cards__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.adv-item {
+  grid-column: 4 span;
+  background: #FFF;
+  box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.14);
+  padding-top: 37px;
+  padding-right: 26px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+  display: flex;
+  column-gap: 22px;
+}
+
+.adv-item__icon {
+  color: #9F694F;
+  font-family: 'FoglihtenNo06_076';
+  font-size: 52px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 0.5px solid rgba(158, 166, 179, 0.70);
+  background: rgba(255, 255, 255, 0.02);
+  width: 47px;
+  min-width: 47px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adv-item__title {
+  color: #9F694F;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.adv-item__descr {
+  font-size: 18px;
+  font-weight: 430;
+  line-height: 30px;
+}

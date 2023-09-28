@@ -1,0 +1,30 @@
+.clinic {
+  overflow: hidden;
+  position: relative;
+
+  &__title {
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    position: absolute;
+    right: -250px;
+    top: -100px;
+  }
+  &-content {   
+    .container {
+      position: relative;
+    }
+    .content-text {
+      max-width: 590px;
+      position: relative;
+      z-index: 1;
+    }  
+  }
+  .flower {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

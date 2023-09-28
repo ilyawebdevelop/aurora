@@ -5,12 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/style.min.css">
-
+	
 	<title>Главная</title>
 </head>
 
@@ -18,7 +14,7 @@
 	
 	<div class="wrapper">
 		<!-- Header -->
-<header class="header" id="header">
+<header class="header header-main" id="header">
     <div class="container">
         <div class="header__wrapper">
             <nav class="header__nav">
@@ -54,8 +50,12 @@
                         </a>
                     </li>
                 </ul>
+                <img src="img/header/logo-sm.svg" alt="logo" class="logo--sm">
             </nav>
-            <a class="header__logo" href="/"><img src="img/header/logo.svg" alt="logo"></a>
+            <a class="header__logo" href="/">
+                <img class="d-none d-xl-block" src="img/header/logo.svg" alt="logo">
+                <img class="d-block d-xl-none" src="img/header/logo-sm-2.svg" alt="logo">
+            </a>
             <div class="header__right">
                 <a href="#" class="header__address" target="_blank">г. Краснодар, <br>ул. Гаражная, 67/1</a>
                 <div class="header__action">
@@ -93,13 +93,13 @@
             <div class="d-flex align-items-center title-wrapper">
                 <div class="intro-main__title color-white">
                  
-                    <img src="img/intro/title.svg" alt="title">
-                    <img class="intro-main__title-o" src="img/intro/o.svg" alt="o">
+                    <img src="img/admin/about/intro-logo.svg" alt="title">
+                  
                  
                 </div><!-- /intro-main__title -->
                 <button class="intro-main__video-btn video-text-btn">
                     <div class="video-text-btn__content">
-                        Смотреть видео о клинике | Смотреть видео о клинике |
+                       <img src="img/icons/video-btn-text.svg" alt="text" class="video-text__img">
                     </div>
                     <div class="video-text-btn__arrow">
                         <svg>
@@ -127,748 +127,89 @@
         </div>
     </div>
 </section>
-			<section class="department" id="department">
-    <div class="container">
-        <h2 class="section-title text-center">
-            Мы искренне рады менять жизнь людей, даря им <strong>возможность свободно улыбаться и чувствовать себя
-                здоровыми</strong><span>.</span>
-        </h2>
-        <div class="tabs" data-tabs="popup">
-            <ul class="tabs__nav">
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Терапия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Имплантация</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Протезирование</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Хирургия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Отородонтия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская стоматология</button>
-                </li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Гигиена</button></li>
-            </ul>
-            <div class="tabs__content">
-                <div class="tabs__panel">
-                    <div class="slider-wrapper">
-                        <div class="swiper department-slider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide department-slide">
-                                    <div class="department-slide__content">
-                                        <div class="department-slide__title">Терапевтическое Отделение</div>
-                                        <p>
-                                            Удобство, комфорт, высокая безопасность и эффективность лечения
-                                            обеспечивается также работой в четыре руки — врач-стоматолог совместно с
-                                            ассистентом.
-                                        </p>
-                                        <ul class="text-list">
-                                            <li>
-                                                Лечение зубов
-                                            </li>
-                                            <li>
-                                                Лечение кариеса
-                                            </li>
-                                            <li>
-                                                Лечение зубов во сне
-                                            </li>
-                                            <li>
-                                                Извлечение инструмента из канала зуба
-                                            </li>
-                                            <li>
-                                                Лечение кисты зуба
-                                            </li>
-                                            <li>
-                                                Лечение каналов под микроскопом
-                                            </li>
-                                            <li>
-                                                Лечение пульпита
-                                            </li>
-                                        </ul>
-                                        <div class="d-flex align-items-center btn-wrapper">
-                                            <a href="#" class="btn btn--brown">
-                                                <span>Подробнее</span>
-                                                <div class="btn-arrow-wrapper">
-                                                    <svg class="btn-arrow">
-                                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                            <div class="department-slide__price price">
-                                                от <strong>3 000</strong> <span>₽</span>  
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <img src="img/admin/department/image-1.png" alt="image"
-                                        class="department-slide__image">
-                                </div>
-
-                                <div class="swiper-slide department-slide">
-                                    <div class="department-slide__content">
-                                        <div class="department-slide__title">Терапевтическое Отделение</div>
-                                        <p>
-                                            Удобство, комфорт, высокая безопасность и эффективность лечения
-                                            обеспечивается также работой в четыре руки — врач-стоматолог совместно с
-                                            ассистентом.
-                                        </p>
-                                        <ul class="text-list">
-                                            <li>
-                                                Лечение зубов
-                                            </li>
-                                            <li>
-                                                Лечение кариеса
-                                            </li>
-                                            <li>
-                                                Лечение зубов во сне
-                                            </li>
-                                            <li>
-                                                Извлечение инструмента из канала зуба
-                                            </li>
-                                            <li>
-                                                Лечение кисты зуба
-                                            </li>
-                                            <li>
-                                                Лечение каналов под микроскопом
-                                            </li>
-                                            <li>
-                                                Лечение пульпита
-                                            </li>
-                                        </ul>
-                                        <div class="d-flex align-items-center btn-wrapper">
-                                            <a href="#" class="btn btn--brown">
-                                                <span>Подробнее</span>
-                                                <div class="btn-arrow-wrapper">
-                                                    <svg class="btn-arrow">
-                                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                            <div class="department-slide__price price">
-                                                от <strong>3 000</strong> <span>₽</span>  
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <img src="img/admin/department/image-1.png" alt="image"
-                                        class="department-slide__image">
-                                </div>
-
-                            </div>
-                            <div class="pagination"></div>
-                        </div><!-- /department-slider -->
-                        <div class="container count-number">
-                           
-                        </div>
-                        <div class="nav-arrow-wrapper">
-                            <button class="nav-arrow nav-arrow--prev">
-                                <svg>
-                                    <use xlink:href="img/icons/icons.svg#slider-prev"></use>
-                                </svg>
-                            </button>
-                            <button class="nav-arrow nav-arrow--next">
-                                <svg>
-                                    <use xlink:href="img/icons/icons.svg#slider-next"></use>
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="tabs__panel">
-                    <div class="slider-wrapper">
-                        <div class="swiper department-slider">
-                            <div class="swiper-wrapper">
-
-                                <div class="swiper-slide department-slide">
-                                    <div class="department-slide__content">
-                                        <div class="department-slide__title">Терапевтическое Отделение</div>
-                                        <p>
-                                            Удобство, комфорт, высокая безопасность и эффективность лечения
-                                            обеспечивается.
-                                        </p>
-                                        <ul class="text-list">
-                                            <li>
-                                                Лечение зубов
-                                            </li>
-                                            <li>
-                                                Лечение кариеса
-                                            </li>
-                                            <li>
-                                                Лечение зубов во сне
-                                            </li>
-                                            <li>
-                                                Извлечение инструмента из канала зуба
-                                            </li>                                   
-                                        </ul>
-                                        <div class="d-flex align-items-center btn-wrapper">
-                                            <a href="#" class="btn btn--brown">
-                                                <span>Подробнее</span>
-                                                <div class="btn-arrow-wrapper">
-                                                    <svg class="btn-arrow">
-                                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                            <div class="department-slide__price price">
-                                                от <strong>53 000</strong> <span>₽</span>  
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <img src="img/admin/department/image-1.png" alt="image"
-                                        class="department-slide__image">
-                                </div>
-
-                                <div class="swiper-slide department-slide">
-                                    <div class="department-slide__content">
-                                        <div class="department-slide__title">Терапевтическое Отделение</div>
-                                        <p>
-                                            Удобство, комфорт
-                                        </p>
-                                        <ul class="text-list">
-                                            <li>
-                                                Лечение зубов
-                                            </li>
-                                            <li>
-                                                Лечение кариеса
-                                            </li>
-                                            <li>
-                                                Лечение зубов во сне
-                                            </li>
-                                            <li>
-                                                Извлечение инструмента из канала зуба
-                                            </li>
-                                            <li>
-                                                Лечение кисты зуба
-                                            </li>
-                                            <li>
-                                                Лечение каналов под микроскопом
-                                            </li>
-                                            <li>
-                                                Лечение пульпита
-                                            </li>
-                                        </ul>
-                                        <div class="d-flex align-items-center btn-wrapper">
-                                            <a href="#" class="btn btn--brown">
-                                                <span>Подробнее</span>
-                                                <div class="btn-arrow-wrapper">
-                                                    <svg class="btn-arrow">
-                                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                            <div class="department-slide__price price">
-                                                от <strong>3 000</strong> <span>₽</span>  
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <img src="img/admin/department/image-1.png" alt="image"
-                                        class="department-slide__image">
-                                </div>
-
-                            </div>
-                            <div class="pagination"></div>
-                        </div><!-- /department-slider -->
-                        <div class="container count-number">
-                            
-                        </div>
-                        <div class="nav-arrow-wrapper">
-                            <button class="nav-arrow nav-arrow--prev">
-                                <svg>
-                                    <use xlink:href="img/icons/icons.svg#slider-prev"></use>
-                                </svg>
-                            </button>
-                            <button class="nav-arrow nav-arrow--next">
-                                <svg>
-                                    <use xlink:href="img/icons/icons.svg#slider-next"></use>
-                                </svg>
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs__panel">
-
-                </div>
-                <div class="tabs__panel">
-
-                </div>
-                <div class="tabs__panel">
-
-                </div>
-                <div class="tabs__panel">
-
-                </div>
-                <div class="tabs__panel">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <img src="img/department/flower.png" alt="image" class="department-flower">
-</section>
-			<section class="order" id="order" style="background-image: url('img/order/order.png');">
-    <div class="container">
-        <div class="order__content">
-            <h2 class="section-title"> <span>Давайте пообщаемся</span> и начнем создавать здоровую голливудскую улыбку
-                вашей мечты<span>.</span>
-            </h2>
-            <div class="order-form__wrapper">
-                <form action="#" class="order-form form">
-                    <div class="input-wrapper">
-                        <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
-                    </div>
-                    <button class="form-btn btn btn--bg-brown">
-                        <div class="d-flex flex-column align-items-start">
-                            <span class="btn__text btn__text--lg">Забронировать время консультации</span>
-                            <span class="btn__text btn__text--sm">в клиние или онлайн</span>
-                        </div>
-                        <div class="btn-arrow-wrapper">
-                            <svg class="btn-arrow">
-                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                            </svg>
-                        </div>
-                    </button>
-                    <div class="agreement">                       
-                        Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
-                    </div>
-                </form>
-                <div class="order-dir">
-                    <div class="order-dir__name">Главный врач<br> челюстно-лицевой хирург</div>
-                    <div class="order-dir__text">
-                        Ишханян Нарек Нораирович
-                    </div>
-                    <div class="line--top"></div>
-                    <div class="line--right"></div>
-                    <div class="line--bottom"></div>
-                    <div class="line--left"></div>   
-                    <div class="round"></div>            
-                </div>
-
-            </div>
-            <div class="order-contacts">
-                <div class="order-contacts__left">
-                    <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
-                    <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
-                </div>
-                <div class="order-contacts__right">
-                    <a href="#" class="order-contacts__social contacts-social">
-                        <span class="contacts-social__img">
-                            <img class="static-social" src="img/icons/whatsapp.svg" alt="icon">
-                            <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon">
-                        </span>
-                        <div class="contacts-social__name">
-                            спросить в
-                            <span>WhatsApp</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-        
-
-    </div>
-    <img src="img/order/flower.png" alt="flower" class="flower">
-</section>
-			<section class="price-sect" id="price-sect">
-  <div class="container">
-    <h2 class="section-title text-center mx-auto">
-      Вы&nbsp;узнаете стоимость до&nbsp;начала лечения <strong>вам расскажут, как проходит лечение и&nbsp;объяснят, что
-        будет после</strong><span>.</span>
-    </h2>
-    <ul class="price__list">
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-1.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Терапия</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Лечение зубов
-              </li>
-              <li class="price-param">
-                Лечение зубов во сне
-              </li>
-              <li class="price-param">
-                Лечение кисты зуба
-              </li>
-              <li class="price-param">
-                Лечение пульпита
-              </li>
-              <li class="price-param">
-                Лечение под микроскопом
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>8 500</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-2.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Исправление прикуса</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Ортодонтическое лечение
-              </li>
-              <li class="price-param">
-                Брекет-системы
-              </li>
-              <li class="price-param">
-                Элайнеры
-              </li>
-              <li class="price-param">
-                Исправление прикуса у детей
-              </li>
-              <li class="price-param">
-                Хирургическое исправление прикуса члх
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>22 000</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-3.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Имплантация</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Имплантация зубов под наркозом
-              </li>
-              <li class="price-param">
-                Костная пластика
-              </li>
-              <li class="price-param">
-                Имплантация зубов
-              </li>
-              <li class="price-param">
-                Имплантация All on 4 / 6
-              </li>
-              <li class="price-param">
-                Синус лифтинг
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>5 000</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-4.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Пародонтология</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Профилактика пародонтоза
-              </li>
-              <li class="price-param">
-                Лечение дёсен
-              </li>
-              <li class="price-param">
-                Лечение подвижности зубов
-              </li>
-              <li class="price-param">
-                Кюретаж десен
-              </li>
-              <li class="price-param">
-                Лечение гингивита
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>5 000</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-5.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Протезирование</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Зубы за один день
-              </li>
-              <li class="price-param">
-                Коронка на зуб
-              </li>
-              <li class="price-param">
-                Несъемное протезирование
-              </li>
-              <li class="price-param">
-                Виниры
-              </li>
-              <li class="price-param">
-                Протезирование на имплантах
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>8 500</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-6.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Детская стоматология</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Пластика уздечки языка
-              </li>
-              <li class="price-param">
-                Удаление зуба
-              </li>
-              <li class="price-param">
-                Коронки на молочные зубы
-              </li>
-              <li class="price-param">
-                Лечение пульпита
-              </li>
-              <li class="price-param">
-                Лечение зубов во сне и под седацией
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>8 500</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-7.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Хирургия</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Удаление зуба
-              </li>
-              <li class="price-param">
-                Трансплантация зуба
-              </li>
-              <li class="price-param">
-                Пластика уздечки языка
-              </li>
-              <li class="price-param">
-                Пластика уздечки
-              </li>
-              <li class="price-param">
-                Устранение десневой улыбки
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>8 500</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-8.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Гнатология</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Дисфункция ВНЧС
-              </li>
-              <li class="price-param">
-                Сплинт терапия
-              </li>
-              <li class="price-param">
-                Хирургия ВНЧС
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>8 500</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-9.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Челюстно-лицевая хирургия</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Пластика подбородка
-              </li>
-              <li class="price-param">
-                Удаление комков Биша
-              </li>
-              <li class="price-param">
-                Удаление кист челюстей
-              </li>
-              <li class="price-param">
-                Лечение гайморита
-              </li>
-              <li class="price-param">
-                Лечение переломов челюсти
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>5 000</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-      <li class="price__item price-item">
-        <div class="price-item__content">
-          <img src="img/icons/price-10.svg" alt="icon" class="price-item__img">
-          <div class="price-item__text">
-            <h3 class="price-item__title">Профессиональная гигиена</h3>
-            <ul class="price-params">
-              <li class="price-param">
-                Отбеливание зубов
-              </li>
-              <li class="price-param">
-                Профессиональная гигиена Air flow
-              </li>
-              <li class="price-param">
-                Профессиональная гигиена аппаратом Vector
-              </li>             
-            </ul>
-          </div>
-        </div>
-        <div class="price-item__action">
-          <div class="price">
-            от <strong>5 000</strong> <span>₽</span>
-          </div>
-          <a href="#" class="price-item__link">
-            <div class="btn-arrow-wrapper">
-              <svg class="btn-arrow">
-                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </li><!-- /price-item -->
-
-    </ul>
-  </div>
-  <div class="flower--right"><img src="img/price/flower.png" alt="flower"></div>
-</section>
-			stat
-			about-slider
-			baner-slider
-			result
-			invite
-			team
-			reviews
-			reviews-star
-			about
-			gallery
-			quality
+			
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">
- 
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__col">
+                    <a href="/" class="logo footer__logo">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__content">
+                        <div class="footer__license">
+                            <span>Лицензия</span>
+                            <span>Л041-01126-23/00498307</span>
+                        </div>
+                        <a href="#">Перечень контролирующих органов в сфере здравоохранения КК</a>
+                        <span>© 2016 - 2023 Стоматологическая клиника White Aurora</span>
+                    </div>                  
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-title">Главная</div>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="#">Врачи</a></li>
+                            <li><a href="#">До | После</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Пациентам</a></li>
+                            <li><a href="#">Из других городов</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <div class="footer__nav-title">Услуги</div>
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Коронка на зуб</a></li>
+                            <li><a href="#">Лечение кариеса</a></li>
+                            <li><a href="#">Профессиональная гигиена</a></li>
+                            <li><a href="#">Лечение десен</a></li>
+                            <li><a href="#">Имплантация зуба</a></li>
+                            <li><a href="#">Зубы за один день All on 4</a></li>
+                            <li><a href="#">Скуловая имплантация Zygoma</a></li>
+                            <li><a href="#">Удаление зубов мудрости</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                      
+                        <ul class="footer__nav-list">
+                            <li><a href="#">Виниры</a></li>
+                            <li><a href="#">Брекеты</a></li>
+                            <li><a href="#">Элайнеры</a></li>
+                            <li><a href="#">Отбеливание</a></li>
+                            <li><a href="#">Детская стоматология</a></li>
+                            <li><a href="#">Лечение зубов во сне</a></li>
+                            <li><a href="#">Лечение зубов под микроскопом</a></li>
+                            <li><a href="#">Пациентам с других городов</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__col">
+                    <a href="#" target="_blank">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__col">
+                    <a href="#" target="_blank">Согласие на обработку ПДН</a>
+                </div>
+                <div class="footer__col">
+                    <a class="develop" href="https://ice-marketing.ru" target="_blank">
+                        <span>Разработка и продвижение</span>
+                        <img src="img/footer/develop.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="img/footer/footer-logo.svg" alt="logo" class="footer__logo-text">
 </footer>
 		<!-- modal -->
 <!-- order -->

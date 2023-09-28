@@ -18,10 +18,24 @@
     &__nav {
         padding-top: 39px;
         grid-column: 5 span;
+        @media(max-width: 1199px){
+            padding-top: 10px;
+            grid-column: 3 span;
+        }
+        @media(max-width: 767px){
+            padding-top: 8px;
+        }
+      
 
         &-list {
             display: flex;
             column-gap: 33px;
+            @media(max-width: 1320px){
+                column-gap: 20px;
+            }
+            @media(max-width: 1199px){
+                display: none;
+            }
 
             li {
                 a {
@@ -39,11 +53,19 @@
     &__logo {
         grid-column: 2 span;
         padding-top: 17px;
+        @media(max-width: 1199px){
+            padding-top: 13px;
+            grid-column: 6 span;
+        }
 
         img {
             width: 200px;
             margin-left: auto;
             margin-right: auto;
+            @media(max-width: 991px){
+                width: 160px;
+                min-width: 160px;
+            }
         }
     }
 
@@ -52,6 +74,13 @@
         display: flex;
         justify-content: flex-end;
         // align-items: center;
+        @media(max-width: 1199px){
+            grid-column: 3 span;
+            padding-top: 10px;
+        }
+        @media(max-width: 767px){
+            padding-top: 8px;
+        }
     }
 
     &__address {
@@ -61,6 +90,16 @@
         padding-top: 30px;
         margin-right: 88px;
         transition: color .2s linear;
+        @media(max-width: 1320px){
+           margin-right: 50px; 
+           font-size: 15px;
+        }
+        @media(max-width: 1250px){
+            margin-right: 25px;
+        }
+        @media(max-width: 1199px){
+            display: none;
+        }
         &:hover {
             color: $brown-color;
         }
@@ -73,19 +112,32 @@
     &__phone {
         font-size: 24px;
         transition: color .2s linear;
+        @media(max-width: 1250px){
+            font-size: 20px;
+            text-align: end;
+        }
         &:hover {
             color: $brown-color;
         }
         &-wrapper {
             padding-top: 30px;
+            @media(max-width: 1199px){
+                display: none;
+            }
         }
     }
-    &__social {
-        color: $brown-dark-color;
+    &__social {       
+        color: #D0B5A9;
         font-size: 15px;
         transition: color .2s linear;
+        @media(max-width: 1250px){
+            font-size: 14px;
+        }
         &:hover {
             color: $white-color;
         }
     }
+}
+.header-main .header__social {
+    color: $brown-dark-color;
 }

@@ -1,0 +1,115 @@
+.system {
+  background: #231F20;
+  padding-bottom: 0;
+  margin-bottom: -143px;
+
+  &__title {
+    max-width: 1177px;
+  }
+
+  &-slider {
+    margin-top: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    
+  }
+  &-slide {
+    background-color: #fff;
+    box-shadow: 0px 21px 16px 0px rgba(35, 31, 32, 0.21);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__top {
+      padding-top: 22px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 13px;
+    }
+
+    &__bottom {      
+      background: #231F20;
+      padding: 15px 20px 14px 20px;
+    }
+
+    &__img {
+      height: 190px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__params {
+      display: flex;
+      flex-direction: column;
+      row-gap: 6px;
+    }
+
+    &__param {
+      display: flex;
+      align-items: center;
+      column-gap: 13px;
+      justify-content: space-between;
+
+      &-name {
+        color: $gray-color;
+        font-size: 15px;
+        line-height: 22px;
+
+        &--lg {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          color: #1F1F1F;
+        }
+      }
+
+      &-text {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+      }
+    }
+
+    &__price {
+      &-name {
+        font-size: 16px;
+        line-height: 22px;
+        color: #fff;
+      }
+
+      &-sum {
+        font-family: $font-family-title;
+        font-size: 28px;
+        line-height: 28px;
+        color: #D0B5A9;
+        white-space: nowrap;
+
+        span {
+          font-family: $font-family;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+  .nav-arrow {
+    cursor: pointer;
+
+    &--prev {
+        background: rgb(0 0 0 / 7%) url('../img/team/team-prev.svg') no-repeat center center/contain;
+    }
+
+    &--next {
+        background: rgb(0 0 0 / 7%) url('../img/team/team-next.svg') no-repeat center center/contain;
+    }
+
+    &.swiper-button-disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    svg {
+        fill: #fff;
+    }
+}
+}

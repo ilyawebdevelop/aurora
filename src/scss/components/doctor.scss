@@ -1,0 +1,33 @@
+.doctor-slider {
+  overflow: visible;
+}
+
+.doctor-slide {
+  &:nth-child(odd) {
+    width: 530px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 350px;
+    }
+  }
+
+  &:nth-child(even) {
+    width: 235px;
+
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+}
+.doctor{
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-top: 12px;
+  .pagination {
+    margin-top: 60px;
+  }
+}

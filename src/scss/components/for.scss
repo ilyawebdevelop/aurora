@@ -1,0 +1,53 @@
+.for {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 60px;
+    box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.14);
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+  }
+  &__img {
+    grid-column: 6 span;
+    width: 100%;
+    object-fit: cover;
+    height: 430px;
+  }
+  &__content {
+    grid-column: 6 span;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  &__item {
+    font-size: 22px;
+    line-height: 26px;
+    position: relative;
+    padding-left: 40px;
+    &::before {
+      content: '';
+      width: 26px;
+      height: 26px;
+      background: url('@img/icons/check.svg') no-repeat center center / 26px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    strong {
+      font-weight: 600;
+    }
+  }
+  .container {
+    position: relative;
+
+    .flower {
+      position: absolute;
+      right: -180px;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}

@@ -53,8 +53,8 @@
             top: 0;
             width: calc(100% - 455px);
             height: auto;
-            top: 50%;
-            transform: translateY(-50%);
+            // top: 50%;
+            // transform: translateY(-50%);
         }
 
         &__title {
@@ -72,7 +72,6 @@
         }
 
         &__price {         
-
             strong {               
                 font-size: 36px;
                 line-height: 36px;               

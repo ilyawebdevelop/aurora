@@ -1,0 +1,74 @@
+.about {
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 20px;
+    }
+
+    &__left {
+        grid-column: 5 span;
+        position: relative;
+    }
+
+    &__right {
+        grid-column: 7 span;
+    }
+    &__img {
+        position: absolute;
+        right: -110px;
+        min-width: 900px;
+        bottom: -50px;
+    }    
+    .flower {
+        position: absolute;
+        right: 0;
+        top: 150px;
+    }
+    .btn{
+        position: relative;
+        z-index: 1;
+    }
+    &-bg {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        bottom: 0;
+        width: 800px;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+.cert-slide {
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.cert-slider--lg {
+    .cert-slide {
+        img {
+            height: 470px;
+        }
+    }
+}
+.about-stat {
+    padding-top: 80px;
+}
+.about-stat .section-title {
+    max-width: 100%;
+}
+.about-slide__title--brown {
+    color: $brown-color;
+}
+.about-slide__subtitle {
+    font-size: 54px;
+    line-height: 65px;
+    letter-spacing: 2.7px;
+   font-family: $font-family-title;
+   color: $brown-color;
+}

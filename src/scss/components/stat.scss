@@ -1,0 +1,51 @@
+.stat {
+    position: relative;
+    padding-top: 0;
+    .section-title {
+        max-width: 1210px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 70px;
+
+        .stat__video-btn {
+            position: absolute;
+            right: -140px;
+            top: 0;
+        }
+    }
+    &__list {
+        display: flex;
+        column-gap: 40px;
+    }
+    &-item {
+        display: flex;
+        column-gap: 10px;
+        &__num {            
+            color: $brown-color;        
+            font-size: 70px;           
+            font-weight: 200;
+            line-height: 70px;       
+        }
+        &__text {
+            display: flex;
+            flex-direction: column;     
+            align-items: flex-end;
+            row-gap: 7px;         
+            font-size: 20px;         
+            line-height: 20px; /* 350% */
+            letter-spacing: 0.2px;        
+            justify-content: center;    
+          span {
+            &:first-child {
+                padding-right: 18px;
+            }
+          }
+        }
+    }
+    .flower {
+        position: absolute;
+        left: 0;
+        top: -200px;
+    }
+}
