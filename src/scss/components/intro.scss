@@ -101,6 +101,9 @@
         justify-content: flex-end;
         min-height: 100vh;
         padding-bottom: 95px;
+        @media(max-width: 1500px){
+            padding-bottom: 20px;
+        }
     }
 }
 

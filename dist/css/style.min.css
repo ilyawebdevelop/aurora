@@ -11937,6 +11937,11 @@ h3 {
   min-height: 100vh;
   padding-bottom: 95px;
 }
+@media (max-width: 1500px) {
+  .intro-main .container {
+    padding-bottom: 20px;
+  }
+}
 
 .video-text-btn__arrow svg {
   fill: #9F694F;
