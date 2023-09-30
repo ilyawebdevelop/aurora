@@ -1267,9 +1267,11 @@
             <div class="footer__top">
                 <div class="footer__col">
                     <a href="/" class="logo footer__logo">
-                        <img src="img/header/logo.svg" alt="logo">
+                        <img class="d-none d-md-block" src="img/header/logo.svg" alt="logo">
+                        <img class="logo--sm d-block d-md-none" src="img/header/logo-sm.svg" alt="logo">
+                        <img class="d-block logo-text--sm d-md-none" src="img/header/logo-sm-2.svg" alt="logo">
                     </a>
-                    <div class="footer__content">
+                    <div class="footer__content d-none d-md-flex">
                         <div class="footer__license">
                             <span>Лицензия</span>
                             <span>Л041-01126-23/00498307</span>
@@ -1280,7 +1282,7 @@
                 </div>
                 <div class="footer__col">
                     <nav class="footer__nav">
-                        <div class="footer__nav-title">Главная</div>
+                        <a class="footer__nav-title" href="#">Главная</a>
                         <ul class="footer__nav-list">
                             <li><a href="#">Услуги</a></li>
                             <li><a href="#">Акции</a></li>
@@ -1295,7 +1297,7 @@
                 </div>
                 <div class="footer__col">
                     <nav class="footer__nav">
-                        <div class="footer__nav-title">Услуги</div>
+                        <a class="footer__nav-title" href="#">Услуги</a>
                         <ul class="footer__nav-list">
                             <li><a href="#">Коронка на зуб</a></li>
                             <li><a href="#">Лечение кариеса</a></li>
@@ -1307,6 +1309,14 @@
                             <li><a href="#">Удаление зубов мудрости</a></li>
                         </ul>
                     </nav>
+                    <div class="footer__content d-flex d-md-none">
+                        <div class="footer__license">
+                            <span>Лицензия</span>
+                            <span>Л041-01126-23/00498307</span>
+                        </div>
+                        <a href="#">Перечень контролирующих органов в сфере здравоохранения КК</a>
+                        <span>© 2016 - 2023 Стоматологическая клиника White Aurora</span>
+                    </div>    
                 </div>
                 <div class="footer__col">
                     <nav class="footer__nav">
@@ -1343,7 +1353,7 @@
     <img src="img/footer/footer-logo.svg" alt="logo" class="footer__logo-text">
 </footer>
 
-<!-- <div class="mobile-nav mobile-nav--fixed">
+<div class="mobile-nav mobile-nav--fixed">
     <ul class="mobile-nav__list">
         <li class="mobile-nav__item mobile-nav__item-main">
             <a href="#">
@@ -1367,7 +1377,7 @@
     <button class="rec">
         <img src="img/footer/rec.svg" alt="button">
     </button>
-</div> -->
+</div>
 		<!-- modal -->
 <!-- order -->
 <div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"

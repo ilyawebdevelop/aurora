@@ -224,11 +224,17 @@
         min-width: 100px;
         margin-left: 9px;
     }
+    @media(max-width: 374px){
+        width: 66px;
+        height: 66px;
+        min-width: 66px;
+    }
 }
 
 
 .video-text-btn__content {
     font-weight: 300;
+    
 
     &>div {
         &>span:first-child {
@@ -238,6 +244,9 @@
     img {
         @media(max-width: 991px){
             width: 87px;
+        }
+        @media(max-width: 374px){
+            width: 58px;
         }
     }
 }
@@ -259,6 +268,9 @@
     @media(max-width: 991px){
         width: 44px;
         height: 44px;
+    }
+    @media(max-width: 374px){
+        width: 32px;height: 32px;
     }
 
     svg {

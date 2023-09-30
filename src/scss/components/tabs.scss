@@ -6,6 +6,9 @@
         flex-wrap: wrap;
         column-gap: 56px;
         position: relative;
+        @media(max-width: 1199px){
+            column-gap: 15px;
+        }
         &::before {
             content: '';
             position: absolute;
@@ -44,6 +47,9 @@
         .tabs__nav-btn {
             min-height: 70px;
             transition: color .2s linear;
+            @media(max-width: 1199px){
+                font-size: 14px;
+            }
             &:hover {
                 color: $brown-color;
             }

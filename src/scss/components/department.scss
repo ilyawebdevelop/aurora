@@ -1,6 +1,11 @@
 .department {
     position: relative;
 
+    .tabs {
+        position: relative;
+        z-index: 1;
+    }
+
     .section-title {
         max-width: 1115px;
         margin-left: auto;
@@ -25,12 +30,17 @@
             line-height: 20px;
             color: rgba(158, 166, 179, 0.76);
             position: absolute;
-            top: 0;        
+            top: 0;
             right: -11px;
         }
     }
 
     &-slide {
+       @media(max-width: 1700px){
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+       }
 
         &__content {
             padding-top: 75px;
@@ -38,6 +48,10 @@
             position: relative;
             z-index: 1;
             padding-bottom: 100px;
+            @media(max-width: 1199px){
+                padding-top: 0;
+                padding-bottom: 40px;
+            }
 
             p {
                 margin-top: 27px;
@@ -53,8 +67,20 @@
             top: 0;
             width: calc(100% - 455px);
             height: auto;
+
             // top: 50%;
             // transform: translateY(-50%);
+            @media(max-width: 1700px) {
+                position: unset;
+            }
+            @media(max-width: 1199px){
+                width: 100%;
+            }
+        }
+        &__img-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         &__title {
@@ -64,6 +90,26 @@
             line-height: 70px;
             letter-spacing: 3.2px;
             text-transform: uppercase;
+            @media(max-width: 1199px){
+                font-size: 40px;
+                line-height: 50px;
+            }         
+            &--lg {
+                @media(max-width: 1700px){
+                    display: none;
+                }
+            }
+            &--sm {
+                display: none;
+                @media(max-width: 1700px){
+                    display: block;
+                    margin-top: 60px;
+                    max-width: 800px;
+                }
+                @media(max-width: 1500px){
+                    margin-top: 30px;
+                }
+            }
         }
 
         .btn-wrapper {
@@ -71,11 +117,12 @@
             column-gap: 24px;
         }
 
-        &__price {         
-            strong {               
+        &__price {
+            strong {
                 font-size: 36px;
-                line-height: 36px;               
+                line-height: 36px;
             }
+
             span {
                 font-size: 36px;
             }
@@ -86,5 +133,8 @@
         position: absolute;
         top: 0px;
         left: -220px;
+        @media(max-width: 1700px){
+            display: none;
+        }
     }
 }

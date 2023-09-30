@@ -23,9 +23,9 @@ body {
   font-size: 20px;
   line-height: 28px;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 22px;
   }
 }
 
@@ -132,9 +132,9 @@ h2 {
   font-weight: 200;
   font-family: $font-family;
 
-  @media(max-width: 991px) {
-    font-size: 20px;
-    line-height: 22px;
+  @media(max-width: 1199px) {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 .section-subtitle {
@@ -215,6 +215,12 @@ h5 {
 
   &--prev {
     left: -180px;
+    @media(max-width: 1800px){
+      left: -85px;
+    }
+    @media(max-width: 1700px){
+      left: 12px;
+    }
 
     &.swiper-button-disabled {
       background: url('@img/icons/slider-prev-disabled.svg') no-repeat center center / contain;
@@ -227,6 +233,12 @@ h5 {
 
   &--next {
     right: -180px;
+    @media(max-width: 1800px){
+      right: -85px;
+    }
+    @media(max-width: 1700px){
+      right: 12px;
+    }
 
     &.swiper-button-disabled {
       background: url('@img/icons/slider-next-disabled.svg') no-repeat center center / contain;
