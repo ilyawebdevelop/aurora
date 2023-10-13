@@ -18729,7 +18729,7 @@ h3 {
   margin-top: 30px;
   padding-bottom: 25px;
   padding-top: 25px;
-  z-index: 2;
+  z-index: 3;
 }
 @media (max-width: 767px) {
   .system-slider {
