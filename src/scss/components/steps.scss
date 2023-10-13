@@ -5,16 +5,47 @@
     position: absolute;
     left: -200px;
     top: 0;
+    @media(max-width: 1199px){
+      display: none;
+    }
+  }
+  .count-number {
+    @media(max-width: 1199px){
+      display: none;
+    }
+  }
+  .nav-arrow {
+    @media(max-width: 991px){
+      top: 50%;
+    }
+  }
+  
+  .department-slide__content {
+    @media(max-width: 991px){
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
   }
 }
-
+.steps-slide {
+  @media(max-width: 991px){
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .steps-slide__title {
   color: #9EA6B3;
   font-size: 40px;
   line-height: 70px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  max-width: unset;
+  @media(max-width: 1199px){
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
+
 
 .steps-slide__subtitle {
   color: #9F694F;  
@@ -22,4 +53,11 @@
   font-weight: 300;
   line-height: 60px;
   max-width: 460px;
+  @media(max-width: 1199px){
+    font-size: 28px;
+    line-height: 30px;
+  }
+  @media(max-width: 991px){
+    margin-top: 10px;
+  }
 }

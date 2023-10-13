@@ -1,10 +1,23 @@
 .content {
     position: relative;
+    .container {
+        position: relative;
+        z-index: 1;
+    }
 
     &__title {
         font-size: 64px;
         line-height: 60px;
         margin-bottom: 22px;
+
+        @media(max-width: 1199px) {
+            font-size: 48px;
+            line-height: 48px;
+        }
+        @media(max-width: 991px){
+            font-size: 25px;
+            line-height: 33px;
+        }
 
         &+p {
             padding-left: 0;
@@ -35,6 +48,7 @@
                 left: 0;
                 top: 0;
             }
+
             &-right {
                 margin-left: 9px;
             }
@@ -67,6 +81,7 @@
 
             &-item {
                 margin-right: -13px;
+
                 img {
                     border-radius: 48px;
                     border: 2px solid #D1D5DB;
@@ -89,6 +104,9 @@
                 width: 100%;
                 height: 100%;
                 background: url('@img/content/quest.svg') no-repeat center center / contain;
+                @media(max-width: 991px){
+                    background: url('@img/content/quest.svg') no-repeat bottom center / cover;
+                }
             }
 
             &::before {
@@ -125,20 +143,38 @@
     h3 {
         font-size: 40px;
         font-weight: 500;
-        line-height: 60px;
+        line-height: 50px;
         font-family: $font-family;
         margin-bottom: 16px;
         color: #57565C;
         margin-top: 52px;
         margin-bottom: 16px;
+        @media(max-width: 1199px){
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media(max-width: 991px){
+            font-size: 24px;
+            line-height: 33px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
     }
 
     p {
         padding-left: 48px;
+        @media(max-width: 991px){
+           padding-left: 0;
+        }
     }
 
     ul {
         padding-left: 48px;
+        margin-top: 30px;
+        @media(max-width: 991px){
+            padding-left: 0;
+            margin-top: 10px;
+        }
 
         li {
             &:not(:last-child) {
@@ -152,8 +188,19 @@
         right: 0;
         top: -30px;
         z-index: 0;
+        @media(max-width: 1720px){
+            width: 200px;
+        }
+        @media(max-width: 767px){
+            width: 100px;
+            top: -60px;
+        }
     }
 }
+
 .content-head__title-wrapper_reviews {
     padding-right: 200px;
+    @media(max-width: 991px){
+        padding-right: 0;
+    }
 }

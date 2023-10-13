@@ -1,6 +1,7 @@
 .baner {
     .container {
         position: relative;
+
         .flower {
             position: absolute;
             left: -150px;
@@ -8,6 +9,7 @@
             z-index: 0;
         }
     }
+
     &-slide {
         padding: 12px;
         padding-bottom: 40px;
@@ -28,6 +30,9 @@
             max-width: 600px;
             position: relative;
             z-index: 1;
+            padding-top: 50px;
+            padding-bottom: 22px;
+            min-width: 600px;
         }
 
         &__title {
@@ -37,14 +42,29 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 67px;           
+            font-size: 67px;
             font-weight: 600;
             line-height: 67px;
-            text-transform: uppercase;     
-            text-align: center;     
+            text-transform: uppercase;
             margin-top: 0px;
-            margin-bottom: 2px;  
+            margin-bottom: 2px;
         }
+
+        &__round {
+            height: auto;
+
+            width: 100%;
+            height: auto;
+            position: relative;           
+            img {
+                height: 100%;
+                object-fit: contain;
+                transform: scale(1.20);
+                position: relative;
+                right: 69px;
+            }
+        }
+
         &__descr {
             color: $gray-color;
             font-size: 25px;
@@ -63,8 +83,10 @@
             border: 12px solid #fff;
             background-color: #231F20;
             position: relative;
-            padding-top: 57px;
-            padding-bottom: 20px;
+            display: flex;
+            column-gap: 50px;
+
+
             padding-left: 65px;
         }
 
@@ -83,6 +105,18 @@
             border: 0.958px solid #9F694F;
             padding-left: 20px;
             padding-right: 30px;
+        }
+    }
+
+    .nav-arrow--prev {
+        @media(max-width: 1700px) {
+            left: -8px;
+        }
+    }
+
+    .nav-arrow--next {
+        @media(max-width: 1700px) {
+            right: -12px;
         }
     }
 }

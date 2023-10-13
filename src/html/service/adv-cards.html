@@ -1,68 +1,134 @@
 <!-- adv-cards -->
 <section class="adv-cards" id="adv-cards">
   <div class="container">
-    <h2 class="adv-cards__title section-title mx-auto text-center">
+    <h2 class="adv-cards__title section-title mx-auto text-start text-md-center">
       Элайнеры <strong> - лучшая альтернатива брекетам.</strong>
     </h2>
 
-    <ul class="adv-cards__list">
 
-      <li class="adv-cards__item adv-item">
+    <ul class="adv-cards__accordion accordion adv-cards__list" id="pills-tabContent">
+
+      <li class="adv-cards__item adv-item accordion-item" id="button-1" data-toggle="collapse" data-target="#content-1"
+        aria-expanded="true" aria-controls="content-1">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Незаметность</div>
-          <p class="adv-item__descr">
+          <p class="adv-item__descr adv-item__descr--lg">
             Увидеть каппы можно только при пристальном рассмотрении зубов собеседника.
           </p>
+          <div class="faq__body collapse show" id="content-1" aria-labelledby="button-1">
+            <div class="adv-item__descr adv-item__descr--sm">
+              <p>
+                Увидеть каппы можно только при пристальном рассмотрении зубов собеседника.
+              </p>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="adv-cards__item adv-item">
+
+      <li class="adv-cards__item collapsed adv-item accordion-item" id="button-2" data-toggle="collapse"
+        data-target="#content-2" aria-expanded="true" aria-controls="content-2">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Минимум визитов к врачу</div>
-          <p class="adv-item__descr">
-            Пациент меняет капы самостоятельно по графику и приходит на прием не чаще 1 раза в 1,5 - 2 месяца.
+          <p class="adv-item__descr adv-item__descr--lg">
+            Пациент меняет капы самостоятельно по графику и приходит на прием не чаще1 раза в 1,5 - 2 месяца.
           </p>
+          <div class="faq__body collapse" id="content-2" aria-labelledby="button-2">
+            <div class="faq__body-wrapper">
+              <div class="adv-item__descr adv-item__descr--sm">
+                <p>
+                  Пациент меняет капы самостоятельно по графикуи приходит на прием не чаще 1 раза в 1,5 - 2 месяца.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="adv-cards__item adv-item">
+
+      <li class="adv-cards__item collapsed adv-item accordion-item" id="button-3" data-toggle="collapse"
+        data-target="#content-3" aria-expanded="true" aria-controls="content-3">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Безопасность</div>
-          <p class="adv-item__descr">
-            У элайнеров нет острых, выдающихся вперед элементов,они не травмируют щекис внутренней стороны и губы.
+          <p class="adv-item__descr adv-item__descr--lg">
+            У элайнеров нет острых, выдающихся вперед элементов, они не травмируют щеки с внутренней стороны и губы.
           </p>
+          <div class="faq__body collapse" id="content-3" aria-labelledby="button-3">
+            <div class="faq__body-wrapper">
+              <div class="adv-item__descr adv-item__descr--sm">
+                <p>
+                  У элайнеров нет острых, выдающихся вперед элементов, они не травмируют щеки с внутренней стороны и
+                  губы.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </li> 
-      <li class="adv-cards__item adv-item">
+      </li>
+
+      <li class="adv-cards__item collapsed adv-item accordion-item" id="button-4" data-toggle="collapse"
+        data-target="#content-4" aria-expanded="true" aria-controls="content-4">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Нет проблем с дикцией</div>
-          <p class="adv-item__descr">
-            Из-за малой толщины, небольшие неудобства могут быть тольков первые 3 дня.
+          <p class="adv-item__descr adv-item__descr--lg">
+            Из-за малой толщины, небольшие неудобства могут быть только в первые 3 дня.
           </p>
+          <div class="faq__body collapse" id="content-4" aria-labelledby="button-4">
+            <div class="faq__body-wrapper">
+              <div class="adv-item__descr adv-item__descr--sm">
+                <p>
+                  Из-за малой толщины, небольшие неудобства могут быть только в первые 3 дня.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="adv-cards__item adv-item">
+
+      <li class="adv-cards__item collapsed adv-item accordion-item" id="button-5" data-toggle="collapse"
+        data-target="#content-5" aria-expanded="true" aria-controls="content-5">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Нет ограничений в питании</div>
-          <p class="adv-item__descr">
+          <p class="adv-item__descr adv-item__descr--lg">
             Возможность без ограничений принимать пищу и чистить зубы привычным способом, просто сняв каппы.
           </p>
+          <div class="faq__body collapse" id="content-5" aria-labelledby="button-5">
+            <div class="faq__body-wrapper">
+              <div class="adv-item__descr adv-item__descr--sm">
+                <p>
+                  Возможность без ограничений принимать пищу и чистить зубы привычным способом, просто сняв каппы.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
-      <li class="adv-cards__item adv-item">
+
+      <li class="adv-cards__item collapsed adv-item accordion-item" id="button-6" data-toggle="collapse"
+        data-target="#content-6" aria-expanded="true" aria-controls="content-6">
         <span class="adv-item__icon">+</span>
         <div class="adv-item__content">
           <div class="adv-item__title">Предсказуемый результат</div>
-          <p class="adv-item__descr">
+          <p class="adv-item__descr adv-item__descr--lg">
             Еще до начала лечения компьютер моделирует результат и процесс изменения улыбки в ходе лечения.
           </p>
+          <div class="faq__body collapse" id="content-6" aria-labelledby="button-6">
+            <div class="faq__body-wrapper">
+              <div class="adv-item__descr adv-item__descr--sm">
+                <p>
+                  Еще до начала лечения компьютер моделирует результат и процесс изменения улыбки в ходе лечения.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </li>
 
     </ul>
+
   </div>
   <img src="@img/service/cards-bg.svg" alt="bg" class="bg">
 </section>

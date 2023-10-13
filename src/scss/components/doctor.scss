@@ -3,6 +3,10 @@
 }
 .doctor-slider {
   overflow: visible;
+  @media(max-width: 575px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .doctor-slide {
@@ -13,6 +17,9 @@
       width: 100%;
       object-fit: cover;
       height: 350px;
+      @media(max-width: 575px){
+        height: 65vw;
+      }
     }
   }
 
@@ -23,6 +30,9 @@
       width: 100%;
       height: 350px;
       object-fit: cover;
+      @media(max-width: 575px){
+        height: 65vw;
+      }
     }
   }
 }
@@ -32,5 +42,8 @@
   padding-top: 12px;
   .pagination {
     margin-top: 60px;
+    @media(max-width: 991px){
+      margin-top: 40px;
+    }
   }
 }

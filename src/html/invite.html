@@ -1,8 +1,9 @@
 <!-- invite -->
 <section class="invite pt-0">
     <div class="container">
-        <h2 class="invite__title section-title mx-auto text-center">           
-            Приезжайте к нам в Краснодар из других городов <strong>мы сделаем вашу улыбку прекрасной</strong><span>.</span>    
+        <h2 class="invite__title section-title mx-auto text-start text-md-center">
+            Приезжайте к нам в Краснодар из других городов <strong>мы сделаем вашу улыбку
+                прекрасной</strong><span>.</span>
         </h2>
         <div class="invite__wrapper">
             <div class="invite__left">
@@ -65,17 +66,17 @@
                 <div class="content-text">
                     <p>
                         После завершения лечения мы проводим вас домой и обеспечим поддержку после
-                    </p>                   
+                    </p>
                 </div>
 
             </div>
 
             <div class="invite__right">
                 <img src="@img/invite/globe.png" alt="image" class="invite__img">
-                <button class="invite__btn btn--short btn">
+                <button class="invite__btn btn--short btn d-none d-lg-flex">
                     <span class="invite__btn-text btn--short__text">
                         записаться
-                        на прием 
+                        на прием
                     </span>
                     <div class="btn-arrow-wrapper mx-auto">
                         <svg class="btn-arrow">
@@ -83,11 +84,21 @@
                         </svg>
                     </div>
                 </button>
-                
+
             </div>
         </div>
+        <button class="reviews-star-btn--sm btn--brown-sm btn d-flex d-lg-none">
+            записаться
+            на прием
+            <div class="btn-arrow-wrapper">
+                <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                </svg>
+            </div>
+        </button>
 
     </div>
     <img src="@img/invite/flower.png" alt="flower" class="flower">
+    <img src="@img/invite/flower-sm.png" alt="flower" class="flower-sm d-block d-lg-none">
     <img src="@img/invite/brown-bg.png" alt="background" class="invite-bg--brown">
 </section>

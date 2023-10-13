@@ -14,15 +14,28 @@
         // padding-left: 150px;
         margin-top: 50px;
         text-align: center;
+        @media(max-width: 1600px){
+            font-size: 23vw;
+            line-height: 23vw;
+        }
+        @media(max-width: 575px){
+            font-size: 124px;
+            line-height: 124px;
+        }
     }
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 30px;
+        align-items: flex-end;
     }
     &__left {
         grid-column: 7 span;
         padding-left: 40px;
+        @media(max-width: 991px){
+            grid-column: 12 span;
+            padding-left: 0;
+        }
     }
     &__right {
         grid-column: 5 span;
@@ -33,10 +46,34 @@
         font-size: 24px;
         // margin-left: 50px;
         margin-bottom: 25px;
+        @media(max-width: 991px){
+            font-size: 18px;
+            line-height: 25px;
+            margin-top: 20px;
+        }
     }
     &__logo {
         position: absolute;
         right: 0;
         top: 185px;
+    }
+}
+.error-404-sm-wrapper{
+    @media(max-width: 991px){
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        margin-top: 25px;
+    }  
+    .error-404__name {
+        @media(max-width: 991px){
+            grid-column: 6 span;
+            margin-top: 0;
+        }
+    }
+    .error-404__img {
+        @media(max-width: 991px){
+            grid-column: 6 span;
+        }
     }
 }

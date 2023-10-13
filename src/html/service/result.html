@@ -1,6 +1,6 @@
 <section class="result result-service">
     <div class="container">
-        <h2 class="result__title section-title mx-auto text-center">
+        <h2 class="result__title section-title mx-auto text-start text-md-center">
             За 7 лет мы помогли более чем 4 000 людей <strong>преобрести здоровую и красивую
                 улыбку</strong><span>.</span>
         </h2>
@@ -8,15 +8,31 @@
     <div class="tabs-sect">
         <div class="container tabs-container">
             <div class="tabs" data-tabs="result">
-                <ul class="tabs__nav">
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Женская улыбка</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Мужская улыбка</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская улыбка</button></li>
-                </ul>
+                <div class="tabs-wrapper">
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Женская улыбка</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Мужская улыбка</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская улыбка</button>
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="tabs__content">
                     <div class="tabs__panel">
                         <div class="slider-wrapper">
                             <div class="swiper result-slider">
+                                <button class="reviews-star__btn result-slide__btn--lg btn btn--short btn">
+                                    <span class="reviews-star__btn-text btn--short__text">
+                                        хочу такую же улыбку
+                                    </span>
+                                    <div class="btn-arrow-wrapper mx-auto">
+                                        <svg class="btn-arrow">
+                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </button>
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide result-slide">
                                         <div class="result-slide__grid">
@@ -43,7 +59,7 @@
                                                             <img src="@img/icons/arrow-slider.svg" alt="arrow">
 
                                                         </div>
-                                                     
+
                                                     </div>
 
 
@@ -57,16 +73,6 @@
                                                 <div class="result-slide__descr">
                                                     посещения нашей клиники
                                                 </div>
-                                                <button class="reviews-star__btn btn btn--short btn">
-                                                    <span class="reviews-star__btn-text btn--short__text">
-                                                        хочу такую же улыбку
-                                                    </span>
-                                                    <div class="btn-arrow-wrapper mx-auto">
-                                                        <svg class="btn-arrow">
-                                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                        </svg>
-                                                    </div>
-                                                </button>
                                             </div>
                                         </div>
                                     </div><!-- /result-slide -->
@@ -95,7 +101,7 @@
                                                             <img src="@img/icons/arrow-slider.svg" alt="arrow">
 
                                                         </div>
-                                                     
+
                                                     </div>
 
 
@@ -109,21 +115,21 @@
                                                 <div class="result-slide__descr">
                                                     посещения нашей клиники
                                                 </div>
-                                                <button class="reviews-star__btn btn btn--short btn">
-                                                    <span class="reviews-star__btn-text btn--short__text">
-                                                        Читать все отзывы о&nbsp;нас
-                                                    </span>
-                                                    <div class="btn-arrow-wrapper mx-auto">
-                                                        <svg class="btn-arrow">
-                                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                        </svg>
-                                                    </div>
-                                                </button>
                                             </div>
                                         </div>
                                     </div><!-- /result-slide -->
                                 </div>
+                                <div class="pagination"></div>
+
                             </div><!-- /result-slider -->
+                            <button class="reviews-star__btn result-slide__btn--sm btn--brown-sm btn btn">
+                                хочу такую же улыбку
+                                <div class="btn-arrow-wrapper mx-auto">
+                                    <svg class="btn-arrow">
+                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
                             <div class="nav-arrow-wrapper">
                                 <button class="nav-arrow nav-arrow--prev">
                                     <svg>
@@ -135,7 +141,7 @@
                                         <use xlink:href="img/icons/icons.svg#slider-next"></use>
                                     </svg>
                                 </button>
-    
+
                             </div>
                         </div>
                     </div>
@@ -168,7 +174,7 @@
                                                             <img src="@img/icons/arrow-slider.svg" alt="arrow">
 
                                                         </div>
-                                                       
+
                                                     </div>
 
 
@@ -182,16 +188,6 @@
                                                 <div class="result-slide__descr">
                                                     посещения нашей клиники
                                                 </div>
-                                                <button class="reviews-star__btn btn btn--short btn">
-                                                    <span class="reviews-star__btn-text btn--short__text">
-                                                        Читать все отзывы о&nbsp;нас
-                                                    </span>
-                                                    <div class="btn-arrow-wrapper mx-auto">
-                                                        <svg class="btn-arrow">
-                                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                                                        </svg>
-                                                    </div>
-                                                </button>
                                             </div>
                                         </div>
                                     </div><!-- /result-slide -->
@@ -206,9 +202,7 @@
                                                 </div>
                                             </div>
                                             <div class="result-slide__content">
-
                                                 <div class="cases-comparisons">
-
 
                                                     <div class="comparison-slider" onmousedown="return false">
                                                         <img src="@img/admin/result/after.jpg" alt>
@@ -219,7 +213,7 @@
 
                                                             <img src="@img/icons/arrow-slider.svg" alt="arrow">
 
-                                                        </div>                                                     
+                                                        </div>
                                                     </div>
 
 
@@ -236,8 +230,9 @@
                                             </div>
                                         </div>
                                     </div><!-- /result-slide -->
-                          
+
                                 </div>
+                                <div class="pagination"></div>
                             </div><!-- /result-slider -->
                             <div class="nav-arrow-wrapper">
                                 <button class="nav-arrow nav-arrow--prev">
@@ -250,17 +245,17 @@
                                         <use xlink:href="img/icons/icons.svg#slider-next"></use>
                                     </svg>
                                 </button>
-    
+
                             </div>
                         </div>
                     </div>
                     <div class="tabs__panel">3</div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 
 
-<img src="@img/result/decor.svg" alt="decor" class="decor">
-
+    <img src="@img/result/decor.svg" alt="decor" class="decor d-none d-md-block">
+    <img src="@img/result/decor_1.svg" alt="decor" class="decor d-block d-md-none">
 </section>

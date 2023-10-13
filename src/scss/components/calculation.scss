@@ -12,9 +12,21 @@
   padding-top: 29px;
   padding-bottom: 33px;
   padding-left: 36px;
+  padding-right: 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  @media(max-width: 767px){
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    padding-left: 11px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .calculation-table__row {
   display: flex;
@@ -24,14 +36,28 @@
   padding-bottom: 32px;
   padding-right: 35px;
   padding-left: 34px;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  @media(max-width: 767px){
+    padding-left: 11px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
   .calculation-table__col {
     &:first-child {
       font-weight: 500;
+      @media(max-width: 767px){
+        line-height: 25px;
+      }
     }
     &:nth-child(2){
       font-weight: 600;
       font-size: 24px;
       white-space: nowrap;
+      margin-left: auto;
+      @media(max-width: 767px){
+        font-size: 20px;     
+      }
     }
   }
   &:nth-child(even){

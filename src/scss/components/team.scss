@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     position: relative;
     padding-bottom: 0;
+    overflow: hidden;
 
     &-text-slider {
         padding-bottom: 40px;
@@ -13,14 +14,56 @@
         flex-direction: column;
         height: 100%;
         padding-top: 100px;
+        z-index: 2;
+        @media(max-width: 1400px){
+            grid-column: 5 span;
+        }
+        @media(max-width: 1199px){
+            padding-top: 50px;
+        }
+        @media(max-width: 767px){
+            grid-column: 6 span;
+            padding-top: 26px;
+        }
     }
 
     &-photo-slider {
         grid-column: 8 span;
         width: 100%;
+        overflow: visible;
+        @media(max-width: 1400px){
+            grid-column: 7 span;
+        }
+        @media(max-width: 1199px){
+            padding-right: 100px;
+        }
+        @media(max-width: 991px){
+            padding-right: 0;
+        }
+        @media(max-width: 767px){
+            grid-column: 6 span;
+        }
+    }
+    .pagination {
+        position: absolute;
+        display: none;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        bottom: 45px;
+        @media(max-width: 1700px){
+            display: flex;
+        }
+        @media(max-width: 991px){
+            bottom: 20px;
+        }
     }
 
     .nav-arrow {
+        @media(max-width: 1700px){
+            display: none;
+        }
         cursor: pointer;
 
         &--prev {
@@ -44,11 +87,20 @@
     .text-slide {
         &__title {
             font-size: 48px;
-            line-height: 70px;
+            line-height: 57px;
             color: #fff;
             margin-bottom: 15px;
             letter-spacing: 1.44px;
             font-weight: 100;
+            @media(max-width: 1500px){
+                font-size: 38px;
+                line-height: 48px;
+            }
+            @media(max-width: 991px){
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.54px;
+            }
 
             span {
                 color: $brown-color;
@@ -60,8 +112,16 @@
             display: block;
             margin-bottom: 14px;
             font-size: 24px;
-            line-height: 20px;
+            line-height: 24px;
             color: $gray-color;
+            @media(max-width: 1500px){
+                font-size: 20px;
+                line-height: 20px;
+            }
+            @media(max-width: 991px){
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         &__year {
@@ -69,37 +129,95 @@
             font-size: 24px;
             line-height: 20px;
             color: $gray-color;
+            @media(max-width: 1500px){
+                font-size: 20px;
+                line-height: 20px;
+            }
+            @media(max-width: 991px){
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         &__descr {
             margin-top: 47px;
             line-height: 30px;
             color: #fff;
+            @media(max-width: 1500px){
+                line-height: 27px;
+                margin-top: 30px;
+            }
+            @media(max-width: 991px){
+                display: none;
+            }
         }
     }
 
     .photo-slide {
+        height: 760px;
+        opacity: 0;
+        transition: opacity .4s linear;
+        @media(max-width: 1199px){
+            height: 600px;
+        }
+        @media(max-width: 991px){
+            height: 100%;
+        }
+
+        &.swiper-slide-active {
+            transition: opacity .4s linear;
+            opacity: 1;
+
+            .photo-slide__img {
+                height: 760px;
+                @media(max-width: 991px){
+                    height: 100%;
+                }
+            }
+        }
+
+        &.swiper-slide-prev {
+            transition: opacity .4s linear;
+        }
+
+        &.swiper-slide-next {
+            opacity: 1;
+            transition: opacity .4s linear;
+        }
+
         &__img {
-            height: 760px;
+            height: 700px;
             width: 100%;
-            object-fit: cover;
-            object-position: top;
+            object-fit: contain;
+            object-position: bottom;
+            transition: height .4s linear;
+            @media(max-width: 991px){
+                height: 100%;
+            }
         }
     }
 
     .flower {
         position: absolute;
         left: 0;
-        bottom: -250px;
+        bottom: -310px;
+        @media(max-width: 1900px){
+            width: 250px;
+        }
     }
 
     .btn--brown {
         padding-left: 30px;
         column-gap: 24px;
     }
+    .btn {
+        @media(max-width: 991px){
+            height: 64px;
+        }
+    }
 
     .order-contacts__social {
-        width: 200px;
+        width: 200px;     
     }
 
     .contacts-social__img {
@@ -107,6 +225,10 @@
 
         img {
             min-width: 47px;
+            @media(max-width: 991px){
+                min-width: 36px;
+                width: 36px;
+            }
         }
     }
 
@@ -114,35 +236,61 @@
         height: 89px;
         column-gap: 3px;
         padding-left: 22px;
+        @media(max-width: 991px){
+            height: 64px;
+            padding-left: 15px;
+        }
 
         &:before {
             width: 89px;
             height: 89px;
+            @media(max-width: 991px){
+                width: 64px;
+                height: 64px;
+                top: -1px;
+            }
         }
 
         &:after {
             width: 91px;
             height: 91px;
+            @media(max-width: 991px){
+                width: 66px;
+                height: 64px;
+            }
         }
     }
 
     .contacts-social__name span {
-        position: relative;
-        bottom: 5px;
+        position: relative;        
     }
 
     .btn-wrapper {
         display: flex;
         column-gap: 30px;
         margin-top: 50px;
+        padding-left: 2px;
+        @media(max-width: 1199px){
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        @media(max-width: 991px){
+            margin-top: 20px;
+        }
     }
 
     .contacts-social:hover:after {
         width: 100%;
+        @media(max-width: 575px){
+            width: 64px;
+        }
     }
 
     .contacts-social:hover:before {
         width: 100%;
+        @media(max-width: 575px){
+            width: 64px;
+        }
     }
 
     .slider-grid {
@@ -162,6 +310,10 @@
         z-index: 1;
         font-family: $font-family-lighthouse;
         color: #9EA6B3;
+        @media(max-width: 991px){
+            font-size: 25px;
+            line-height: 30px;
+        }
 
 
         span {
@@ -171,6 +323,9 @@
             position: absolute;
             top: 0;
             left: calc(100% + 4px);
+            @media(max-width: 991px){
+                font-size: 6px;
+            }
         }
     }
 
@@ -179,10 +334,19 @@
 .team-page {
     position: relative;
 
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
     .flower {
         position: absolute;
         left: -200px;
         top: 0;
+
+        @media(max-width: 991px) {
+            display: none;
+        }
     }
 }
 
@@ -193,6 +357,11 @@
         grid-template-columns: repeat(12, 1fr);
         column-gap: 24px;
         row-gap: 24px;
+
+        @media(max-width: 575px) {
+            margin-top: 40px;
+            row-gap: 12px;
+        }
     }
 
     &__item {
@@ -201,6 +370,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media(max-width: 1199px) {
+            grid-column: 6 span;
+        }
+
+        @media(max-width: 991px) {
+            grid-column: 12 span;
+        }
     }
 }
 
@@ -209,6 +386,10 @@
     margin-right: auto;
     max-width: 330px;
     height: 415px;
+
+    @media(max-width: 767px) {
+        height: 340px;
+    }
 }
 
 .team-page__item-bottom {
@@ -230,12 +411,18 @@
     color: #fff;
     text-transform: uppercase;
     font-size: 18px;
+
+    @media(max-width: 575px) {
+        font-size: 14px;
+        height: 56px;
+    }
 }
 
 .team-page__item-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 5px;
 }
 
 .team-page__item-top {
@@ -246,6 +433,13 @@
     font-size: 18px;
     line-height: 20px;
 
+    @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 16px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-top: 18px;
+    }
 }
 
 .team-page__item-year {
@@ -260,8 +454,13 @@
     justify-content: center;
     position: relative;
 
+    @media(max-width: 575px) {
+        height: 35px;
+    }
+
     span {
         z-index: 2;
+        white-space: nowrap;
     }
 
     &::before {
@@ -298,6 +497,11 @@
         line-height: 40px;
         letter-spacing: 0.84px;
 
+        @media(max-width: 575px) {
+            font-size: 21px;
+            line-height: 30px;
+        }
+
         &:nth-child(1) {
             display: block;
             font-weight: 600;
@@ -314,6 +518,11 @@
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 20px;
+
+    @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 
 .team-page__item-logo {

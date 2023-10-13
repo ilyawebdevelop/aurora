@@ -1,23 +1,67 @@
 .about-slider-sect {
     padding-top: 0;
 
+    .content-text--hide {
+        -webkit-line-clamp: 5;
+    }
+
+    .nav-arrow {
+        @media(max-width: 1700px) {
+            top: 350px;
+        }
+
+        @media(max-width: 991px) {
+            top: 250px;
+        }
+
+        @media(max-width: 575px) {
+            top: 230px;
+        }
+    }
+
+    .department-slide__image {
+        @media(max-width: 767px) {
+            max-height: 300px;
+            object-fit: contain;
+        }
+    }
+
     .count-number {
         display: flex;
         position: absolute;
         align-items: flex-end;
         top: 0;
         left: 0;
+        z-index: 1;
+
+        @media(max-width: 1700px) {
+            position: unset;
+            margin-bottom: 24px;
+        }
+        @media(max-width: 991px){
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
 
         .separator {
             width: 300px;
             height: 1px;
             background-color: #D9D9D9;
+
+            @media(max-width: 767px) {
+                width: 100px;
+            }
         }
 
         .count-first {
             color: #9F694F;
             font-size: 36px;
             line-height: 36px;
+
+            @media(max-width: 767px) {
+                font-size: 24px;
+            }
         }
 
         .count-second {
@@ -26,7 +70,15 @@
             font-weight: 400;
             line-height: 36px;
 
+            @media(max-width: 767px) {
+                font-size: 24px;
+            }
         }
+    }
+}
+.about-slider {
+    @media(max-width: 991px){
+        padding-top: 60px;
     }
 }
 
@@ -37,6 +89,11 @@
         position: relative;
         z-index: 1;
         padding-bottom: 100px;
+
+        @media(max-width: 767px) {
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
     }
 
     &__title {
@@ -45,5 +102,32 @@
         font-size: 64px;
         line-height: 70px;
         letter-spacing: 3.2px;
+
+        @media(max-width: 1199px) {
+            font-size: 32px;
+            line-height: 37px;
+            letter-spacing: 1.6px;
+        }
+
+        @media(max-width: 991px) {
+            font-size: 28px;
+            line-height: 37px;
+            letter-spacing: 1.4px;
+            color: #9EA6B3!important;
+        }
+    }
+}
+
+.about-slide__title--lg {
+    @media(max-width: 1700px) {
+        display: none;
+    }
+}
+
+.about-slide__title--sm {
+    display: none;
+
+    @media(max-width: 1700px) {
+        display: block;
     }
 }

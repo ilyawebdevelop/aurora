@@ -1,9 +1,11 @@
 .about {
     position: relative;
+
     .container {
         position: relative;
         z-index: 1;
     }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -13,26 +15,69 @@
     &__left {
         grid-column: 5 span;
         position: relative;
+
+        @media(max-width: 1500px) {
+            grid-column: 6 span;
+        }
+
+        @media(max-width: 991px) {
+            grid-column: 12 span;
+        }
+    }
+
+    &-slide {
+        @media(max-width: 1700px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 
     &__right {
         grid-column: 7 span;
+
+        @media(max-width: 1500px) {
+            grid-column: 6 span;
+        }
+
+        @media(max-width: 991px) {
+            grid-column: 12 span;
+        }
     }
+
     &__img {
         position: absolute;
         right: -110px;
         min-width: 900px;
         bottom: -50px;
-    }    
+
+        @media(max-width: 991px) {
+            position: relative;
+            right: unset;
+            bottom: 50px;
+            margin-bottom: -100px;
+            min-width: unset;
+        }
+    }
+
     .flower {
         position: absolute;
         right: 0;
         top: 150px;
+
+        @media(max-width: 1600px) {
+            width: 200px;
+        }
+
+        @media(max-width: 991px) {
+            display: none;
+        }
     }
-    .btn{
+
+    .btn {
         position: relative;
         z-index: 1;
     }
+
     &-bg {
         position: absolute;
         left: 0;
@@ -41,34 +86,85 @@
         width: 800px;
         height: 100%;
         object-fit: contain;
+
+        @media(max-width: 991px) {
+            display: none;
+        }
+    }
+
+    .flower--sm {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: -10px;
+
+        @media(max-width: 991px) {
+            display: block;
+        }
     }
 }
+
 .cert-slide {
     img {
         margin-left: auto;
         margin-right: auto;
-    }
-}
-.cert-slider--lg {
-    .cert-slide {
-        img {
-            height: 470px;
+        @media(max-width: 575px){
+            width: 100%;
         }
     }
 }
+
+.cert-slider--lg {
+    @media(max-width: 575px){
+        padding-right: 100px;
+    }
+    .cert-slide {
+        img {
+            height: 470px;
+            @media(max-width: 575px){
+                height: auto;
+            }
+        }
+    }
+}
+
 .about-stat {
     padding-top: 80px;
+    @media(max-width: 991px){
+        padding-top: 45px;
+    }
+    .flower {
+        @media(max-width: 991px){
+            display: block;
+            width: 100px;
+            left: -20px;
+            top: 230px;
+        }
+    }
 }
+
 .about-stat .section-title {
     max-width: 100%;
+    @media(max-width: 991px){
+        margin-bottom: 20px;
+    }
 }
+
 .about-slide__title--brown {
     color: $brown-color;
 }
+
 .about-slide__subtitle {
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 2.7px;
-   font-family: $font-family-title;
-   color: $brown-color;
+    font-family: $font-family-title;
+    color: $brown-color;
+    @media(max-width: 991px){
+        font-size: 28px;
+        line-height: 37px;
+        letter-spacing: 1.4px;
+        max-width: 340px;
+        color: #9EA6B3;
+    }
 }

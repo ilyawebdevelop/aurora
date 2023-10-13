@@ -25,6 +25,9 @@
     position: absolute;
     right: 0;
     top: -100px;
+    @media(max-width: 991px){
+      top: 70px;
+    }
   }
 }
 .adv-cards__list {
@@ -44,6 +47,28 @@
   padding-left: 24px;
   display: flex;
   column-gap: 22px;
+  transition: background .2s linear;
+  border: none;
+  @media(max-width: 1199px){
+    grid-column: 6 span;
+  }
+  @media(max-width: 991px){
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    grid-column: 12 span;
+    column-gap: 10px;
+    // align-items: center;
+    @media(max-width: 991px){
+      background: #fff url('@img/icons/accord-arrow-up.svg') no-repeat right 14px top 27px;
+    }
+  }
+  &.collapsed {   
+    @media(max-width: 991px){
+      transition: background .2s linear;
+      background: #fff url('@img/icons/accord-arrow.svg') no-repeat right 14px top 27px;
+    }    
+  }
 }
 
 .adv-item__icon {
@@ -60,6 +85,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media(max-width: 991px){
+    font-size: 37px;
+    width: 30px;
+    min-width: 30px;
+    height: 39px;
+  }
 }
 
 .adv-item__title {
@@ -68,10 +99,33 @@
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 9px;
+  @media(max-width: 1199px){
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
-
+.adv-item__content {
+  @media(max-width: 991px){
+    padding-top: 10px;
+  }
+}
 .adv-item__descr {
   font-size: 18px;
   font-weight: 430;
   line-height: 30px;
+  @media(max-width: 1199px){
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+.adv-item__descr--lg {
+  @media(max-width: 991px){
+    display: none;
+  }
+}
+.adv-item__descr--sm {
+  display: none;
+  @media(max-width: 991px){
+    display: block;
+  }
 }

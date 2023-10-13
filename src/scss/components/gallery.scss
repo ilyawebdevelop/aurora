@@ -1,15 +1,36 @@
 .gallery {
     overflow: hidden;
+
     &-slider {
         overflow: visible;
+        @media(max-width: 575px){
+            padding-right: 25px;           
+        }
     }
+
     &-slide {
+        transition: opacity .2s linear;
         img {
             height: 330px;
             width: 100%;
             object-fit: cover;
+            @media(max-width: 1300px){
+                height: 25vw;
+            }
+            @media(max-width: 767px){
+                height: 30vw;
+            }
+            @media(max-width: 575px){
+                height: 55vw;
+            }
+        }
+        &.swiper-slide-next {
+            @media(max-width: 575px){
+                opacity: .4;
+            }          
         }
     }
+
     .pagination {
         margin-top: 45px;
     }

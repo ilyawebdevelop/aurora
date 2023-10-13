@@ -1,5 +1,5 @@
 <!-- intro-about -->
-<section class="intro-service intro-about" id="intro-about"
+<section class="intro-about" id="intro-about"
     style="background-image: url('@img/admin/about/intro-about.jpeg');">
     <div class="container section-first">
         <div class="intro-main__wrapper">
@@ -11,20 +11,29 @@
                     Отзывы
                 </span>
             </div>
+            <div class="intro-main__rate intro-rate intro-rate--sm d-flex d-lg-none align-items-center">
+                <img src="@img/intro/rate.svg" alt="rate">
+                <div class="d-flex flex-column gap-1">
+                    <span class="text-uppercase text-white">в рейтинге</span>
+                    <img class="intro-main__rate-name" src="@img/intro/komersant.svg" alt="icon">
+                </div>
+            </div><!-- /intro-main__rate -->
 
             <h1 class="page-title page-title--sm">
-               <img src="@img/admin/about/intro-logo.svg" alt="logo" class="page-title__logo">
+                <img src="@img/admin/about/intro-logo.svg" alt="logo" class="page-title__logo">
             </h1>
             <p class="page-descr">
-                Клиника молодая, но уже зарекомендовала себя и заслужила звание <span>“Лучшая стоматологическая клиника России до 3 лет” по версии Всероссийского рейтинга стоматологий Startsmile при поддержке ИД КоммерсантЪ</span> 
+                Клиника молодая, но уже зарекомендовала себя и заслужила звание <span>“Лучшая стоматологическая клиника
+                    России до 3 лет” по версии Всероссийского рейтинга стоматологий Startsmile при поддержке ИД
+                    КоммерсантЪ</span>
             </p>
             <div class="intro-footer d-flex justify-content-between flex-wrap">
 
-                <div class="d-flex gap-3">
+                <div class="d-flex gap-3 flex-column flex-md-row">
                     <button class="btn btn--bg-brown">
                         <div class="d-flex flex-column align-items-start">
                             <span class="btn__text btn__text--lg">Забронировать время консультации</span>
-                            <span class="btn__text btn__text--sm">в клиние или онлайн</span>
+                            <span class="btn__text btn__text--sm d-none d-md-block">в клиние или онлайн</span>
                         </div>
                         <div class="btn-arrow-wrapper">
                             <svg class="btn-arrow">
@@ -45,7 +54,7 @@
                     </a>
                 </div>
 
-                <div class="intro-main__rate intro-rate intro-rate--sm d-flex align-items-center">
+                <div class="intro-main__rate intro-rate intro-rate--sm align-items-center d-none d-lg-flex">
                     <img src="@img/intro/rate.svg" alt="rate">
                     <div class="d-flex flex-column gap-1">
                         <span class="text-uppercase text-white">в рейтинге</span>

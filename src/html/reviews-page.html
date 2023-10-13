@@ -1,5 +1,5 @@
 <!-- stocks-page -->
-<section class="content-head section-first">
+<section class="content-head reviews-page__head section-first">
     <div class="container">
         <div class="breadcrumbs">
             <a href="/">
@@ -13,7 +13,7 @@
             <h1 class="content-head__title">
                 Отзывы и улыбки
             </h1>
-            <div class="content-head__reviews">
+            <div class="content-head__reviews d-none d-lg-flex">
                 <ul class="content-head__reviews-list">
                     <li class="content-head__reviews-item">
                         <img src="@img/admin/reviews/photo1.jpeg" alt="photo" class="content-head__reviews-img">
@@ -70,6 +70,14 @@
                 <a class="content-head__reviews-link" href="#"></a>
             </div>
         </div>
+        <button class="reviews-page__btn reviews-page__btn--sm btn--brown-sm btn btn d-flex d-xl-none">
+            Оставить свой отзыв
+            <div class="btn-arrow-wrapper mx-unset mx-sm-auto">
+                <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                </svg>
+            </div>
+        </button>
 
     </div>
     <img src="@img/content/logo-head.svg" alt="logo" class="content-head__logo">
@@ -77,11 +85,12 @@
 
 <section class="reviews-page">
     <div class="container">
+
         <div class="reviews-page__title-wrapper">
-            <h2 class="reviews-page__title section-title mx-auto text-center">
+            <h2 class="reviews-page__title section-title mx-auto text-start text-md-center">
                 Более 4 000 пациентов с красивыми улыбками <strong>и интересными историями</strong><span>.</span>
             </h2>
-            <button class="reviews-page__btn btn btn--short btn">
+            <button class="reviews-page__btn btn btn--short btn d-none d-xl-flex">
                 <span class="reviews-page__btn-text btn--short__text">
                     оставить свой отзыв
                 </span>
@@ -95,31 +104,31 @@
         <div class="tabs" data-tabs="popup">
 
             <div class="tabs__nav-wrapper">
-
-                <ul class="tabs__nav">
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Все отзывы</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Терапия</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Имплантация</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Протезирование</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Хирургия</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Отородонтия</button></li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская</button>
-                    </li>
-                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Гигиена</button></li>
-                </ul>
-
-                <div class="select-wrapper">
-                    <select name="doctors" id="doctors" class="tabs__nav-select">
-                        <option value="Все врачи">Все врачи</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="4">3</option>
-                        <option value="4">Евстафьев А.</option>
-                    </select>
+                <div class="tabs-wrapper">
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Все отзывы</button></li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Терапия</button></li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Имплантация</button></li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Протезирование</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Хирургия</button></li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Отородонтия</button></li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Гигиена</button></li>
+                    </ul>
                 </div>
 
+                <select name="doctors" id="doctors" class="tabs__nav-select">
+                    <option value="Все врачи">Все врачи</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">3</option>
+                    <option value="4">Евстафьев А.</option>
+                </select>
 
             </div>
+
 
             <div class="tabs__content">
                 <div class="tabs__panel">
@@ -242,36 +251,38 @@
                         <div class="reviews-item__person-img-wrapper">
                             <img src="@img/admin/reviews/photo4.jpeg" alt="photo" class="reviews-item__person-img">
                         </div>
-
-                        <div class="reviews-item__person-rating">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28"
-                                fill="none">
-                                <g clip-path="url(#clip0_10_4351)">
-                                    <path
-                                        d="M7.85713 15.1762L4.85515 24.4309L12.7123 18.7084L20.5652 24.4309L17.5695 15.1762L25.4225 9.45998H15.7143L12.7123 0.209473L9.71031 9.45998H0L7.85713 15.1762Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M42.9018 9.45998L39.8998 0.209473L36.8978 9.45998H27.1875L35.0446 15.1762L32.0427 24.4309L39.8998 18.7084L47.7569 24.4309L44.7549 15.1762L52.6142 9.45998H42.9018Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M70.0854 9.45998L67.0834 0.209473L64.0814 9.45998H54.3711L62.2282 15.1762L59.2262 24.4309L67.0834 18.7084L74.9405 24.4309L71.9385 15.1762L79.7957 9.45998H70.0854Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M97.2711 9.45998L94.2691 0.209473L91.2671 9.45998H81.5547L89.4139 15.1762L86.4119 24.4309L94.2691 18.7084L102.126 24.4309L99.1242 15.1762L106.981 9.45998H97.2711Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M124.454 9.46046L121.452 0.209961L118.45 9.46046H108.742L116.595 15.1767L113.593 24.4314L121.452 18.7089L129.31 24.4314L126.308 15.1767L134.165 9.46046H124.454Z"
-                                        fill="#CCCCCC" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_10_4351">
-                                        <rect width="134.167" height="28" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                        <div class="reviews-item__person-content">
+                            <div class="reviews-item__person-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_10_4351)">
+                                        <path
+                                            d="M7.85713 15.1762L4.85515 24.4309L12.7123 18.7084L20.5652 24.4309L17.5695 15.1762L25.4225 9.45998H15.7143L12.7123 0.209473L9.71031 9.45998H0L7.85713 15.1762Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M42.9018 9.45998L39.8998 0.209473L36.8978 9.45998H27.1875L35.0446 15.1762L32.0427 24.4309L39.8998 18.7084L47.7569 24.4309L44.7549 15.1762L52.6142 9.45998H42.9018Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M70.0854 9.45998L67.0834 0.209473L64.0814 9.45998H54.3711L62.2282 15.1762L59.2262 24.4309L67.0834 18.7084L74.9405 24.4309L71.9385 15.1762L79.7957 9.45998H70.0854Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M97.2711 9.45998L94.2691 0.209473L91.2671 9.45998H81.5547L89.4139 15.1762L86.4119 24.4309L94.2691 18.7084L102.126 24.4309L99.1242 15.1762L106.981 9.45998H97.2711Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M124.454 9.46046L121.452 0.209961L118.45 9.46046H108.742L116.595 15.1767L113.593 24.4314L121.452 18.7089L129.31 24.4314L126.308 15.1767L134.165 9.46046H124.454Z"
+                                            fill="#CCCCCC" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_4351">
+                                            <rect width="134.167" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="reviews-item__person-name">Александр</div>
+                            <div class="reviews-item__person-date">01 января 2023</div>
                         </div>
-                        <div class="reviews-item__person-name">Александр</div>
-                        <div class="reviews-item__person-date">01 января 2023</div>
+              
                     </div><!-- /reviews-item__person -->
 
                     <div class="reviews-item__content">
@@ -287,7 +298,7 @@
                                 которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
                                 прекрасногона свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное
                                 спасибо!
-                            </p>                           
+                            </p>
                         </div>
                         <div class="reviews-item__text-more">Читать весь отзыв</div>
                     </div>
@@ -309,7 +320,8 @@
                                 <img src="@img/admin/reviews/spec-2.jpeg" alt="image" class="reviews-specs__item-img">
                                 <div class="reviews-specs__item-content">
                                     <div class="reviews-specs__item-title">Гаврилов Михаил Сергеевич</div>
-                                    <div class="reviews-specs__item-work">Гнатолог, стоматолог, стоматолог-ортодонт</div>
+                                    <div class="reviews-specs__item-work">Гнатолог, стоматолог, стоматолог-ортодонт
+                                    </div>
                                 </div>
                                 <a class="reviews-specs__item-link" href="#"></a>
                             </li>
@@ -322,39 +334,42 @@
                 <div class="reviews-item__left">
 
                     <div class="reviews-item__person">
+
                         <div class="reviews-item__person-img-wrapper">
                             <img src="@img/admin/reviews/photo4.jpeg" alt="photo" class="reviews-item__person-img">
                         </div>
-
-                        <div class="reviews-item__person-rating">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28"
-                                fill="none">
-                                <g clip-path="url(#clip0_10_4351)">
-                                    <path
-                                        d="M7.85713 15.1762L4.85515 24.4309L12.7123 18.7084L20.5652 24.4309L17.5695 15.1762L25.4225 9.45998H15.7143L12.7123 0.209473L9.71031 9.45998H0L7.85713 15.1762Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M42.9018 9.45998L39.8998 0.209473L36.8978 9.45998H27.1875L35.0446 15.1762L32.0427 24.4309L39.8998 18.7084L47.7569 24.4309L44.7549 15.1762L52.6142 9.45998H42.9018Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M70.0854 9.45998L67.0834 0.209473L64.0814 9.45998H54.3711L62.2282 15.1762L59.2262 24.4309L67.0834 18.7084L74.9405 24.4309L71.9385 15.1762L79.7957 9.45998H70.0854Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M97.2711 9.45998L94.2691 0.209473L91.2671 9.45998H81.5547L89.4139 15.1762L86.4119 24.4309L94.2691 18.7084L102.126 24.4309L99.1242 15.1762L106.981 9.45998H97.2711Z"
-                                        fill="#9F694F" />
-                                    <path
-                                        d="M124.454 9.46046L121.452 0.209961L118.45 9.46046H108.742L116.595 15.1767L113.593 24.4314L121.452 18.7089L129.31 24.4314L126.308 15.1767L134.165 9.46046H124.454Z"
-                                        fill="#CCCCCC" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_10_4351">
-                                        <rect width="134.167" height="28" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                        <div class="reviews-item__person-content">
+                            <div class="reviews-item__person-rating">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="135" height="28" viewBox="0 0 135 28"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_10_4351)">
+                                        <path
+                                            d="M7.85713 15.1762L4.85515 24.4309L12.7123 18.7084L20.5652 24.4309L17.5695 15.1762L25.4225 9.45998H15.7143L12.7123 0.209473L9.71031 9.45998H0L7.85713 15.1762Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M42.9018 9.45998L39.8998 0.209473L36.8978 9.45998H27.1875L35.0446 15.1762L32.0427 24.4309L39.8998 18.7084L47.7569 24.4309L44.7549 15.1762L52.6142 9.45998H42.9018Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M70.0854 9.45998L67.0834 0.209473L64.0814 9.45998H54.3711L62.2282 15.1762L59.2262 24.4309L67.0834 18.7084L74.9405 24.4309L71.9385 15.1762L79.7957 9.45998H70.0854Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M97.2711 9.45998L94.2691 0.209473L91.2671 9.45998H81.5547L89.4139 15.1762L86.4119 24.4309L94.2691 18.7084L102.126 24.4309L99.1242 15.1762L106.981 9.45998H97.2711Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M124.454 9.46046L121.452 0.209961L118.45 9.46046H108.742L116.595 15.1767L113.593 24.4314L121.452 18.7089L129.31 24.4314L126.308 15.1767L134.165 9.46046H124.454Z"
+                                            fill="#CCCCCC" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_4351">
+                                            <rect width="134.167" height="28" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="reviews-item__person-name">Александр</div>
+                            <div class="reviews-item__person-date">01 января 2023</div>
                         </div>
-                        <div class="reviews-item__person-name">Александр</div>
-                        <div class="reviews-item__person-date">01 января 2023</div>
+
                     </div><!-- /reviews-item__person -->
 
                     <div class="reviews-item__content">
@@ -365,7 +380,7 @@
                                 раньше врачами, просто развалилось, не мог кушать месяц, это было мучение, и посетил
                                 данную клинику! Это был прекрасный приём, всё объяснили, рассказали как и что! Провели
                                 операцию, это врачи от бога (как говорится).
-                            </p>                           
+                            </p>
                         </div>
                         <div class="reviews-item__text-more">Читать весь отзыв</div>
                     </div>
@@ -387,7 +402,8 @@
                                 <img src="@img/admin/reviews/spec-2.jpeg" alt="image" class="reviews-specs__item-img">
                                 <div class="reviews-specs__item-content">
                                     <div class="reviews-specs__item-title">Гаврилов Михаил Сергеевич</div>
-                                    <div class="reviews-specs__item-work">Гнатолог, стоматолог, стоматолог-ортодонт</div>
+                                    <div class="reviews-specs__item-work">Гнатолог, стоматолог, стоматолог-ортодонт
+                                    </div>
                                 </div>
                                 <a class="reviews-specs__item-link" href="#"></a>
                             </li>

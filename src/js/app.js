@@ -142,6 +142,17 @@ document.querySelectorAll('.gallery-slider').forEach(n => {
             clickable: true,
             type: 'bullets',
         },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+        },
     });
 });
 
@@ -211,9 +222,17 @@ document.querySelectorAll('.reviews-page .slider-wrapper').forEach(n => {
         breakpoints: {
             0: {
                 spaceBetween: 8,
+                slidesPerView: 1,
             },
             576: {
                 spaceBetween: 0,
+                slidesPerView: 2,
+            },
+            992: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
             },
         },
     });
@@ -240,9 +259,25 @@ var mySwiperTeam = new Swiper(teamSlider, {
     spaceBetween: 10,
     speed: 600,
     allowTouchMove: true,
+    centeredSlides: true,
     navigation: {
         nextEl: document.querySelector('.team .nav-arrow--next'),
         prevEl: document.querySelector('.team .nav-arrow--prev'),
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            centeredSlides: false,
+        },
+        1200: {
+            spaceBetween: 0,
+            centeredSlides: true,
+        },
+    },
+    pagination: {
+        el: document.querySelector('.team .pagination'),
+        clickable: true,
+        type: 'bullets',
     },
     thumbs: { // указываем на превью слайдер
         swiper: {
@@ -252,6 +287,7 @@ var mySwiperTeam = new Swiper(teamSlider, {
             spaceBetween: 25,
             speed: 600,
             watchSlidesProgress: true,
+            allowTouchMove: false,
             effect: 'fade',
             fadeEffect: {
                 crossFade: true
@@ -288,6 +324,7 @@ var mySwiperReviewsTop = new Swiper(reviewsSliderTop, {
     spaceBetween: 0,
     speed: 600,
     allowTouchMove: true,
+    centeredSlides: true,
     navigation: {
         nextEl: document.querySelector('.reviews-top .nav-arrow--next'),
         prevEl: document.querySelector('.reviews-top .nav-arrow--prev'),
@@ -297,6 +334,18 @@ var mySwiperReviewsTop = new Swiper(reviewsSliderTop, {
         clickable: true,
         type: 'bullets',
     },
+    breakpoints: {
+        0: {
+            spaceBetween: 8,           
+            slidesPerView: 1,
+            centeredSlides: false,
+        },        
+        992: {
+            centeredSlides: true,
+            slidesPerView: 2,
+        },
+    },
+    
     thumbs: { // указываем на превью слайдер
         swiper: {
             el: document.querySelector('.reviews-top .reviews-text-slider'),
@@ -348,6 +397,11 @@ var mySwiperReviewsBottom = new Swiper(reviewsSliderBottom, {
     navigation: {
         nextEl: document.querySelector('.reviews-bottom .nav-arrow--next'),
         prevEl: document.querySelector('.reviews-bottom .nav-arrow--prev'),
+    },
+    pagination: {
+        el: document.querySelector('.reviews-bottom .pagination'),
+        clickable: true,
+        type: 'bullets',
     },
     thumbs: { // указываем на превью слайдер
         swiper: {
@@ -435,6 +489,20 @@ var mySwiperSystem = new Swiper(systemSlider, {
         clickable: true,
         type: 'bullets',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
 });
 
 // Инициализация слайдера doctor-slider
@@ -451,6 +519,14 @@ var mySwiperDoctor = new Swiper(doctorSlider, {
         el: document.querySelector('.doctor .pagination'),
         clickable: true,
         type: 'bullets',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 'auto',
+        },       
     },
 });
 
@@ -469,6 +545,14 @@ var mySwiperCert = new Swiper(certSlider, {
         clickable: true,
         type: 'bullets',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        576: {
+            slidesPerView: 2,
+        },       
+    },
 });
 
 // Инициализация слайдера cert-slider--lg
@@ -486,6 +570,20 @@ var mySwiperCert = new Swiper(certSliderLg, {
         clickable: true,
         type: 'bullets',
     },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },    
+        768: {
+            slidesPerView: 2,
+        },  
+        992: {
+            slidesPerView: 3,
+        },  
+        1200: {
+            slidesPerView: 4,
+        }, 
+    },
 });
 
 // Инициализация слайдера contacts-page-slider
@@ -502,6 +600,29 @@ var mySwiperContactsPage = new Swiper(contactsPageSlider, {
         el: document.querySelector('.contacts-page .pagination'),
         clickable: true,
         type: 'bullets',
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 5,
+        },
+        460: {
+            slidesPerView: 2,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+        },
+        992: {
+            slidesPerView: 5,
+        },
+        1301: {
+            slidesPerView: 2,
+            spaceBetween: 18,
+        },
     },
 });
 
@@ -555,3 +676,26 @@ $('body').on('click', '.comparison-slider', function (e) {
 
     });
 })(jQuery);
+
+let textMoreBtnAll = document.querySelectorAll('.text-more');
+textMoreBtnAll.forEach(el => {
+    el.addEventListener('click', () => {
+        let elWrap = el.closest('.content-text-wraper');
+        let elContent = elWrap.querySelector('.content-text--hide');
+        elContent.classList.add('active');
+        el.style.display = 'none';
+    });
+});
+
+let catalogBtnLg = document.getElementById('btn-catalog--lg');
+let catalogContentLg = document.querySelector('.catalog-modal');
+let catalogCloseLg = document.getElementById('catalog-close-lg');
+let bodyEl = document.querySelector('body');
+catalogBtnLg.addEventListener('click', () => {
+    catalogContentLg.classList.add('active');
+    bodyEl.classList.add('hidden');
+});
+catalogCloseLg.addEventListener('click', () => {
+    catalogContentLg.classList.remove('active');
+    bodyEl.classList.remove('hidden');
+});

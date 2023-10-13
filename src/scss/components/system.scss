@@ -2,7 +2,8 @@
   background: #231F20;
   padding-bottom: 0;
   margin-bottom: -143px;
-
+  overflow: hidden;
+  
   &__title {
     max-width: 1177px;
   }
@@ -11,6 +12,13 @@
     margin-top: 30px;
     padding-bottom: 25px;
     padding-top: 25px;
+    z-index: 2;
+    @media(max-width: 767px){
+      margin-top: 35px;
+      padding-top: 0;
+      overflow: visible;
+      padding-right: 30px;
+    }
     
   }
   &-slide {
@@ -55,6 +63,10 @@
         color: $gray-color;
         font-size: 15px;
         line-height: 22px;
+        @media(max-width: 1199px){
+          font-size: 14px;
+          line-height: 20px;
+        }
 
         &--lg {
           font-weight: 600;
@@ -68,6 +80,11 @@
         font-size: 16px;
         line-height: 26px;
         font-weight: 600;
+        @media(max-width: 1199px){
+          font-size: 14px;
+          line-height: 23px;
+          font-weight: 500;
+        }
       }
     }
 
@@ -76,6 +93,10 @@
         font-size: 16px;
         line-height: 22px;
         color: #fff;
+        @media(max-width: 1400px){
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
 
       &-sum {
@@ -84,6 +105,10 @@
         line-height: 28px;
         color: #D0B5A9;
         white-space: nowrap;
+        @media(max-width: 1199px){
+          font-size: 26px;
+          line-height: 26px;
+        }
 
         span {
           font-family: $font-family;
@@ -93,6 +118,9 @@
     }
   }
   .nav-arrow {
+    @media(max-width: 1700px){
+      display: none;
+    }
     cursor: pointer;
 
     &--prev {

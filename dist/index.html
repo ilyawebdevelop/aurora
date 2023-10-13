@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="img/favicon.png">
-	<link rel="stylesheet" href="css/style.min.css">
-	
+	<link rel="stylesheet" href="css/style.min.css">	
 	<title>Главная</title>
 </head>
 
@@ -86,28 +85,486 @@
     </div>
 
 </header>
+
+<div class="catalog-modal">
+    <div class="catalog-header-wrapper">
+        <div class="container">
+
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li>
+                            <a href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Цены
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Акции
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                ДО | после
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Врачи
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О клинике
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="img/header/logo-sm.svg" alt="logo" class="logo--sm d-block d-xl-none">
+                </nav>
+
+                <div class="header__right">
+                    <div class="d-block">
+                        <a href="#" class="header__address" target="_blank">г. Краснодар, ул. Гаражная, 67/1</a>
+                        <a href="#" class="header__social header__map-link" target="_blank">Посмотреть на карте</a>
+                    </div>
+
+                    <div class="header__action">
+                        <div class="header__phone-wrapper">
+                            <a href="tel:+78612114830" class="header__phone">+7 (861) 211-48-30</a>
+                            <a href="#" class="header__social" target="_blank">Спросить по WhatsApp</a>
+                        </div>
+                        <button class="header__btn-catalog d-none d-xl-flex" id="catalog-close-lg">
+                            <!-- Hamburger Menu -->
+                            <div class="hamburger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_10_17667)">
+                                        <path
+                                            d="M19.3374 18.438L1.30631 0.406919C1.14625 0.246862 0.875652 0.260579 0.701187 0.435044C0.526721 0.609509 0.515159 0.877952 0.675216 1.03801L18.7043 19.0671C18.8644 19.2272 19.1328 19.2156 19.3073 19.0411C19.4817 18.8667 19.4933 18.5982 19.3333 18.4382L19.3374 18.438Z"
+                                            fill="#9F694F" />
+                                        <path
+                                            d="M18.7041 0.405294L0.673032 18.4364C0.512976 18.5964 0.526692 18.867 0.701157 19.0415C0.875622 19.216 1.14407 19.2275 1.30412 19.0675L19.3332 1.03836C19.4933 0.878303 19.4817 0.609858 19.3073 0.435393C19.1328 0.260928 18.8643 0.249367 18.7043 0.409424L18.7041 0.405294Z"
+                                            fill="#9F694F" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_10_17667">
+                                            <rect width="20" height="20" fill="white"
+                                                transform="matrix(-1 0 0 1 20 0)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div><!-- /Hamburger Menu -->
+                        </button>              
+
+                    </div><!-- /header__action -->
+                </div><!-- /header__right -->
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container catalog-container">
+        <ul class="price__list">
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-1"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Терапия</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Лечение зубов
+                            </li>
+                            <li class="price-param">
+                                Лечение зубов во сне
+                            </li>
+                            <li class="price-param">
+                                Лечение кисты зуба
+                            </li>
+                            <li class="price-param">
+                                Лечение пульпита
+                            </li>
+                            <li class="price-param">
+                                Лечение под микроскопом
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-2"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Исправление прикуса</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Ортодонтическое лечение
+                            </li>
+                            <li class="price-param">
+                                Брекет-системы
+                            </li>
+                            <li class="price-param">
+                                Элайнеры
+                            </li>
+                            <li class="price-param">
+                                Исправление прикуса у детей
+                            </li>
+                            <li class="price-param">
+                                Хирургическое исправление прикуса члх
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-3"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Имплантация</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Имплантация зубов под наркозом
+                            </li>
+                            <li class="price-param">
+                                Костная пластика
+                            </li>
+                            <li class="price-param">
+                                Имплантация зубов
+                            </li>
+                            <li class="price-param">
+                                Имплантация All on 4 / 6
+                            </li>
+                            <li class="price-param">
+                                Синус лифтинг
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-4"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Пародонтология</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Профилактика пародонтоза
+                            </li>
+                            <li class="price-param">
+                                Лечение дёсен
+                            </li>
+                            <li class="price-param">
+                                Лечение подвижности зубов
+                            </li>
+                            <li class="price-param">
+                                Кюретаж десен
+                            </li>
+                            <li class="price-param">
+                                Лечение гингивита
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-5"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Протезирование</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Зубы за один день
+                            </li>
+                            <li class="price-param">
+                                Коронка на зуб
+                            </li>
+                            <li class="price-param">
+                                Несъемное протезирование
+                            </li>
+                            <li class="price-param">
+                                Виниры
+                            </li>
+                            <li class="price-param">
+                                Протезирование на имплантах
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-6"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Детская стоматология</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Пластика уздечки языка
+                            </li>
+                            <li class="price-param">
+                                Удаление зуба
+                            </li>
+                            <li class="price-param">
+                                Коронки на молочные зубы
+                            </li>
+                            <li class="price-param">
+                                Лечение пульпита
+                            </li>
+                            <li class="price-param">
+                                Лечение зубов во сне и под седацией
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-7"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Хирургия</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Удаление зуба
+                            </li>
+                            <li class="price-param">
+                                Трансплантация зуба
+                            </li>
+                            <li class="price-param">
+                                Пластика уздечки языка
+                            </li>
+                            <li class="price-param">
+                                Пластика уздечки
+                            </li>
+                            <li class="price-param">
+                                Устранение десневой улыбки
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-8"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Гнатология</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Дисфункция ВНЧС
+                            </li>
+                            <li class="price-param">
+                                Сплинт терапия
+                            </li>
+                            <li class="price-param">
+                                Хирургия ВНЧС
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-9"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Челюстно-лицевая хирургия</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Пластика подбородка
+                            </li>
+                            <li class="price-param">
+                                Удаление комков Биша
+                            </li>
+                            <li class="price-param">
+                                Удаление кист челюстей
+                            </li>
+                            <li class="price-param">
+                                Лечение гайморита
+                            </li>
+                            <li class="price-param">
+                                Лечение переломов челюсти
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+            <li class="price__item price-item">
+                <div class="price-item__content">
+                    <svg class="price-item__img">
+                        <use xlink:href="img/icons/icons.svg#price-10"></use>
+                    </svg>
+                    <div class="price-item__text">
+                        <h3 class="price-item__title"><a href="#">Профессиональная гигиена</a></h3>
+                        <ul class="price-params">
+                            <li class="price-param">
+                                Отбеливание зубов
+                            </li>
+                            <li class="price-param">
+                                Профессиональная гигиена Air flow
+                            </li>
+                            <li class="price-param">
+                                Профессиональная гигиена аппаратом Vector
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="price-item__action">
+
+                    <a href="#" class="price-item__link">
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </li><!-- /price-item -->
+
+        </ul>
+    </div>
+</div>
 		<main class="main">		
 			<!-- intro-main -->
 <section class="intro-main" id="intro-main" style="background-image: url('img/admin/intro/intro.png');">
     <div class="container section-first">
         <div class="intro-main__wrapper">
             <div class="intro-main__rate intro-rate d-flex align-items-center">
-                <img src="img/intro/rate.svg" alt="rate">
-                <div class="d-flex flex-column gap-1">
-                    <span class="text-uppercase text-white">в рейтинге</span>
-                    <img class="intro-main__rate-name" src="img/intro/komersant.svg" alt="icon">
-                </div>
+
+                <img src="img/intro/rate-logo.svg" alt="rate" class="intro-main-rate-logo">
+
+
             </div><!-- /intro-main__rate -->
             <div class="d-flex align-items-center title-wrapper">
                 <div class="intro-main__title color-white">
-                 
+
                     <img src="img/admin/about/intro-logo.svg" alt="title">
-                  
-                 
+
+
                 </div><!-- /intro-main__title -->
                 <button class="intro-main__video-btn video-text-btn d-none d-lg-block">
                     <div class="video-text-btn__content">
-                       <img src="img/icons/video-btn-text.svg" alt="text" class="video-text__img">
+                        <img src="img/icons/video-btn-text.svg" alt="text" class="video-text__img">
                     </div>
                     <div class="video-text-btn__arrow">
                         <svg>
@@ -121,7 +578,7 @@
                     Клиника квалифицированной стоматологии
                 </p>
                 <button class="btn btn--dark d-none d-xl-inline-flex">
-                    <span> Забронировать время консультации</span>                   
+                    <span> Забронировать время консультации</span>
                     <div class="btn-arrow-wrapper">
                         <svg class="btn-arrow">
                             <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
@@ -131,7 +588,7 @@
 
                 <div class="d-flex d-xl-none align-items-center">
                     <button class="btn btn--dark">
-                        <span> Забронировать время консультации</span>                   
+                        <span> Забронировать время консультации</span>
                         <div class="btn-arrow-wrapper">
                             <svg class="btn-arrow">
                                 <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
@@ -140,7 +597,7 @@
                     </button>
                     <button class="intro-main__video-btn video-text-btn d-block d-lg-none">
                         <div class="video-text-btn__content">
-                           <img src="img/icons/video-btn-text.svg" alt="text" class="video-text__img">
+                            <img src="img/icons/video-btn-text.svg" alt="text" class="video-text__img">
                         </div>
                         <div class="video-text-btn__arrow">
                             <svg>
@@ -149,7 +606,7 @@
                         </div>
                     </button>
                 </div>
-             
+
 
             </div>
 
@@ -158,21 +615,24 @@
 </section>
 			<section class="department" id="department">
     <div class="container">
-        <h2 class="section-title text-center">
+        <h2 class="section-title text-start text-md-center">
             Мы искренне рады менять жизнь людей, даря им <strong>возможность свободно улыбаться и чувствовать себя
                 здоровыми</strong><span>.</span>
         </h2>
         <div class="tabs" data-tabs="popup">
-            <ul class="tabs__nav">
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Терапия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Имплантация</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Протезирование</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Хирургия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Отородонтия</button></li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская стоматология</button>
-                </li>
-                <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Гигиена</button></li>
-            </ul>
+            <div class="tabs-wrapper">
+                <ul class="tabs__nav">
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Терапия</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Имплантация</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Протезирование</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Хирургия</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Отородонтия</button></li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская стоматология</button>
+                    </li>
+                    <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Гигиена</button></li>
+                </ul>
+            </div>
+         
             <div class="tabs__content">
                 <div class="tabs__panel">
                     <div class="slider-wrapper">
@@ -228,8 +688,7 @@
 
                                 <div class="swiper-slide department-slide">
                                     <div class="department-slide__content">
-                                        <div class="department-slide__title department-slide__title--lg">Терапевтическое
-                                            Отделение</div>
+                                        <div class="department-slide__title department-slide__title--lg">Детская стоматология</div>
                                         <div class="content-text">
                                             <p>
                                                 Удобство, комфорт, высокая безопасность и эффективность лечения
@@ -254,8 +713,7 @@
 
                                     </div>
                                     <div class="department-slide__img-wrapper">
-                                        <div class="department-slide__title department-slide__title--sm">Терапевтическое
-                                            Отделение</div>
+                                        <div class="department-slide__title department-slide__title--sm">Детская стоматология</div>
                                         <img src="img/admin/department/image-1.png" alt="image"
                                             class="department-slide__image">
                                     </div>
@@ -289,8 +747,7 @@
 
                                 <div class="swiper-slide department-slide">
                                     <div class="department-slide__content">
-                                        <div class="department-slide__title department-slide__title--lg">Терапевтическое
-                                            Отделение</div>
+                                        <div class="department-slide__title department-slide__title--lg">Протезирование</div>
                                         <div class="content-text">
                                             <p>
                                                 Удобство, комфорт, высокая безопасность и эффективность лечения
@@ -329,8 +786,7 @@
 
                                     </div>
                                     <div class="department-slide__img-wrapper">
-                                        <div class="department-slide__title department-slide__title--sm">Терапевтическое
-                                            Отделение</div>
+                                        <div class="department-slide__title department-slide__title--sm">Протезирование</div>
                                         <img src="img/admin/department/image-1.png" alt="image"
                                             class="department-slide__image">
                                     </div>
@@ -424,7 +880,2147 @@
     </div>
     <img src="img/department/flower.png" alt="image" class="department-flower">
 </section>
-			
+			<section class="order" id="order" style="background-image: url('img/order/order.png');">
+    <div class="container">
+        <div class="order__content">
+            <h2 class="section-title section-title--white"> <span>Давайте пообщаемся</span> и начнем создавать здоровую голливудскую улыбку
+                вашей мечты<span>.</span>
+            </h2>
+            <div class="order-form__wrapper">
+                <form action="#" class="order-form form d-none d-lg-block">
+                    <div class="input-wrapper">
+                        <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
+                    </div>
+                    <button class="form-btn btn btn--bg-brown">
+                        <div class="d-flex flex-column align-items-start">
+                            <span class="btn__text btn__text--lg">Забронировать время консультации</span>
+                            <span class="btn__text btn__text--sm">в клиние или онлайн</span>
+                        </div>
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="agreement">                       
+                        Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                    </div>
+                </form>
+                <div class="order-dir">
+                    <div class="order-dir__name">Главный врач<br> челюстно-лицевой хирург</div>
+                    <div class="order-dir__text">
+                        Ишханян Нарек Нораирович
+                    </div>
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>   
+                    <div class="round"></div>            
+                </div>
+
+            </div>
+            <div class="order-contacts d-none d-lg-flex">
+                <div class="order-contacts__left">
+                    <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
+                    <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
+                </div>
+                <div class="order-contacts__right">
+                    <a href="#" class="order-contacts__social contacts-social">
+                        <span class="contacts-social__img">
+                            <img class="static-social" src="img/icons/whatsapp.svg" alt="icon">
+                            <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon">
+                        </span>
+                        <div class="contacts-social__name">
+                            спросить в
+                            <span>WhatsApp</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    <img src="img/order/flower.png" alt="flower" class="flower">
+</section>
+
+<section class="order--sm d-block d-lg-none">
+    <div class="container">
+        <div class="order-form__wrapper">
+            <form action="#" class="order-form form">
+                <div class="input-wrapper">
+                    <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
+                </div>
+                <button class="form-btn btn btn--bg-brown">
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="btn__text btn__text--lg">Забронировать время консультации</span>
+                        <span class="btn__text btn__text--sm">в клиние или онлайн</span>
+                    </div>
+                    <div class="btn-arrow-wrapper">
+                        <svg class="btn-arrow">
+                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </div>
+                </button>
+                <div class="agreement">                       
+                    Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                </div>
+            </form>     
+
+        </div>
+        <div class="order-contacts">
+            <div class="order-contacts__left">
+                <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
+                <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
+            </div>
+            <div class="order-contacts__right">
+                <a href="#" class="order-contacts__social contacts-social">
+                    <span class="contacts-social__img">
+                        <img class="static-social" src="img/icons/whatsapp.svg" alt="icon">
+                        <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon">
+                    </span>
+                    <div class="contacts-social__name">
+                        спросить в
+                        <span>WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+			<section class="price-sect" id="price-sect">
+  <div class="container">
+    <h2 class="section-title text-start text-md-center mx-auto">
+      Вы&nbsp;узнаете стоимость до&nbsp;начала лечения <strong>вам расскажут, как проходит лечение и&nbsp;объяснят, что
+        будет после</strong><span>.</span>
+    </h2>
+    <ul class="price__list">
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-1"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Терапия</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Лечение зубов
+                      </li>
+                      <li class="price-param">
+                          Лечение зубов во сне
+                      </li>
+                      <li class="price-param">
+                          Лечение кисты зуба
+                      </li>
+                      <li class="price-param">
+                          Лечение пульпита
+                      </li>
+                      <li class="price-param">
+                          Лечение под микроскопом
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>8 500</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-2"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Исправление прикуса</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Ортодонтическое лечение
+                      </li>
+                      <li class="price-param">
+                          Брекет-системы
+                      </li>
+                      <li class="price-param">
+                          Элайнеры
+                      </li>
+                      <li class="price-param">
+                          Исправление прикуса у детей
+                      </li>
+                      <li class="price-param">
+                          Хирургическое исправление прикуса члх
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>22 000</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-3"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Имплантация</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Имплантация зубов под наркозом
+                      </li>
+                      <li class="price-param">
+                          Костная пластика
+                      </li>
+                      <li class="price-param">
+                          Имплантация зубов
+                      </li>
+                      <li class="price-param">
+                          Имплантация All on 4 / 6
+                      </li>
+                      <li class="price-param">
+                          Синус лифтинг
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>5 000</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-4"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Пародонтология</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Профилактика пародонтоза
+                      </li>
+                      <li class="price-param">
+                          Лечение дёсен
+                      </li>
+                      <li class="price-param">
+                          Лечение подвижности зубов
+                      </li>
+                      <li class="price-param">
+                          Кюретаж десен
+                      </li>
+                      <li class="price-param">
+                          Лечение гингивита
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>5 000</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-5"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Протезирование</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Зубы за один день
+                      </li>
+                      <li class="price-param">
+                          Коронка на зуб
+                      </li>
+                      <li class="price-param">
+                          Несъемное протезирование
+                      </li>
+                      <li class="price-param">
+                          Виниры
+                      </li>
+                      <li class="price-param">
+                          Протезирование на имплантах
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>8 500</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-6"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Детская стоматология</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Пластика уздечки языка
+                      </li>
+                      <li class="price-param">
+                          Удаление зуба
+                      </li>
+                      <li class="price-param">
+                          Коронки на молочные зубы
+                      </li>
+                      <li class="price-param">
+                          Лечение пульпита
+                      </li>
+                      <li class="price-param">
+                          Лечение зубов во сне и под седацией
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>8 500</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-7"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Хирургия</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Удаление зуба
+                      </li>
+                      <li class="price-param">
+                          Трансплантация зуба
+                      </li>
+                      <li class="price-param">
+                          Пластика уздечки языка
+                      </li>
+                      <li class="price-param">
+                          Пластика уздечки
+                      </li>
+                      <li class="price-param">
+                          Устранение десневой улыбки
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>8 500</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-8"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Гнатология</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Дисфункция ВНЧС
+                      </li>
+                      <li class="price-param">
+                          Сплинт терапия
+                      </li>
+                      <li class="price-param">
+                          Хирургия ВНЧС
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>8 500</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-9"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Челюстно-лицевая хирургия</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Пластика подбородка
+                      </li>
+                      <li class="price-param">
+                          Удаление комков Биша
+                      </li>
+                      <li class="price-param">
+                          Удаление кист челюстей
+                      </li>
+                      <li class="price-param">
+                          Лечение гайморита
+                      </li>
+                      <li class="price-param">
+                          Лечение переломов челюсти
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>5 000</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+      <li class="price__item price-item">
+          <div class="price-item__content">
+              <svg class="price-item__img">
+                  <use xlink:href="img/icons/icons.svg#price-10"></use>
+              </svg>
+              <div class="price-item__text">
+                  <h3 class="price-item__title"><a href="#">Профессиональная гигиена</a></h3>
+                  <ul class="price-params">
+                      <li class="price-param">
+                          Отбеливание зубов
+                      </li>
+                      <li class="price-param">
+                          Профессиональная гигиена Air flow
+                      </li>
+                      <li class="price-param">
+                          Профессиональная гигиена аппаратом Vector
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="price-item__action">
+              <div class="price">
+                  от <strong>5 000</strong> <span>₽</span>
+              </div>
+              <a href="#" class="price-item__link">
+                  <div class="btn-arrow-wrapper">
+                      <svg class="btn-arrow">
+                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                      </svg>
+                  </div>
+              </a>
+          </div>
+      </li><!-- /price-item -->
+
+  </ul>
+  </div>
+  <div class="flower--right"><img src="img/price/flower.png" alt="flower"></div>
+</section>
+			<!-- stat -->
+<section class="stat" id="stat">
+    <div class="container">
+        <h2 class="section-title text-start text-md-center">
+            Наши пациенты достойны <strong>международных стандартов лечения и восстановления зубов</strong><span>.</span>
+            <button class="stat__video-btn">
+                <img src="img/icons/video-btn.svg" alt="icon">
+            </button>
+        </h2>
+        <ul class="stat__list">
+            <li class="stat__item stat-item">
+                <span class="stat-item__num">4 526</span>
+                <div class="stat-item__text">
+                    <span>Довольных</span>
+                    <span>клиентов</span>
+                </div>
+            </li>
+            <li class="stat__item stat-item">
+                <span class="stat-item__num">12 825</span>
+                <div class="stat-item__text">
+                    <span>Установленных </span>
+                    <span>имплантов</span>
+                </div>
+            </li>
+            <li class="stat__item stat-item">
+                <span class="stat-item__num">456</span>
+                <div class="stat-item__text">
+                    <span>Операция </span>
+                    <span>во сне</span>
+                </div>
+            </li>
+            <li class="stat__item stat-item">
+                <span class="stat-item__num">1 024</span>
+                <div class="stat-item__text">
+                    <span>Установленных </span>
+                    <span>брекетов</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <img src="img/stat/flower.png" alt="flower" class="flower">
+    <img src="img/stat/flower-sm.png" alt="flower" class="flower--sm">
+    <img src="img/stat/flower-sm_2.png" alt="flower" class="flower--sm_2">
+</section>
+			<!-- about-slider -->
+<section class="about-slider-sect pb-0" id="about-slider-sect">
+    <div class="container">
+
+        <div class="slider-wrapper">
+            <div class="count-number"></div>
+            <div class="swiper about-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide about-slide">
+                        <div class="about-slide__content">
+                            <div class="about-slide__title about-slide__title--lg">цифровая ортодонтия</div>
+                            <div class="content-text-wraper">
+                                <div class="content-text content-text--hide">
+                                    <p>
+                                        Благодаря Digital Smile Design, Вы узнаете как выглядит Ваша улыбка на экране
+                                        монитора
+                                        и внести коррективы еще до начала лечения.
+                                    </p>
+                                    <p>
+                                        Каждый человек уникален и поэтому шаблонных решений не может быть. В программу
+                                        Digital
+                                        Smile Design загружается личная информация пациента — его фотографии, данные КТ.
+                                        Врач
+                                        создает модель будущей улыбки с учетом всех индивидуальных анатомических
+                                        особенностей.
+                                    </p>
+                                </div>
+                                <button class="text-more" type="button">Читать полностью</button>
+                            </div>
+
+                        </div>
+                        <div class="image-wrapper">
+                            <div class="about-slide__title about-slide__title--sm">цифровая ортодонтия</div>
+                            <img src="img/admin/about/slider-1.jpg" alt="image" class="department-slide__image">
+                        </div>
+
+                    </div><!-- /about-slide -->
+
+                    <div class="swiper-slide about-slide">
+                        <div class="about-slide__content">
+                            <div class="about-slide__title about-slide__title--lg">Лечение под микроскомом</div>
+                            <div class="content-text-wraper">
+                                <div class="content-text content-text--hide">
+                                    <p>
+                                        Стоматологический микроскоп - это прибор, позволяющий 30-кратно увеличить
+                                        рабочее
+                                        поле,
+                                        что повышает качество лечения.
+                                    </p>
+                                    <p>
+                                        Дентальный микроскоп используется как при лечении зубов, так и проведении
+                                        хирургических
+                                        операций, установке ортопедических конструкций и даже брекетов.
+                                    </p>
+                                </div>
+                                <button class="text-more" type="button">Читать полностью</button>
+                            </div>
+
+                        </div>
+
+                        <div class="image-wrapper">
+                            <div class="about-slide__title about-slide__title--sm">Лечение под микроскомом</div>
+                            <img src="img/admin/about/slider-2.jpg" alt="image" class="department-slide__image">
+                        </div>
+
+                    </div><!-- /about-slide -->
+
+                    <div class="swiper-slide about-slide">
+                        <div class="about-slide__content">
+                            <div class="about-slide__title about-slide__title--lg">ренген прямо у кресла</div>
+                            <div class="content-text-wraper">
+                                <div class="content-text content-text--hide">
+                                    <p>
+                                        Интраоральная цифровая рентген-диагностика – современный метод диагностики в
+                                        стоматологии. Для его проведения используется дентальный рентген и
+                                        радиовизиограф.
+                                        Использование портативного рентгена обусловлено такими преимуществами как:
+                                        возможность проводить безопасную диагностику не прерывая лечения,а также
+                                        простота
+                                        использования.
+                                    </p>
+                                </div>
+                                <button class="text-more" type="button">Читать полностью</button>
+                            </div>
+
+                        </div>
+                        <div class="image-wrapper">
+                            <div class="about-slide__title about-slide__title--sm">ренген прямо у кресла</div>
+                            <img src="img/admin/about/slider-3.jpg" alt="image" class="department-slide__image">
+                        </div>
+
+                    </div><!-- /about-slide -->
+
+                </div>
+            </div><!-- /about-slider -->
+
+            <div class="nav-arrow-wrapper">
+                <button class="nav-arrow nav-arrow--prev">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                    </svg>
+                </button>
+                <button class="nav-arrow nav-arrow--next">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+			<!-- baner-slider -->
+<section class="baner pt-0">
+    <div class="container">
+        <div class="slider-wrapper">
+            <div class="swiper baner-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide baner-slide">
+                        <div class="baner-slide__inner">
+                            <div class="baner-slide__content">
+                                <div class="baner-slide__border">
+                                    <span class="baner-slide__subtitle">Успешно лечим</span>
+                                    <div class="baner-slide__title">на элайнерах</div>
+                                    <span class="baner-slide__descr">самые сложные проблемы прикуса</span>
+                                </div>
+                                <a href="#" class="btn--link btn">
+                                    <span>Подробнее</span>
+                                    <div class="btn-arrow-wrapper">
+                                        <svg class="btn-arrow">
+                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="baner-slide__round">
+                                <img src="img/admin/baner/baner-1.png" alt="baner">
+                            </div>
+                        </div>
+                    </div><!-- /baner-slide -->
+
+                    <div class="swiper-slide baner-slide">
+                        <div class="baner-slide__inner">
+                            <div class="baner-slide__content">
+                                <div class="baner-slide__border">
+                                    <span class="baner-slide__subtitle">Успешно лечим</span>
+                                    <div class="baner-slide__title">на элайнерах</div>
+                                    <span class="baner-slide__descr">самые сложные проблемы прикуса</span>
+                                </div>
+                                <a href="#" class="btn--link btn">
+                                    <span>Подробнее</span>
+                                    <div class="btn-arrow-wrapper">
+                                        <svg class="btn-arrow">
+                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="baner-slide__round">
+                                <img src="img/admin/baner/baner-1.png" alt="baner">
+                            </div>
+                        </div>
+                    </div><!-- /baner-slide -->
+
+                </div>
+                <div class="pagination"></div>
+
+            </div>
+            <div class="nav-arrow-wrapper">
+                <button class="nav-arrow nav-arrow--prev">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                    </svg>
+                </button>
+                <button class="nav-arrow nav-arrow--next">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <img src="img/baner/flower.svg" alt="flower" class="flower">
+    </div>
+</section>
+
+
+			<section class="result">
+    <div class="container">
+        <h2 class="result__title section-title mx-auto text-start text-md-center">
+            За 7 лет мы помогли более чем 4 000 людей <strong>преобрести здоровую и красивую
+                улыбку</strong><span>.</span>
+        </h2>
+    </div>
+    <div class="tabs-sect">
+        <div class="container tabs-container">
+            <div class="tabs" data-tabs="result">
+                <div class="tabs-wrapper">
+                    <ul class="tabs__nav">
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Женская улыбка</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Мужская улыбка</button>
+                        </li>
+                        <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button">Детская улыбка</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__panel">
+                        <div class="slider-wrapper">
+
+                            <div class="swiper result-slider">
+                                <button class="reviews-star__btn result-slide__btn--lg btn btn--short btn">
+                                    <span class="reviews-star__btn-text btn--short__text">
+                                        хочу такую же улыбку
+                                    </span>
+                                    <div class="btn-arrow-wrapper mx-auto">
+                                        <svg class="btn-arrow">
+                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide result-slide">
+                                        <div class="result-slide__grid">
+                                            <div class="result-slide__before">
+                                                <div class="result-slide__title">
+                                                    До
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                            <div class="result-slide__content">
+
+                                                <div class="cases-comparisons">
+
+
+                                                    <div class="comparison-slider" onmousedown="return false">
+                                                        <img src="img/admin/result/after.jpg" alt>
+                                                        <div class="comparison-slider__back">
+                                                            <img src="img/admin/gallery/gal-1.jpeg" alt>
+                                                        </div>
+                                                        <div class="comparison-slider__drag">
+
+                                                            <img src="img/icons/arrow-slider.svg" alt="arrow">
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="result-slide__after">
+                                                <div class="result-slide__title">
+                                                    После
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /result-slide -->
+                                    <div class="swiper-slide result-slide">
+                                        <div class="result-slide__grid">
+                                            <div class="result-slide__before">
+                                                <div class="result-slide__title">
+                                                    До
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                            <div class="result-slide__content">
+
+                                                <div class="cases-comparisons">
+
+
+                                                    <div class="comparison-slider" onmousedown="return false">
+                                                        <img src="img/admin/gallery/gal-1.jpeg" alt>
+                                                        <div class="comparison-slider__back">
+                                                            <img src="img/admin/gallery/gal-2.jpeg" alt>
+                                                        </div>
+                                                        <div class="comparison-slider__drag">
+
+                                                            <img src="img/icons/arrow-slider.svg" alt="arrow">
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="result-slide__after">
+                                                <div class="result-slide__title">
+                                                    После
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /result-slide -->
+                                </div>
+                                <div class="pagination"></div>
+                            </div><!-- /result-slider -->
+                            <button class="reviews-star__btn result-slide__btn--sm btn--brown-sm btn btn">
+                                хочу такую же улыбку
+                                <div class="btn-arrow-wrapper mx-auto">
+                                    <svg class="btn-arrow">
+                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="nav-arrow-wrapper">
+                                <button class="nav-arrow nav-arrow--prev">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                                    </svg>
+                                </button>
+                                <button class="nav-arrow nav-arrow--next">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__panel">
+                        <div class="slider-wrapper">
+                            <button class="reviews-star__btn result-slide__btn--lg btn btn--short btn">
+                                <span class="reviews-star__btn-text btn--short__text">
+                                    хочу такую же улыбку
+                                </span>
+                                <div class="btn-arrow-wrapper mx-auto">
+                                    <svg class="btn-arrow">
+                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="swiper result-slider">
+                                <button class="reviews-star__btn result-slide__btn--lg btn btn--short btn">
+                                    <span class="reviews-star__btn-text btn--short__text">
+                                        хочу такую же улыбку
+                                    </span>
+                                    <div class="btn-arrow-wrapper mx-auto">
+                                        <svg class="btn-arrow">
+                                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide result-slide">
+                                        <div class="result-slide__grid">
+                                            <div class="result-slide__before">
+                                                <div class="result-slide__title">
+                                                    До
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                            <div class="result-slide__content">
+
+                                                <div class="cases-comparisons">
+
+
+                                                    <div class="comparison-slider" onmousedown="return false">
+                                                        <img src="img/admin/gallery/gal-1.jpeg" alt>
+                                                        <div class="comparison-slider__back">
+                                                            <img src="img/admin/gallery/gal-2.jpeg" alt>
+                                                        </div>
+                                                        <div class="comparison-slider__drag">
+
+                                                            <img src="img/icons/arrow-slider.svg" alt="arrow">
+
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+
+                                            </div>
+                                            <div class="result-slide__after">
+                                                <div class="result-slide__title">
+                                                    После
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div><!-- /result-slide -->
+                                    <div class="swiper-slide result-slide">
+                                        <div class="result-slide__grid">
+                                            <div class="result-slide__before">
+                                                <div class="result-slide__title">
+                                                    До
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                            <div class="result-slide__content">
+
+                                                <div class="cases-comparisons">
+
+
+                                                    <div class="comparison-slider" onmousedown="return false">
+                                                        <img src="img/admin/result/after.jpg" alt>
+                                                        <div class="comparison-slider__back">
+                                                            <img src="img/admin/gallery/gal-1.jpeg" alt>
+                                                        </div>
+                                                        <div class="comparison-slider__drag">
+                                                            <img src="img/icons/arrow-slider.svg" alt="arrow">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="result-slide__after">
+                                                <div class="result-slide__title">
+                                                    После
+                                                </div>
+                                                <div class="result-slide__descr">
+                                                    посещения нашей клиники
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /result-slide -->
+
+                                </div>
+                                <div class="pagination"></div>
+                            </div><!-- /result-slider -->
+                            <button class="reviews-star__btn result-slide__btn--sm btn--brown-sm btn btn">
+                                хочу такую же улыбку
+                                <div class="btn-arrow-wrapper mx-auto">
+                                    <svg class="btn-arrow">
+                                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                    </svg>
+                                </div>
+                            </button>
+                            <div class="nav-arrow-wrapper">
+                                <button class="nav-arrow nav-arrow--prev">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                                    </svg>
+                                </button>
+                                <button class="nav-arrow nav-arrow--next">
+                                    <svg>
+                                        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__panel">3</div>
+                </div>
+            </div>
+            <a href="#" class="result-cities">
+                <img src="img/result/cities.svg" alt="text-logo">
+            </a>
+        </div>
+    </div>
+
+
+    <img src="img/result/decor.svg" alt="decor" class="decor d-none d-md-block">
+    <img src="img/result/decor_1.svg" alt="decor" class="decor d-block d-md-none">
+
+</section>
+			<!-- invite -->
+<section class="invite pt-0">
+    <div class="container">
+        <h2 class="invite__title section-title mx-auto text-start text-md-center">
+            Приезжайте к нам в Краснодар из других городов <strong>мы сделаем вашу улыбку
+                прекрасной</strong><span>.</span>
+        </h2>
+        <div class="invite__wrapper">
+            <div class="invite__left">
+
+                <ul class="invite__list">
+                    <li class="invite__item">
+                        <div class="invite__item-num">
+                            01
+                        </div>
+                        <div class="invite__item-content">
+                            <div class="invite__item-title">
+                                Консультация
+                            </div>
+                            <span class="invite__item-descr">
+                                Дистанционная консультация врача онлайн
+                            </span>
+                        </div>
+                    </li>
+                    <li class="invite__item">
+                        <div class="invite__item-num">
+                            02
+                        </div>
+                        <div class="invite__item-content">
+                            <div class="invite__item-title">
+                                Помощь в приезде
+                            </div>
+                            <span class="invite__item-descr">
+                                Организация приезда и размещения
+                            </span>
+                        </div>
+                    </li>
+                    <li class="invite__item">
+                        <div class="invite__item-num">
+                            03
+                        </div>
+                        <div class="invite__item-content">
+                            <div class="invite__item-title">
+                                Оперативность
+                            </div>
+                            <span class="invite__item-descr">
+                                Восстановление зубов за 1-3 дня
+                            </span>
+                        </div>
+                    </li>
+                    <li class="invite__item">
+                        <div class="invite__item-num">
+                            04
+                        </div>
+                        <div class="invite__item-content">
+                            <div class="invite__item-title">
+                                Внимание
+                            </div>
+                            <span class="invite__item-descr">
+                                Забота и уход во время лечения
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="content-text">
+                    <p>
+                        После завершения лечения мы проводим вас домой и обеспечим поддержку после
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="invite__right">
+                <img src="img/invite/globe.png" alt="image" class="invite__img">
+                <button class="invite__btn btn--short btn d-none d-lg-flex">
+                    <span class="invite__btn-text btn--short__text">
+                        записаться
+                        на прием
+                    </span>
+                    <div class="btn-arrow-wrapper mx-auto">
+                        <svg class="btn-arrow">
+                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+        <button class="reviews-star-btn--sm btn--brown-sm btn d-flex d-lg-none">
+            записаться
+            на прием
+            <div class="btn-arrow-wrapper">
+                <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                </svg>
+            </div>
+        </button>
+
+    </div>
+    <img src="img/invite/flower.png" alt="flower" class="flower">
+    <img src="img/invite/flower-sm.png" alt="flower" class="flower-sm d-block d-lg-none">
+    <img src="img/invite/brown-bg.png" alt="background" class="invite-bg--brown">
+</section>
+			<section class="team" id="team" style="background-image: url('img/admin/team/team-bg.jpg');">
+    <div class="container">
+        <div class="reviews-star__title-wrapper">
+            <h2 class="team-star__title section-title section-title--white mx-auto text-start text-md-center">
+                Врачи клиники имеют высокую степень компетенции и <strong>регулярно проходят курсы по повышению
+                    квалификацию</strong><span>.</span>
+            </h2>
+            <div class="slider-wrapper">
+                <div class="slider-grid">
+
+                    <div class="swiper team-text-slider">
+                        <div class="swiper-wrapper">
+
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Петросян</span><br> Лиза Мадатовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов, лечение под закисью азота, лечение под
+                                    седацией
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Обрубкина</span><br> Евгения Альбертовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов.
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Иванова</span><br> Евгения Альбертовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов.
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Петросян</span><br> Лиза Мадатовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов, лечение под закисью азота, лечение под
+                                    седацией
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Обрубкина</span><br> Евгения Альбертовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов.
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+
+                            <div thumbsslider class="swiper-slide team-text-slide team-text-slide">
+                                <div class="text-slide__title">
+                                    <span>Иванова</span><br> Евгения Альбертовна
+                                </div>
+                                <span class="text-slide__work">
+                                    Стоматолог общей практики.
+                                </span>
+                                <span class="text-slide__year">
+                                    Стаж: 2+
+                                </span>
+                                <p class="text-slide__descr">
+                                    Лечение кариеса, отбеливание зубов, профессиональная гигиена, лечение дёсен,
+                                    реставрацию зубов, лечение каналов зубов.
+                                </p>
+                                <div class="btn-wrapper">
+                                    <button class="btn btn--brown">
+                                        О враче
+                                        <div class="btn-arrow-wrapper">
+                                            <svg class="btn-arrow">
+                                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                    <a href="#" class="order-contacts__social contacts-social">
+                                        <span class="contacts-social__img">
+                                            <img class="static-social" src="img/icons/play.svg" alt="icon">
+                                            <!-- <img class="focus-social" src="img/icons/whatsapp-focus.svg" alt="icon"> -->
+                                        </span>
+                                        <div class="contacts-social__name">
+                                            посмотеть
+                                            <span>видео</span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div><!-- /team-slide -->
+
+                        </div>
+                    </div><!-- /team-text-slider -->
+
+                    <div class="swiper team-photo-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-3.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-2.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-3.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-2.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-2.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                            <div class="swiper-slide team-photo-slide photo-slide">
+                                <img src="img/admin/team/image-3.png" alt="image" class="photo-slide__img">
+                            </div><!-- /photo-slide -->
+                        </div>
+                    </div><!-- /team-text-slider -->
+                    <div class="count-number"></div>
+                </div>
+                <div class="pagination"></div>
+                <div class="nav-arrow-wrapper">
+                    <button class="nav-arrow nav-arrow--prev">
+                        <svg>
+                            <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                        </svg>
+                    </button>
+                    <button class="nav-arrow nav-arrow--next">
+                        <svg>
+                            <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                        </svg>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <img src="img/team/flower.svg" alt="flower" class="flower">
+</section>
+			<section class="reviews" id="reviews">
+  <div class="container">
+    <h2 class="reviews__title section-title mx-auto text-start text-md-center">
+      Более 4 000 пациентов с красивыми улыбками <strong>и интересными историями</strong><span>.</span>
+    </h2>
+
+    <div class="reviews-top">
+      <div class="slider-wrapper">
+        <div class="reviews-grid">
+
+          <div class="swiper reviews-text-slider">
+            <div class="swiper-wrapper">
+
+              <div thumbsslider class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Александр Иванович, 01 января 2023</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>          
+                    Огромная
+                    благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                    работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
+                    прекрасного
+                    на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+                <img src="img/reviews/quote.svg" alt="quote" class="quote">
+              </div><!-- /reviews-text-slide -->
+
+              <div thumbsslider class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Игорь Иванович, 11 января 2023</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>                   
+                    благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                    работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
+                    прекрасного
+                    на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+              </div><!-- /reviews-text-slide -->
+              <div thumbsslider class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Игорь Иванович, 22 января 2023</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>                   
+                    Благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                    работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
+                    прекрасного
+                    на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+              </div><!-- /reviews-text-slide -->
+
+            </div>
+          </div><!-- /reviews-text-slider -->
+
+          <div class="swiper reviews-video-slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide video-slide reviews-video-slide">
+                <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
+                <img src="img/admin/reviews/video-1.png" alt="preview" class="video-slide__img-preload">
+                <button class="video-slide__btn">
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#play"></use>
+                  </svg>
+                </button>
+              </div><!-- /reviews-video-slide -->
+              <div class="swiper-slide video-slide reviews-video-slide">
+                <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
+                <img src="img/admin/reviews/video-2.png" alt="preview" class="video-slide__img-preload">
+                <button class="video-slide__btn">
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#play"></use>
+                  </svg>
+                </button>
+              </div><!-- /reviews-video-slide -->
+              <div class="swiper-slide video-slide reviews-video-slide">
+                <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
+                <img src="img/admin/reviews/video-3.png" alt="preview" class="video-slide__img-preload">
+                <button class="video-slide__btn">
+                  <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#play"></use>
+                  </svg>
+                </button>
+              </div><!-- /reviews-video-slide -->
+
+            </div>
+            <div class="pagination"></div>
+          </div><!-- /reviews-video-slider -->
+          <div class="count-number"></div>
+          <div class="nav-arrow-wrapper">
+            <button class="nav-arrow nav-arrow--prev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+              </svg>
+            </button>
+            <button class="nav-arrow nav-arrow--next">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#slider-next"></use>
+              </svg>
+            </button>
+          </div>
+        </div><!-- /reviews-grid -->
+      </div><!-- /slider-wrapper -->
+    </div><!-- /reviews-top -->
+
+    <div class="reviews-bottom">
+     
+      <div class="slider-wrapper">
+        <div class="reviews-grid">
+
+          <div class="reviews-image-wrapper">
+            <div class="swiper reviews-image-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews-image-slide">
+                  <img src="img/admin/reviews/photo1.jpeg" alt="image" class="reviews-image-slide__img">
+                </div><!-- /reviews-image-slide -->
+                <div class="swiper-slide reviews-image-slide">
+                  <img src="img/admin/reviews/photo2.jpeg" alt="image" class="reviews-image-slide__img">
+                </div><!-- /reviews-image-slide -->
+                <div class="swiper-slide reviews-image-slide">
+                  <img src="img/admin/reviews/photo4.jpeg" alt="image" class="reviews-image-slide__img">
+                </div><!-- /reviews-image-slide -->
+              </div>
+            </div><!-- /reviews-image-slider -->
+          </div>
+   
+
+          <div class="swiper reviews-text-slider">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Александр Иванович, 01 января 2023</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>
+                    Обратился в стоматологическую клинику «Аврора» первый раз в жизни, всё, что было сделано раньше
+                    врачами,
+                    просто развалилось, не мог кушать месяц, это было мучение, и посетил данную клинику! Это был
+                    прекрасный
+                    приём, всё объяснили, рассказали как и что! Провели операцию, это врачи от бога (как говорится),
+                    ничего
+                    не чувствовал, а так этого боялся, и вот на третий день уезжаю домой счастливым и радостный!
+                    Огромная
+                    благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                    работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
+                    прекрасного
+                    на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+              </div><!-- /reviews-text-slide -->
+              <div class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Александр Иванович, 01 января 2023</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>                 
+                    Огромная
+                    благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                    работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
+                    прекрасного          
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+              </div><!-- /reviews-text-slide -->
+              <div class="swiper-slide reviews-text-slide">
+                <div class="reviews-text-slide__head">
+
+                  <div class="reviews-text-slide__rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="163" height="30" viewBox="0 0 163 30" fill="none">
+                      <g clip-path="url(#clip0_10_18090)">
+                        <path
+                          d="M9.54081 18.4278L5.89555 29.6656L15.4364 22.7169L24.9721 29.6656L21.3344 18.4278L30.8702 11.4867H19.0816L15.4364 0.253906L11.7911 11.4867H0L9.54081 18.4278Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M52.0933 11.4867L48.4481 0.253906L44.8028 11.4867H33.0117L42.5525 18.4278L38.9073 29.6656L48.4481 22.7169L57.9889 29.6656L54.3436 18.4278L63.887 11.4867H52.0933Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M85.1031 11.4867L81.4578 0.253906L77.8126 11.4867H66.0215L75.5623 18.4278L71.917 29.6656L81.4578 22.7169L90.9986 29.6656L87.3534 18.4278L96.8942 11.4867H85.1031Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M118.115 11.4867L114.47 0.253906L110.825 11.4867H99.0312L108.575 18.4278L104.929 29.6656L114.47 22.7169L124.011 29.6656L120.366 18.4278L129.907 11.4867H118.115Z"
+                          fill="#9F694F" />
+                        <path
+                          d="M151.126 11.4867L147.481 0.253906L143.835 11.4867H132.047L141.583 18.4278L137.937 29.6656L147.481 22.7169L157.021 29.6656L153.376 18.4278L162.917 11.4867H151.126Z"
+                          fill="#9F694F" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_18090">
+                          <rect width="163" height="30" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div><!-- /reviews-text-slide__rating -->
+                  <span class="reviews-text-slide__name">Александр Иванович, 05 марта 2020</span>
+
+                </div><!-- /reviews-text-slide__head -->
+                <div class="reviews-text-slide__title">Отзыв на имплантацию зубов All-on-4</div>
+                <div class="content-text">
+                  <p>
+                    Обратился в стоматологическую клинику «Аврора» первый раз в жизни, всё, что было сделано раньше
+                    врачами,
+                    просто развалилось, не мог кушать месяц, это было мучение, и посетил данную клинику! Это был
+                    прекрасный
+                    приём, всё объяснили, рассказали как и что! Провели операцию, это врачи от бога (как говорится),               
+                  </p>
+                </div>
+                <div class="reviews-item__text-more">Читать весь отзыв</div>
+              </div><!-- /reviews-text-slide -->
+
+            </div>
+            <div class="pagination"></div>
+          </div><!-- /reviews-text-slider -->
+      
+          <div class="count-number"></div>
+          <div class="nav-arrow-wrapper">
+            <button class="nav-arrow nav-arrow--prev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+              </svg>
+            </button>
+            <button class="nav-arrow nav-arrow--next">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#slider-next"></use>
+              </svg>
+            </button>
+          </div>
+
+        </div><!-- /reviews-grid -->
+      </div><!-- /slider-wrapper -->
+    </div><!-- /reviews-bottom -->
+
+
+  </div>
+  <img src="img/reviews/reviews-bg.svg" alt="bg" class="reviews__bg-rect">
+</section>
+			<!-- reviews-star -->
+<section class="reviews-star">
+    <div class="container">
+        <div class="reviews-star__title-wrapper">
+            <h2 class="reviews-star__title section-title section-title--white mx-auto text-start text-md-center">
+                Вы помогаете нам стать лучше, оставляя отзывы на <span>независимых площадках.</span>
+            </h2>
+            <button class="reviews-star__btn btn btn--short btn d-none d-xl-flex">
+                <span class="reviews-star__btn-text btn--short__text">
+                    Читать все отзывы о&nbsp;нас
+                </span>
+                <div class="btn-arrow-wrapper mx-auto">
+                    <svg class="btn-arrow">
+                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <ul class="reviews-star__list">
+            <li class="reviews-star__item">
+                <div class="reviews-star__item-inner">
+                    <div class="reviews-star__item-top">
+                        <a href="#" class="reviews-star__item-link">
+                            <img src="img/reviews/gis.svg" alt="logo" class="reviews-star__item-logo">
+                        </a>
+                        <div class="reviews-star__item-rating">
+                            <span>5.0</span><span>/5</span>
+                        </div>
+
+                    </div>
+                    <div class="reviews-star__item-bottom">
+                        <a href="#" class="reviews-star__item-num">
+                            180 отзывов
+                        </a>
+                        <img src="img/reviews/star.svg" alt="" class="reviews-star__item-star">
+                    </div>
+                </div>
+                <div class="gradients">
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>
+                </div>
+            </li>
+            <li class="reviews-star__item">
+                <div class="reviews-star__item-inner">
+                    <div class="reviews-star__item-top">
+                        <a href="#" class="reviews-star__item-link">
+                            <img src="img/reviews/yandex.svg" alt="logo" class="reviews-star__item-logo">
+                        </a>
+                        <div class="reviews-star__item-rating">
+                            <span>4.9</span><span>/5</span>
+                        </div>
+
+                    </div>
+                    <div class="reviews-star__item-bottom">
+                        <a href="#" class="reviews-star__item-num">
+                            60 отзывов
+                        </a>
+                        <img src="img/reviews/star.svg" alt="" class="reviews-star__item-star">
+                    </div>
+                </div>
+                <div class="gradients">
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>
+                </div>
+            </li>
+            <li class="reviews-star__item">
+                <div class="reviews-star__item-inner">
+                    <div class="reviews-star__item-top">
+                        <a href="#" class="reviews-star__item-link">
+                            <img src="img/reviews/sber.svg" alt="logo" class="reviews-star__item-logo">
+                        </a>
+                        <div class="reviews-star__item-rating">
+                            <span>5.0</span><span>/5</span>
+                        </div>
+                    </div>
+                    <div class="reviews-star__item-bottom">
+                        <a href="#" class="reviews-star__item-num">
+                            2 отзыва
+                        </a>
+                        <img src="img/reviews/star.svg" alt="" class="reviews-star__item-star">
+                    </div>
+                </div>
+                <div class="gradients">
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>
+                </div>
+            </li>
+            <li class="reviews-star__item">
+                <div class="reviews-star__item-inner">
+                    <div class="reviews-star__item-top">
+                        <a href="#" class="reviews-star__item-link">
+                            <img src="img/reviews/doctor.svg" alt="logo" class="reviews-star__item-logo">
+                        </a>
+                        <div class="reviews-star__item-rating">
+                            <span>5.0</span><span>/5</span>
+                        </div>
+                    </div>
+                    <div class="reviews-star__item-bottom">
+                        <a href="#" class="reviews-star__item-num">
+                            197 отзыва
+                        </a>
+                        <img src="img/reviews/star.svg" alt="" class="reviews-star__item-star">
+                    </div>
+                </div>    
+                <div class="gradients">
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="reviews-star-btn--sm btn--brown-sm btn d-flex d-xl-none">
+            Читать все отзывы
+            <div class="btn-arrow-wrapper">
+                <svg class="btn-arrow">
+                    <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                </svg>
+            </div>
+        </a>
+
+    </div>
+</section>
+			<!-- about -->
+<section class="about">
+    <div class="container">
+        <h2 class="about__title section-title text-start text-md-center">
+            Ведущая стоматология в Краснодарском крае,где используются <strong>международные стандарты лечения и
+                восстановления зубов</strong><span>.</span>
+        </h2>
+        <div class="about__wrapper">
+            <div class="about__left">
+                <img src="img/about/image.png" alt="image" class="about__img">
+            </div>
+
+            <div class="about__right">
+                <div class="content-text-wraper">
+                    <div class="content-text content-text--hide">
+                        <p>
+                            Врачи хирургического отделения имеют высокую степень компетенции, благодаря чему мы являемся
+                            одной из немногих клиник Краснодарского края, кто применяет все проверенные методики
+                            имплантации
+                            с немедленной нагрузкой All on 4, скуловая имплантация Zygoma. Благодаря этому мы можем
+                            предложить нашим пациентам самое оптимальное решение, которое прослужит не 2—3 года,а в
+                            течение
+                            многих десятилетий.
+                        </p>
+                        <p>
+                            Врачи отделение эстетической ортодонтии WHITE AURORA не только возвращают взрослым и детям
+                            эстетику улыбки, но и компетентно лечат сложных пациентовс проблемами суставов и прикус. На
+                            базе
+                            клиники пациенты проходят подготовкук ортогнатический операции, ортодонты работают в связке
+                            с
+                            Главным врачом чел
+                        </p>                       
+                    </div>
+                    <button class="text-more" type="button">Читать полностью</button>
+
+                </div>
+
+                <button class="btn btn--brown">
+                    Подробнее о нас
+                    <div class="btn-arrow-wrapper">
+                        <svg class="btn-arrow">
+                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <img src="img/about/flower.png" alt="flower" class="flower">
+    <img src="img/about/about-bg.svg" alt="bg" class="about-bg">
+    <img src="img/about/flower-sm.png" alt="flower" class="flower--sm">
+</section>
+			<!-- gallery -->
+<section class="gallery pt-0 pb-0" id="gallery">
+    <div class="container">
+
+        <div class="swiper gallery-slider slider">
+            <div class="swiper-wrapper">
+                <a data-fslightbox class="swiper-slide gallery-slide" href="img/admin/gallery/gal-1.jpeg">
+                    <img src="img/admin/gallery/gal-1.jpeg" alt="image">
+                </a>
+                <a data-fslightbox class="swiper-slide gallery-slide" href="img/admin/gallery/gal-2.jpeg">
+                    <img src="img/admin/gallery/gal-2.jpeg" alt="image">
+                </a>
+                <a data-fslightbox class="swiper-slide gallery-slide" href="img/admin/gallery/gal-3.jpeg">
+                    <img src="img/admin/gallery/gal-3.jpeg" alt="image">
+                </a>
+                <a data-fslightbox class="swiper-slide gallery-slide" href="img/admin/gallery/gal-4.jpeg">
+                    <img src="img/admin/gallery/gal-4.jpeg" alt="image">
+                </a>
+            </div>
+            <div class="pagination"></div>
+            <div class="nav-arrow-wrapper">
+                <button class="nav-arrow nav-arrow--prev">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-prev"></use>
+                    </svg>
+                </button>
+                <button class="nav-arrow nav-arrow--next">
+                    <svg>
+                        <use xlink:href="img/icons/icons.svg#slider-next"></use>
+                    </svg>
+                </button>            
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+ 
+			<!-- quality -->
+<section class="quality">
+    <div class="container">
+
+        <h2 class="quality__title section-title text-start text-md-center">
+            <strong>Вы получите все услуги европейского качества</strong>
+            стоматологических клиник в одном месте<span>.</span>
+        </h2>
+
+        <form action="#" class="quality__form form">
+            <div class="input-wrapper">
+                <input type="text" class="form-input" placeholder="Имя">
+            </div>
+            <div class="input-wrapper">
+                <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
+            </div>
+            <button class="form-btn btn btn--bg-brown">
+                <div class="d-flex flex-column align-items-start">
+                    <span class="btn__text btn__text--lg">Записаться на прием</span>
+                </div>
+                <div class="btn-arrow-wrapper">
+                    <svg class="btn-arrow">
+                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                    </svg>
+                </div>
+            </button>
+            <button class="form-btn btn btn--brown">
+                <div class="d-flex flex-column align-items-start">
+                    <span class="btn__text">Обратный звонок</span>
+                </div>
+                <div class="btn-arrow-wrapper">
+                    <svg class="btn-arrow">
+                        <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                    </svg>
+                </div>
+            </button>
+        </form>
+
+        <div class="agreement">
+            Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+        </div>
+        <div class="quality__contacts">
+            <div class="quality__left">
+
+                <div class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <h3 class="contacts__item-title">
+                                Адрес
+                            </h3>
+                            <span class="contacts__item-text">
+                                г. Краснодар, ул. Гаражная, 67/1
+                            </span>
+                        </li>
+                        <li class="contacts__item contacts__item-wrapper">
+                            <div class="contacts__item-left">
+                                <h3 class="contacts__item-title">
+                                    Телефон
+                                </h3>
+                                <a href="tel:+78612114830" class="contacts__item-text">+7 (861) 211-48-30</a>
+                            </div>
+                            <div class="contacts__item-right">
+                                <div class="contacts-socials">
+                                    <ul class="contacts-socials__list">
+                                        <li class="contacts-socials__item">
+                                            <a href="#" class="contacts-socials__link">
+                                                <img src="img/icons/whatsapp.svg" alt="social">
+                                            </a>
+                                        </li>
+                                        <li class="contacts-socials__item telegram">
+                                            <a href="#" class="contacts-socials__link">
+                                                <img src="img/icons/telegram.svg" alt="social">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__item-title">
+                                Режим работы
+                            </h3>
+                            <span class="contacts__item-text">
+                                Ежедневно — 9:00 до 21:00
+                            </span>
+
+
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__item-title">
+                                E-mail
+                            </h3>
+                            <a href="mailto:clinic@whiteaurora.ru"
+                                class="contacts__item-text">clinic@whiteaurora.ru</a>
+                        </li>
+                    </ul>
+                </div><!-- /contacts -->
+            </div>
+            <div class="quality__right">
+                <img src="img/admin/quality/map.png" alt="map" class="quality__map">
+            </div>
+        </div>
+    </div>
+    <img src="img/quality/flower.png" alt="flower" class="flower">
+</section>
 		</main>
 		<!-- Footer -->
 <footer class="footer" id="footer">

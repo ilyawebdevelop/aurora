@@ -1,6 +1,15 @@
 .invite {
     position: relative;
     padding-bottom: 0;
+    @media(max-width: 991px){
+        padding-bottom: 50px;
+        margin-top: -50px;
+    }
+    .reviews-star-btn--sm {
+        @media(max-width: 991px){
+            margin-top: 0;
+        }
+    }
     .container {
         position: relative;
         z-index: 1;
@@ -17,11 +26,26 @@
     &__left {
         grid-column: 5 span;
         padding-top: 40px;
+        @media(max-width: 991px){
+            grid-column: 12 span;
+            padding-top: 0;
+            margin-bottom: 10px;
+        }
     }
-
+    &__img {
+        max-width: calc(100% - 128px);
+        object-fit: contain;
+    }
     &__right {
         grid-column: 7 span;
         display: flex;
+        @media(max-width: 991px){
+            grid-column: 12 span;
+            justify-content: flex-start;
+        }
+        @media(max-width: 575px){
+            justify-content: center;
+        }
     }
 
     &__item {
@@ -29,13 +53,31 @@
         align-items: center;
         column-gap: 29px;
         margin-bottom: 40px;
+        @media(max-width: 991px){
+            column-gap: 22px;
+            margin-bottom: 22px;
+            align-items: flex-start;
+        }
 
         &-title {
             font-family: $font-family-title;
             margin-bottom: 11px;
             font-size: 32px;
+            line-height: 38px;
             color: $brown-color;
             letter-spacing: 1.6px;
+            @media(max-width: 991px){
+                font-size: 24px;
+                margin-bottom: 3px;
+            }
+        }
+        &-descr {
+            @media(max-width: 991px){
+                font-size: 18px;
+                line-height: 26px;
+                padding-right: 50px;
+                display: block;
+            }
         }
 
         &-num {
@@ -54,12 +96,29 @@
         }
         &-content {
             padding-top: 10px;
+            @media(max-width: 991px){
+                padding-top: 0;
+                margin-top: -6px;
+            }
         }
     }
     .flower {
         position: absolute;
         left: 0;
         top: 150px;
+        @media(max-width: 1700px){
+            width: 200px;
+        }
+        @media(max-width: 991px){
+            top: -135px;
+            width: 130px;
+            left: -28px;
+        }
+    }
+    .flower-sm {
+        position: absolute;
+        right: 0;
+        top: 200px;
     }
 }
 .invite-bg--brown {
