@@ -16038,6 +16038,11 @@ h3 {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 575px) {
+  .about .btn {
+    width: 100%;
+  }
+}
 .about-bg {
   position: absolute;
   left: 0;
@@ -20057,11 +20062,12 @@ h3 {
 
 .mobile-nav {
   width: 100%;
-  padding-top: 24px;
+  padding-top: 15px;
   padding-bottom: 6px;
   background-color: #fff;
-  background: url("../img/footer/nav-fixed.svg") no-repeat center center/375px;
-  width: 375px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -4px 9px 0px rgba(87, 86, 92, 0.1);
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -20074,11 +20080,31 @@ h3 {
     display: block;
   }
 }
+.mobile-nav .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.mobile-nav .container .rec-left {
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  right: 85px;
+  top: 0;
+  background-color: #fff;
+}
 .mobile-nav__list {
   display: flex;
-  column-gap: 30px;
+  column-gap: 60px;
   position: relative;
+  justify-content: center;
   z-index: 1;
+  width: calc(100% - 100px);
+}
+@media (max-width: 575px) {
+  .mobile-nav__list {
+    column-gap: 35px;
+  }
 }
 @media (max-width: 450px) {
   .mobile-nav__list {
@@ -20113,49 +20139,6 @@ h3 {
   font-weight: 300;
   color: #9EA6B3;
 }
-.mobile-nav::before {
-  content: "";
-  position: absolute;
-  left: 98%;
-  top: 5px;
-  height: 100%;
-  width: 100vw;
-  background-color: #fff;
-  box-shadow: 13px -4px 20px 6px rgba(87, 86, 92, 0.1);
-}
-@media (max-width: 991px) {
-  .mobile-nav::before {
-    top: 6px;
-  }
-}
-.mobile-nav::after {
-  content: "";
-  position: absolute;
-  right: 86%;
-  top: 5px;
-  background-color: #fff;
-  width: 100vw;
-  height: 100%;
-  box-shadow: -13px -4px 20px 6px rgba(87, 86, 92, 0.1);
-}
-@media (max-width: 991px) {
-  .mobile-nav::after {
-    top: 6px;
-  }
-}
-@media (max-width: 475px) {
-  .mobile-nav::after {
-    left: 0;
-    border-top-left-radius: 20px;
-    right: unset;
-    position: fixed;
-    bottom: 0;
-    height: 81px;
-    top: unset;
-    width: 24vw;
-    box-shadow: -13px -5px 20px 0px rgba(87, 86, 92, 0.1);
-  }
-}
 .mobile-nav--fixed {
   position: fixed;
   bottom: -8px;
@@ -20163,7 +20146,14 @@ h3 {
   z-index: 4;
 }
 .mobile-nav .rec {
-  position: absolute;
-  right: 21px;
-  bottom: 25px;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: 30px;
+  margin-left: 50px;
+}
+@media (max-width: 575px) {
+  .mobile-nav .rec {
+    margin-left: 30px;
+  }
 }
