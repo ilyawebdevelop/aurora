@@ -527,7 +527,9 @@
 
         /* Вертикальная ориентация */
         &.active {
-            -webkit-line-clamp: unset;
+            overflow: unset!important;
+            -webkit-line-clamp: unset!important;
+            display: block!important;
         }
 
         &-more {
@@ -537,6 +539,7 @@
             cursor: pointer;
             transition: color .2s linear;
             margin-top: 15px;
+            display: block;
 
             &:hover {
                 color: #000;
@@ -1012,6 +1015,11 @@
             display: -webkit-box;
             /* Включаем флексбоксы */
             -webkit-box-orient: vertical;
+            &.active {
+                overflow: unset;
+                -webkit-line-clamp: unset;
+                display: block;
+            }
 
             p {
                 font-size: 18px;

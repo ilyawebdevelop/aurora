@@ -336,16 +336,16 @@ var mySwiperReviewsTop = new Swiper(reviewsSliderTop, {
     },
     breakpoints: {
         0: {
-            spaceBetween: 8,           
+            spaceBetween: 8,
             slidesPerView: 1,
             centeredSlides: false,
-        },        
+        },
         992: {
             centeredSlides: true,
             slidesPerView: 2,
         },
     },
-    
+
     thumbs: { // указываем на превью слайдер
         swiper: {
             el: document.querySelector('.reviews-top .reviews-text-slider'),
@@ -526,7 +526,7 @@ var mySwiperDoctor = new Swiper(doctorSlider, {
         },
         576: {
             slidesPerView: 'auto',
-        },       
+        },
     },
 });
 
@@ -551,7 +551,7 @@ var mySwiperCert = new Swiper(certSlider, {
         },
         576: {
             slidesPerView: 2,
-        },       
+        },
     },
 });
 
@@ -573,16 +573,16 @@ var mySwiperCert = new Swiper(certSliderLg, {
     breakpoints: {
         0: {
             slidesPerView: 1,
-        },    
+        },
         768: {
             slidesPerView: 2,
-        },  
+        },
         992: {
             slidesPerView: 3,
-        },  
+        },
         1200: {
             slidesPerView: 4,
-        }, 
+        },
     },
 });
 
@@ -699,3 +699,70 @@ catalogCloseLg.addEventListener('click', () => {
     catalogContentLg.classList.remove('active');
     bodyEl.classList.remove('hidden');
 });
+
+let btnSmMenu = document.getElementById('btn-menu--sm');
+let btnMenuClose = document.getElementById('menu-modal-close');
+let menuModal = document.querySelector('.menu-modal');
+
+btnSmMenu.addEventListener('click', () => {
+    menuModal.classList.add('active');
+    bodyEl.classList.add('hidden');
+});
+
+btnMenuClose.addEventListener('click', () => {
+    menuModal.classList.remove('active');
+    bodyEl.classList.remove('hidden');
+});
+
+let menuServicesBtn = document.getElementById('menu-item__button-services');
+let menuModalContent = document.querySelector('.menu-modal-content');
+let menuServices = document.querySelector('.menu-services');
+menuServicesBtn.addEventListener('click', () => {
+    menuModalContent.classList.remove('active');
+    menuServices.classList.add('active');
+});
+
+let servicesBack = document.getElementById('services-back');
+servicesBack.addEventListener('click', () => {
+    menuModalContent.classList.add('active');
+    menuServices.classList.remove('active');
+});
+
+// add menuArrowBtn
+let menuItemHasChild = document.querySelectorAll('.menu-item-has-children');
+
+menuItemHasChild.forEach(el => {
+    let buttonMore = document.createElement('div');   
+    let buttonBackSubcat = document.createElement('div');   
+    let submenu = el.querySelector('.sub-menu');
+    buttonMore.classList.add('menu-item__button');
+    buttonBackSubcat.classList.add('menu-back');
+    buttonBackSubcat.classList.add('menu-back--service');
+    el.appendChild(buttonMore);
+    submenu.prepend(buttonBackSubcat);
+    buttonBackSubcat.textContent = 'Услуги';
+    buttonMore.addEventListener('click', () => {
+        submenu.classList.add('active');
+    });
+    buttonBackSubcat.addEventListener('click', () => {
+        submenu.classList.remove('active');
+    });
+});
+
+// let arrowMenuAll = document.querySelectorAll('.menu-item__button');
+// arrowMenuAll.forEach(el => {
+//   let elPar = el.closest('li');
+//   let elContent = elPar.querySelector('.sub-menu');
+//   el.addEventListener('click', () => {
+//     elContent.classList.toggle('active');
+//   });
+// });
+
+// let btnCloseSubcat = document.querySelectorAll('.subcat-close');
+// btnCloseSubcat.forEach(el => {
+//   let elPar = el.closest('li');
+//   let elContent = elPar.querySelector('.header__nav-subcat-wrapper ');
+//   el.addEventListener('click', () => {
+//     elContent.classList.toggle('active');
+//   });
+// });
