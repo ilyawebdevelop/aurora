@@ -714,7 +714,12 @@ btnMenuClose.addEventListener('click', () => {
     menuServices.classList.remove('active');
     menuModal.classList.remove('active');
     bodyEl.classList.remove('hidden');
+    document.querySelectorAll('.sub-menu').forEach(el => {
+        el.classList.remove('active');
+    });
 });
+
+
 
 let menuServicesBtn = document.getElementById('menu-item__button-services');
 let menuModalContent = document.querySelector('.menu-modal-content');

@@ -472,7 +472,7 @@
         position: fixed;
         width: 100%;
         height: calc(100% - 50px);
-        top: 55px;
+        top: 58px;
         padding-top: 85px;
         padding-bottom: 50px;
         background-color: #231F20;
@@ -493,4 +493,22 @@
 .menu-back--service{
     position: absolute;
     top: 32px;
+}
+.menu-socials__item{
+    background-color: #2C2829;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #9ea6b363;
+
+    img {
+        width: 32px;
+    }
+    position: relative;
+    &::after {
+
+    }
 }
