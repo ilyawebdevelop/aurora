@@ -41,6 +41,9 @@ html {
 body.hidden {
   overflow: hidden
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

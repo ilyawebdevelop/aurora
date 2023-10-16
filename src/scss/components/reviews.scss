@@ -846,6 +846,9 @@
             @media(max-width: 991px) {
                 bottom: -40px;
             }
+            @media(max-width: 575px){
+                right: 5px;
+            }
         }
 
         margin-bottom: 44px;
@@ -865,6 +868,7 @@
 
         .reviews-text-slider {
             padding-top: 30px;
+            z-index: 2;
 
             @media(max-width: 1199px) {
                 order: 2;

@@ -16,3 +16,29 @@
   }
 }
 
+.modal-video video {
+  width: 100%;
+  height: calc(100vh - 170px);
+  background-color: #fff;
+}
+.modal-video .modal-dialog {
+  max-width: 1000px;
+}
+.btn-close{
+  background: none;
+  position: absolute;
+  right: -50px;
+  top: -46px;
+  width: fit-content;
+  height: fit-content;
+  img {
+    width: 40px;
+    @media(max-width: 1199px){
+      width: 30px;
+    }
+  }
+  @media(max-width: 1199px){
+    right: -6px;
+    top: -37px;
+  }
+}

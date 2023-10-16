@@ -739,8 +739,8 @@ servicesBack.addEventListener('click', () => {
 let menuItemHasChild = document.querySelectorAll('.menu-item-has-children');
 
 menuItemHasChild.forEach(el => {
-    let buttonMore = document.createElement('div');   
-    let buttonBackSubcat = document.createElement('div');   
+    let buttonMore = document.createElement('div');
+    let buttonBackSubcat = document.createElement('div');
     let submenu = el.querySelector('.sub-menu');
     buttonMore.classList.add('menu-item__button');
     buttonBackSubcat.classList.add('menu-back');
@@ -762,6 +762,27 @@ mobileNavServ.addEventListener('click', () => {
     bodyEl.classList.add('hidden');
     menuServicesBtn.click();
 });
+
+let videoBtnAll = document.querySelectorAll('.video-slide__btn');
+let modalVideoSrc = document.querySelector('.modal-video source');
+let modalVideoPoster = document.querySelector('.modal-video video');
+
+videoBtnAll.forEach(el => {
+    el.addEventListener('click', () => {
+        modalVideoSrc.src = el.dataset.video;
+        modalVideoPoster.poster = el.dataset.poster;
+        modalVideoPoster.load();
+    });
+});
+$('#modal-video').on('hide.bs.modal', function (e) {
+    // modalVideoPoster.pause();
+});
+
+
+$('.modal-video').on('hide.bs.modal', function (e) {
+    $(this).find('video').trigger('pause');  
+});
+
 
 // let arrowMenuAll = document.querySelectorAll('.menu-item__button');
 // arrowMenuAll.forEach(el => {

@@ -1414,7 +1414,7 @@
                   </div>
 
                 </div>
-                <div class="reviews-item__text-more">Читать весь отзыв</div>
+
               </div><!-- /reviews-text-slide -->
               <div thumbsslider class="swiper-slide reviews-text-slide">
                 <div class="reviews-text-slide__head">
@@ -1451,15 +1451,16 @@
                 <div class="content-text-wraper">
                   <div class="content-text content-text--hide">
                     <p>
-                      Благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                      Благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно
+                      выполненную
                       работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
                       прекрасного
                       на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
                     </p>
                   </div>
                   <button class="text-more reviews-item__text-more" type="button">Читать весь отзыв</button>
-                </div>     
-                <div class="reviews-item__text-more">Читать весь отзыв</div>
+                </div>
+
               </div><!-- /reviews-text-slide -->
 
             </div>
@@ -1471,16 +1472,17 @@
               <div class="swiper-slide video-slide reviews-video-slide">
                 <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
                 <img src="img/admin/reviews/video-1.png" alt="preview" class="video-slide__img-preload">
-                <button class="video-slide__btn">
+                <button class="video-slide__btn" data-toggle="modal" data-target="#modal-video" data-video="img/admin/reviews/1.mp4" data-poster="img/admin/reviews/form-bg.png">
                   <svg class="btn-arrow">
                     <use xlink:href="img/icons/icons.svg#play"></use>
                   </svg>
                 </button>
               </div><!-- /reviews-video-slide -->
+
               <div class="swiper-slide video-slide reviews-video-slide">
                 <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
                 <img src="img/admin/reviews/video-2.png" alt="preview" class="video-slide__img-preload">
-                <button class="video-slide__btn">
+                <button class="video-slide__btn" data-toggle="modal" data-target="#modal-video" data-video="img/admin/reviews/1.mp4" data-poster="img/admin/reviews/form-bg.png">
                   <svg class="btn-arrow">
                     <use xlink:href="img/icons/icons.svg#play"></use>
                   </svg>
@@ -1489,7 +1491,7 @@
               <div class="swiper-slide video-slide reviews-video-slide">
                 <img src="img/reviews/border-slide-1.png" alt="border" class="video-slide__border">
                 <img src="img/admin/reviews/video-3.png" alt="preview" class="video-slide__img-preload">
-                <button class="video-slide__btn">
+                <button class="video-slide__btn" data-toggle="modal" data-target="#modal-video" data-video="img/admin/reviews/1.mp4" data-poster="img/admin/reviews/form-bg.png">
                   <svg class="btn-arrow">
                     <use xlink:href="img/icons/icons.svg#play"></use>
                   </svg>
@@ -1585,14 +1587,15 @@
                       ничего
                       не чувствовал, а так этого боялся, и вот на третий день уезжаю домой счастливым и радостный!
                       Огромная
-                      благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                      благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно
+                      выполненную
                       работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
                       прекрасного
                       на свете, они молодцы, делают красивые улыбки всем обратившимся! Огромное спасибо!
                     </p>
                   </div>
                   <button class="text-more reviews-item__text-more" type="button">Читать весь отзыв</button>
-                </div>     
+                </div>
               </div><!-- /reviews-text-slide -->
               <div class="swiper-slide reviews-text-slide">
                 <div class="reviews-text-slide__head">
@@ -1631,14 +1634,15 @@
                   <div class="content-text content-text--hide">
                     <p>
                       Огромная
-                      благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно выполненную
+                      благодарность всему коллективу, за прекрасное отношение к своим клиентам, и за прекрасно
+                      выполненную
                       работу, которая была выполнена на всё 100 %, желаю всем им крепкого здоровья и всего самого
                       прекрасного
                     </p>
                   </div>
                   <button class="text-more reviews-item__text-more" type="button">Читать весь отзыв</button>
                 </div>
-       
+
               </div><!-- /reviews-text-slide -->
               <div class="swiper-slide reviews-text-slide">
                 <div class="reviews-text-slide__head">
@@ -1685,7 +1689,7 @@
                   </div>
                   <button class="text-more reviews-item__text-more" type="button">Читать весь отзыв</button>
                 </div>
-    
+
               </div><!-- /reviews-text-slide -->
 
             </div>
@@ -1957,6 +1961,36 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
 
+    </div>
+  </div>
+</div>
+
+<!-- video -->
+<div class="modal fade modal-video" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel_1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <video controls poster="#">
+        <source src="#" type="video/mp4">
+      </video>
+      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+        <img src="img/icons/close-icon.svg" alt="close">
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- video_1 -->
+<div class="modal fade modal-video" id="modal-video-about" tabindex="-1" aria-labelledby="exampleModalLabel_2"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <video controls poster="img/admin/reviews/form-bg.png">
+        <source src="img/admin/reviews/1.mp4" type="video/mp4">
+      </video>
+      <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+        <img src="img/icons/close-icon.svg" alt="close">
+      </button>
     </div>
   </div>
 </div>
