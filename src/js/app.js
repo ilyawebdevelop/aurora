@@ -706,10 +706,12 @@ let menuModal = document.querySelector('.menu-modal');
 
 btnSmMenu.addEventListener('click', () => {
     menuModal.classList.add('active');
+    menuModalContent.classList.add('active');
     bodyEl.classList.add('hidden');
 });
 
 btnMenuClose.addEventListener('click', () => {
+    menuServices.classList.remove('active');
     menuModal.classList.remove('active');
     bodyEl.classList.remove('hidden');
 });
@@ -747,6 +749,13 @@ menuItemHasChild.forEach(el => {
     buttonBackSubcat.addEventListener('click', () => {
         submenu.classList.remove('active');
     });
+});
+
+let mobileNavServ = document.querySelector('.mobile-nav__item-services');
+mobileNavServ.addEventListener('click', () => {
+    menuModal.classList.add('active');
+    bodyEl.classList.add('hidden');
+    menuServicesBtn.click();
 });
 
 // let arrowMenuAll = document.querySelectorAll('.menu-item__button');

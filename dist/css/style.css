@@ -12590,6 +12590,7 @@ h3 {
 
 .menu-services {
   display: none;
+  padding-top: 55px;
 }
 .menu-services.active {
   display: block;
