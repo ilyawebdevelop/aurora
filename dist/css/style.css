@@ -14780,9 +14780,15 @@ h3 {
   position: relative;
   margin-bottom: 70px;
 }
+@media (max-width: 1600px) {
+  .stat .section-title {
+    max-width: calc(100% - 350px);
+  }
+}
 @media (max-width: 991px) {
   .stat .section-title {
     margin-bottom: 30px;
+    max-width: 100%;
   }
 }
 .stat .section-title .stat__video-btn {
@@ -14919,6 +14925,11 @@ h3 {
   position: absolute;
   right: -140px;
   top: 0;
+}
+@media (max-width: 1600px) {
+  .stat .intro-main__video-btn {
+    right: -143px;
+  }
 }
 
 .about-slider-sect {
@@ -15215,6 +15226,8 @@ h3 {
 }
 .reviews-star--white .reviews-star__item-inner {
   background: #231F20;
+  position: relative;
+  z-index: 1;
 }
 .reviews-star--white .reviews-star__item:after {
   content: "";
@@ -20060,6 +20073,97 @@ h3 {
     max-width: calc(100% - 100px);
     margin-left: auto;
   }
+}
+
+.rating-area {
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.rating-area:not(:checked) > input {
+  display: none;
+}
+
+.rating-area:not(:checked) > label {
+  float: right;
+  width: 26px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 32px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.24);
+}
+
+.rating-area:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating-area > input:checked ~ label {
+  color: #fff;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+  color: #fff;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+  color: #fff;
+}
+
+.rate-area > label:active {
+  position: relative;
+}
+
+.reviews-form__rating .rating-area:not(:checked) > label {
+  width: fit-content;
+  font-size: 60px;
+  line-height: 60px;
+  color: #CCC;
+}
+.reviews-form__rating .rating-area > input:checked ~ label {
+  color: #9F694F;
+}
+.reviews-form__rating .rating-area:not(:checked) > label:hover,
+.reviews-form__rating .rating-area:not(:checked) > label:hover ~ label {
+  color: #9F694F;
+}
+.reviews-form__rating .rating-area > input:checked + label:hover,
+.reviews-form__rating .rating-area > input:checked + label:hover ~ label,
+.reviews-form__rating .rating-area > input:checked ~ label:hover,
+.reviews-form__rating .rating-area > input:checked ~ label:hover ~ label,
+.reviews-form__rating .rating-area > label:hover ~ input:checked ~ label {
+  color: #9F694F;
+}
+
+.reviews-rating--sm .rating-area:not(:checked) > label {
+  width: fit-content;
+  font-size: 20px;
+  line-height: 20px;
+  color: #CCC;
+}
+.reviews-rating--sm .rating-area > input:checked ~ label {
+  color: #9F694F;
+}
+.reviews-rating--sm .rating-area:not(:checked) > label:hover,
+.reviews-rating--sm .rating-area:not(:checked) > label:hover ~ label {
+  color: #9F694F;
+}
+.reviews-rating--sm .rating-area > input:checked + label:hover,
+.reviews-rating--sm .rating-area > input:checked + label:hover ~ label,
+.reviews-rating--sm .rating-area > input:checked ~ label:hover,
+.reviews-rating--sm .rating-area > input:checked ~ label:hover ~ label,
+.reviews-rating--sm .rating-area > label:hover ~ input:checked ~ label {
+  color: #9F694F;
+}
+
+.content-head__reviews-right {
+  position: relative;
+  z-index: 1;
 }
 
 .footer {

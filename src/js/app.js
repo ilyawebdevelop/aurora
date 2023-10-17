@@ -774,10 +774,6 @@ videoBtnAll.forEach(el => {
         modalVideoPoster.load();
     });
 });
-$('#modal-video').on('hide.bs.modal', function (e) {
-    // modalVideoPoster.pause();
-});
-
 
 $('.modal-video').on('hide.bs.modal', function (e) {
     $(this).find('video').trigger('pause');  

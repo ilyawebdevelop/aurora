@@ -21,9 +21,13 @@
         margin-right: auto;
         position: relative;
         margin-bottom: 70px;
+        @media(max-width: 1600px){
+            max-width: calc(100% - 350px);
+        }
 
         @media(max-width: 991px) {
             margin-bottom: 30px;
+            max-width: 100%;
 
         }
 
@@ -160,5 +164,8 @@
         position: absolute;
         right: -140px;
         top: 0;        
+        @media(max-width: 1600px){
+            right: -143px;
+        }
     }
 }
