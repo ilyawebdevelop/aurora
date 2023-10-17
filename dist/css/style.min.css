@@ -11465,17 +11465,23 @@ h3 {
 }
 
 .content-text--hide {
-  overflow: hidden;
-  -webkit-line-clamp: 10;
-  display: -webkit-box;
-  /* Включаем флексбоксы */
-  -webkit-box-orient: vertical;
   /* Вертикальная ориентация */
 }
-.content-text--hide.active {
-  overflow: unset;
-  -webkit-line-clamp: unset;
-  display: block;
+@media (max-width: 575px) {
+  .content-text--hide {
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+  }
+}
+@media (max-width: 575px) {
+  .content-text--hide.active {
+    overflow: unset;
+    -webkit-line-clamp: unset;
+    display: block;
+  }
 }
 
 .content-text-wraper {
