@@ -8,21 +8,24 @@
     margin: auto;
     color: #fff;
     z-index: 2;
+
     &--linear {
-        @media(max-width: 767px){
+        @media(max-width: 767px) {
             height: 65px;
             background-color: #332E30;
         }
+
         .container {
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 position: absolute;
                 z-index: 1;
-               
+
             }
         }
+
         &::after {
-            @media(max-width: 767px){
-                background: linear-gradient(179deg, #332E30 1.72%, #332E30 40.72%, rgba(51, 46, 48, 0.70) 65.28%, rgba(51, 46, 48, .2) 80%, rgba(51, 46, 48, 0) 100%);
+            @media(max-width: 767px) {
+                background: linear-gradient(179deg, #332E30 1.72%, #332E30 40.72%, rgba(51, 46, 48, 0.70) 60.28%, rgba(51, 46, 48, .2) 80%, rgba(51, 46, 48, 0) 100%);
                 content: '';
                 position: absolute;
                 width: 100%;
@@ -30,11 +33,11 @@
                 top: 0;
                 left: 0;
                 z-index: 0;
-            }      
+            }
         }
     }
-   
-   
+
+
 
 
 
@@ -360,6 +363,7 @@
     z-index: 5;
     background-color: #231F20;
     padding-bottom: 100px;
+
     .header__wrapper {
         position: fixed;
         width: calc(100% - 24px);
@@ -486,12 +490,15 @@
     padding-left: 50px;
     background: url('@img/icons/arrow-left.svg') no-repeat left center / 36px;
 }
+
 .menu-services__content {
     padding-top: 20px;
 }
+
 .menu-services__item {
     margin-bottom: 16px;
 }
+
 .menu-services__list {
     .sub-menu {
         position: fixed;
@@ -505,21 +512,25 @@
         visibility: hidden;
         opacity: 0;
         overflow-y: scroll;
+
         &.active {
             display: block;
             visibility: visible;
             opacity: 1;
         }
+
         li {
             margin-bottom: 16px;
         }
     }
 }
-.menu-back--service{
+
+.menu-back--service {
     position: absolute;
     top: 32px;
 }
-.menu-socials__item{
+
+.menu-socials__item {
     background-color: #2C2829;
     width: 60px;
     height: 60px;
@@ -532,8 +543,8 @@
     img {
         width: 32px;
     }
-    position: relative;
-    &::after {
 
-    }
+    position: relative;
+
+    &::after {}
 }

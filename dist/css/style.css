@@ -12258,7 +12258,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .header--linear::after {
-    background: linear-gradient(179deg, #332E30 1.72%, #332E30 40.72%, rgba(51, 46, 48, 0.7) 65.28%, rgba(51, 46, 48, 0.2) 80%, rgba(51, 46, 48, 0) 100%);
+    background: linear-gradient(179deg, #332E30 1.72%, #332E30 40.72%, rgba(51, 46, 48, 0.7) 60.28%, rgba(51, 46, 48, 0.2) 80%, rgba(51, 46, 48, 0) 100%);
     content: "";
     position: absolute;
     width: 100%;
