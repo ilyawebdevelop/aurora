@@ -557,6 +557,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
     @media(max-width: 767px){
         padding-bottom: 50px;
         background-position: right -348px center;
@@ -622,11 +623,39 @@
         top: -200px;
         width: 200%;
         height: calc(100% + 500px);
-        background: url('@img/intro/linear-intro.svg') no-repeat center center/cover;
+        
     }
     @media(max-width: 991px){
         position: relative;
         margin-top: -50px;
        
+    }
+}
+.linear-sm-wrapper {
+    position: relative;
+
+    &::before {
+        @media(max-width: 767px){
+            content: '';
+            position: absolute;
+            height: calc(100% - 70px);
+            width: 200vw;
+            left: -200px;
+            background-color: #332E30;
+            z-index: -1;
+            top: 136px;
+        }   
+    }
+    &::after {
+        @media(max-width: 767px){
+            z-index: -1;
+            top: 0;
+            height: 100%;
+            content: '';
+            position: absolute;
+            width: 200vw;
+            left: -200px;
+            background: linear-gradient(180deg, rgba(51, 46, 48, 0) 0%, rgba(51, 46, 48, 0.93) 10.52%, #332E30 20.16%);
+        }
     }
 }

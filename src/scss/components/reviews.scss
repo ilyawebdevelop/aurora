@@ -421,6 +421,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        @media(max-width: 767px){
+            width: 70px;
+            height: 70px;
+        }
 
         &::before {
             content: '';
@@ -451,6 +455,9 @@
             fill: $brown-color;
             position: relative;
             left: 3px;
+            @media(max-width: 767px){
+                width: 13px;
+            }
         }
     }
 }

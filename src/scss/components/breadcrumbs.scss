@@ -1,6 +1,8 @@
 .breadcrumbs {
-    margin-bottom: 23px;
+  margin-bottom: 23px;
   display: flex;
+  z-index: 2;
+  position: relative;
   a {
     font-size: 16px;
     color: #fff;
