@@ -213,6 +213,7 @@
     @media(max-width: 1199px) {
         overflow: hidden;
     }
+
     .tabs-wrapper {
         width: 100%;
     }
@@ -249,10 +250,11 @@
             bottom: -66px;
             z-index: 0;
 
-            @media(max-width: 767px){
+            @media(max-width: 767px) {
                 font-size: 55px;
                 bottom: -59px;
             }
+
             span {
                 color: rgba(158, 166, 179, 0.76);
                 font-family: $font-family-lighthouse;
@@ -363,18 +365,44 @@
 
     &__img-preload {
         position: absolute;
-        left: 24px;
+        left: 2px;
         right: 0;
         margin: auto;
         top: 50%;
         transform: translateY(-239px);
         height: calc(100% - 46px);
+        border-radius: 33px;
+        width: calc(100% - 95px);
+        object-fit: cover;
+
+        @media(max-width: 1199px) {
+            width: calc(100% - 212px);
+        }
+
+        @media(max-width: 991px) {
+            width: calc(100% - 446px);
+        }
+
+        @media(max-width: 767px) {
+            width: calc(100% - 266px);
+        }
+
+        @media(max-width: 575px) {
+            width: 50vw;
+            height: 91vw;
+            transform: translateY(-48vw);
+            border-radius: 6vw;
+        }
     }
 
     &__border {
         height: 500px;
         margin-left: auto;
         margin-right: auto;
+
+        @media(max-width: 575px) {
+            height: 100vw;
+        }
     }
 
     &__btn {
@@ -529,9 +557,9 @@
 
         /* Вертикальная ориентация */
         &.active {
-            overflow: unset!important;
-            -webkit-line-clamp: unset!important;
-            display: block!important;
+            overflow: unset !important;
+            -webkit-line-clamp: unset !important;
+            display: block !important;
         }
 
         &-more {
@@ -848,7 +876,8 @@
             @media(max-width: 991px) {
                 bottom: -40px;
             }
-            @media(max-width: 575px){
+
+            @media(max-width: 575px) {
                 right: 5px;
             }
         }
@@ -864,7 +893,25 @@
             }
 
             @media(max-width: 400px) {
-                padding-right: 40px;
+                padding-right: 100px;
+            }
+        }
+        .baner-top-border {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            margin: auto;
+           width: 150px;
+            @media(max-width: 1500px){
+                width: 10vw;
+            }
+            @media(max-width: 767px){
+                top: 1vw;
+                width: 20vw;
+            }
+            @media(max-width: 575px){
+                width: 30vw;
             }
         }
 
@@ -879,11 +926,11 @@
         }
 
         .video-slide__img-preload {
-            left: 4px;
-            top: 11px;
-            transform: none;
-            height: calc(100% - 47px);
-            transition: height .2s linear;
+            // left: 4px;
+            // top: 11px;
+            // transform: none;
+            // height: calc(100% - 47px);
+            // transition: height .2s linear;
         }
 
         .reviews-video-slide {
@@ -1021,6 +1068,7 @@
             display: -webkit-box;
             /* Включаем флексбоксы */
             -webkit-box-orient: vertical;
+
             &.active {
                 overflow: unset;
                 -webkit-line-clamp: unset;
@@ -1093,6 +1141,6 @@
 
 .reviews-page__head {
     @media(max-width: 1199px) {
-        padding-bottom: 0;       
+        padding-bottom: 0;
     }
 }
