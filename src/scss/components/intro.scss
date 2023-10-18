@@ -307,8 +307,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    z-index: 1;
-    padding-top: 0;
+    @media(max-width: 767px){
+        overflow: hidden;
+    }
+   
     .intro-main__rate {
         @media(max-width: 1199px){
             display: none!important;
@@ -317,13 +319,14 @@
     .page-title {
         max-width: 680px;
         @media(max-width: 991px){
-            margin-bottom: 8px;
+            margin-bottom: 16px;
+            margin-top: 290px;
         }
     }
 
     .container {
         position: relative;
-        z-index: 1;
+      
     }
 
     &::before {

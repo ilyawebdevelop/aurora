@@ -13033,8 +13033,11 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  z-index: 1;
-  padding-top: 0;
+}
+@media (max-width: 767px) {
+  .intro-service {
+    overflow: hidden;
+  }
 }
 @media (max-width: 1199px) {
   .intro-service .intro-main__rate {
@@ -13046,12 +13049,12 @@ h3 {
 }
 @media (max-width: 991px) {
   .intro-service .page-title {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    margin-top: 290px;
   }
 }
 .intro-service .container {
   position: relative;
-  z-index: 1;
 }
 .intro-service::before {
   content: "";
