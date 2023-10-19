@@ -17678,6 +17678,12 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
 }
+@media (max-width: 1199px) {
+  .stocks__list {
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
 .stocks__item {
   grid-column: 6 span;
   position: relative;
@@ -17686,16 +17692,31 @@ h3 {
   min-height: 320px;
   background-size: cover;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .stocks__item {
     grid-column: 12 span;
   }
+}
+@media (max-width: 767px) {
+  .stocks__item {
+    padding-bottom: 0;
+  }
+}
+.stocks__item--cover .stocks__item-img {
+  object-fit: cover;
+  height: 100%;
+  position: absolute;
 }
 .stocks__item.shadow {
   box-shadow: 0px 21px 16px 0px rgba(208, 181, 169, 0.46);
 }
 .stocks__item--left {
   padding-left: 40px;
+}
+@media (max-width: 767px) {
+  .stocks__item--left {
+    padding-left: 20px;
+  }
 }
 .stocks__item--left .stocks__item-content {
   max-width: 286px;
@@ -17715,12 +17736,23 @@ h3 {
   max-width: 368px;
   margin-left: auto;
 }
+@media (max-width: 767px) {
+  .stocks__item--right .stocks__item-content {
+    padding-left: 20px;
+  }
+}
 .stocks__item--right .stocks__item-descr {
   color: #EAD4CB;
   font-size: 34px;
   line-height: 40px;
   font-weight: 500;
   max-width: 280px;
+}
+@media (max-width: 767px) {
+  .stocks__item--right .stocks__item-descr {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .stocks__item-link {
   position: absolute;
@@ -17760,10 +17792,21 @@ h3 {
   top: 55px;
   color: #EAD4CB;
 }
+@media (max-width: 991px) {
+  .stocks__item-title-text {
+    position: unset;
+  }
+}
 .stocks__item-title-text span:nth-child(1) {
   font-size: 30px;
   line-height: 40px;
   font-weight: 500;
+}
+@media (max-width: 767px) {
+  .stocks__item-title-text span:nth-child(1) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .stocks__item-title-text span:nth-child(2) {
   font-size: 18px;
@@ -17771,6 +17814,12 @@ h3 {
   font-weight: 500;
   position: relative;
   left: 2px;
+}
+@media (max-width: 767px) {
+  .stocks__item-title-text span:nth-child(2) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .stocks__item-title strong {
   font-weight: 600;
@@ -17788,6 +17837,11 @@ h3 {
   position: relative;
   z-index: 1;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .stocks__item-content {
+    height: unset;
+  }
 }
 .stocks__item-content--between {
   display: flex;
@@ -17819,6 +17873,13 @@ h3 {
   position: absolute;
   top: 0;
   object-fit: contain;
+}
+@media (max-width: 767px) {
+  .stocks__item-img {
+    width: unset;
+    height: unset;
+    position: unset;
+  }
 }
 .stocks__item .btn-arrow {
   width: 14px;
