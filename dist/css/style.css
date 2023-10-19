@@ -13098,7 +13098,7 @@ h3 {
 @media (max-width: 991px) {
   .intro-doctor .linear-sm-wrapper::after {
     z-index: -1;
-    top: 0;
+    top: -34px;
     height: 100%;
     content: "";
     position: absolute;
@@ -13254,16 +13254,16 @@ h3 {
 }
 
 .intro-about {
-  z-index: 1;
-  padding-top: 0;
   position: relative;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  padding-top: 240px;
 }
 @media (max-width: 767px) {
   .intro-about {
+    padding-top: 90px !important;
     background-position: top 65px right -67px;
     background-size: 700px;
     background-color: #393638;
@@ -13293,17 +13293,6 @@ h3 {
 @media (max-width: 767px) {
   .intro-about .intro-footer {
     margin-top: 24px;
-  }
-}
-@media (max-width: 991px) {
-  .intro-about::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: url("../img/intro/linear-intro.svg") no-repeat center center/cover;
   }
 }
 .intro-about::after {
