@@ -35,6 +35,9 @@
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   row-gap: 24px;
+  @media(max-width: 767px){
+    row-gap: 14px;
+  }
 }
 
 .adv-item {

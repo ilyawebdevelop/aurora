@@ -309,6 +309,8 @@
     background-position: right;
     @media(max-width: 767px){
         overflow: hidden;
+        background-size: 1115px;
+        background-position: top 60px right -140px;
     }
    
     .intro-main__rate {
@@ -352,9 +354,36 @@
     padding-bottom: 0;
     background-position: center;
     overflow: hidden;
-    @media(max-width: 991px){
-       
+
+    .linear-sm-wrapper {
+        position: relative;
+
+        &::before {
+            @media(max-width: 991px){
+                content: '';
+                position: absolute;
+                height: calc(100% - 70px);
+                width: 200vw;
+                left: -200px;
+                background-color: #332E30;
+                z-index: -1;
+                top: 136px;
+            }   
+        }
+        &::after {
+            @media(max-width: 991px){
+                z-index: -1;
+                top: 0;
+                height: 100%;
+                content: '';
+                position: absolute;
+                width: 200vw;
+                left: -200px;
+                background: linear-gradient(180deg, rgba(51, 46, 48, 0) 0%, rgba(51, 46, 48, 0.93) 10.52%, #332E30 20.16%);
+            }
+        }
     }
+
 
     .container {
         position: relative;
@@ -387,7 +416,7 @@
         top: 0;
         background: linear-gradient(180deg, rgba(35, 31, 32, 0.80) 8.05%, rgba(35, 31, 32, 0.31) 25.04%, rgba(35, 31, 32, 0.31) 67.83%, rgba(35, 31, 32, 0.80) 93.72%);
         @media(max-width: 991px){
-            background: url('@img/intro/linear-intro.svg') no-repeat center center / cover;
+            background: rgba(35, 31, 32, 0.325);
         }
     }
 
@@ -451,8 +480,9 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    @media(max-width: 991px){
-        position: unset;
+    @media(max-width: 991px){      
+        position: relative;
+        bottom: -50px;
     }
 }
 
@@ -630,7 +660,7 @@
     }
     @media(max-width: 991px){
         position: relative;
-        margin-top: -50px;
+        margin-top: -90px;
        
     }
 }

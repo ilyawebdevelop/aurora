@@ -386,6 +386,8 @@
     margin-right: auto;
     max-width: 330px;
     height: 415px;
+    position: relative;
+    z-index: 1;
 
     @media(max-width: 767px) {
         height: 340px;

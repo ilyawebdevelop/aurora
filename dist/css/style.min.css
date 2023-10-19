@@ -11770,7 +11770,7 @@ h3 {
   backdrop-filter: blur(5px);
   height: 88px;
   padding-left: 18px;
-  padding-right: 21px;
+  padding-right: 18px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -13037,6 +13037,8 @@ h3 {
 @media (max-width: 767px) {
   .intro-service {
     overflow: hidden;
+    background-size: 1115px;
+    background-position: top 60px right -140px;
   }
 }
 @media (max-width: 1199px) {
@@ -13078,6 +13080,33 @@ h3 {
   background-position: center;
   overflow: hidden;
 }
+.intro-doctor .linear-sm-wrapper {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .intro-doctor .linear-sm-wrapper::before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 70px);
+    width: 200vw;
+    left: -200px;
+    background-color: #332E30;
+    z-index: -1;
+    top: 136px;
+  }
+}
+@media (max-width: 991px) {
+  .intro-doctor .linear-sm-wrapper::after {
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    content: "";
+    position: absolute;
+    width: 200vw;
+    left: -200px;
+    background: linear-gradient(180deg, rgba(51, 46, 48, 0) 0%, rgba(51, 46, 48, 0.93) 10.52%, #332E30 20.16%);
+  }
+}
 .intro-doctor .container {
   position: relative;
   z-index: 1;
@@ -13113,7 +13142,7 @@ h3 {
 }
 @media (max-width: 991px) {
   .intro-doctor::before {
-    background: url("../img/intro/linear-intro.svg") no-repeat center center/cover;
+    background: rgba(35, 31, 32, 0.325);
   }
 }
 .intro-doctor::after {
@@ -13183,7 +13212,8 @@ h3 {
 }
 @media (max-width: 991px) {
   .intro-doctor__image {
-    position: unset;
+    position: relative;
+    bottom: -50px;
   }
 }
 
@@ -13361,7 +13391,7 @@ h3 {
 @media (max-width: 991px) {
   .intro-doctor__image-wrapper {
     position: relative;
-    margin-top: -50px;
+    margin-top: -90px;
   }
 }
 
@@ -18587,6 +18617,8 @@ h3 {
   margin-right: auto;
   max-width: 330px;
   height: 415px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .team-page__item-img {
@@ -18765,7 +18797,7 @@ h3 {
 }
 @media (max-width: 767px) {
   .intro-services::before {
-    background: none;
+    background: rgba(35, 31, 32, 0.325);
   }
 }
 .intro-services .intro-footer {
@@ -19536,6 +19568,11 @@ h3 {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   row-gap: 24px;
+}
+@media (max-width: 767px) {
+  .adv-cards__list {
+    row-gap: 14px;
+  }
 }
 
 .adv-item {
