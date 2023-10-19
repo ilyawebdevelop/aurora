@@ -11506,6 +11506,8 @@ h3 {
   .pagination.swiper-pagination-bullets {
     display: flex;
     margin-top: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
   }
 }
 
@@ -15501,6 +15503,53 @@ h3 {
     overflow: hidden;
   }
 }
+.reviews-page .video-slide__img-preload {
+  left: 24px;
+  width: calc(100% - 129px);
+}
+@media (max-width: 1500px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 6vw);
+  }
+}
+@media (max-width: 1199px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 7vw);
+  }
+}
+@media (max-width: 991px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 11vw);
+  }
+}
+@media (max-width: 767px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 160px);
+  }
+}
+@media (max-width: 575px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 27vw);
+    left: 4vw;
+  }
+}
+@media (max-width: 500px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 25vw);
+    left: 4vw;
+  }
+}
+@media (max-width: 460px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 23vw);
+    left: 5vw;
+  }
+}
+@media (max-width: 430px) {
+  .reviews-page .video-slide__img-preload {
+    width: calc(100% - 18vw);
+  }
+}
 .reviews-page .tabs-wrapper {
   width: 100%;
 }
@@ -15509,6 +15558,11 @@ h3 {
     margin-right: unset;
     margin-left: unset;
     margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews-page .video-slider {
+    padding-right: 100px;
   }
 }
 .reviews-page .video-slide {
@@ -16143,30 +16197,6 @@ h3 {
     padding-right: 100px;
   }
 }
-.reviews-top .baner-top-border {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 150px;
-}
-@media (max-width: 1500px) {
-  .reviews-top .baner-top-border {
-    width: 10vw;
-  }
-}
-@media (max-width: 767px) {
-  .reviews-top .baner-top-border {
-    top: 1vw;
-    width: 20vw;
-  }
-}
-@media (max-width: 575px) {
-  .reviews-top .baner-top-border {
-    width: 30vw;
-  }
-}
 .reviews-top .reviews-text-slider {
   padding-top: 30px;
   z-index: 2;
@@ -16365,6 +16395,31 @@ h3 {
 @media (max-width: 1199px) {
   .reviews-page__head {
     padding-bottom: 0;
+  }
+}
+
+.baner-top-border {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 150px;
+}
+@media (max-width: 1500px) {
+  .baner-top-border {
+    width: 10vw;
+  }
+}
+@media (max-width: 767px) {
+  .baner-top-border {
+    top: 1vw;
+    width: 20vw;
+  }
+}
+@media (max-width: 575px) {
+  .baner-top-border {
+    width: 30vw;
   }
 }
 
@@ -16818,6 +16873,11 @@ h3 {
     line-height: 32px;
   }
 }
+@media (max-width: 767px) {
+  .baner-slide__title {
+    font-size: 24px;
+  }
+}
 .baner-slide__round {
   height: auto;
   width: 100%;
@@ -17044,6 +17104,7 @@ h3 {
   display: flex;
   z-index: 2;
   position: relative;
+  flex-wrap: wrap;
 }
 .breadcrumbs a {
   font-size: 16px;
@@ -17602,6 +17663,16 @@ h3 {
 .stocks__title {
   font-size: 47px;
 }
+@media (max-width: 1199px) {
+  .stocks__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  .stocks__title {
+    font-size: 25px;
+  }
+}
 .stocks__list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -17614,6 +17685,11 @@ h3 {
   padding-bottom: 30px;
   min-height: 320px;
   background-size: cover;
+}
+@media (max-width: 991px) {
+  .stocks__item {
+    grid-column: 12 span;
+  }
 }
 .stocks__item.shadow {
   box-shadow: 0px 21px 16px 0px rgba(208, 181, 169, 0.46);
@@ -17776,6 +17852,11 @@ h3 {
   position: absolute;
   left: 0;
   top: 0;
+}
+@media (max-width: 767px) {
+  .stocks .flower {
+    display: none;
+  }
 }
 .stocks .flower-svg {
   position: absolute;

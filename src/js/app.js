@@ -226,6 +226,10 @@ document.querySelectorAll('.reviews-page .slider-wrapper').forEach(n => {
             },
             576: {
                 spaceBetween: 0,
+                slidesPerView: 1,
+            },
+            768: {
+                spaceBetween: 0,
                 slidesPerView: 2,
             },
             992: {
