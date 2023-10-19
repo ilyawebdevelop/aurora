@@ -13218,22 +13218,40 @@ h3 {
 }
 
 .intro-contacts {
-  padding-top: 0;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding-bottom: 120px;
   background-position: center;
   z-index: 1;
 }
 @media (max-width: 767px) {
   .intro-contacts {
+    z-index: unset;
+  }
+}
+.intro-contacts .page-title {
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .intro-contacts .page-title {
+    margin-bottom: 20px;
+    margin-top: 200px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-contacts {
     padding-bottom: 50px;
+    overflow: hidden;
   }
 }
 .intro-contacts .container {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .intro-contacts .container {
+    z-index: unset;
+  }
 }
 .intro-contacts::after {
   content: "";
@@ -13244,15 +13262,6 @@ h3 {
   top: 0;
   background: radial-gradient(84.51% 36.11% at 78.54% 82.32%, rgba(35, 31, 32, 0.17) 0%, rgba(35, 31, 32, 0.1) 0.01%, rgba(35, 31, 32, 0.7) 100%);
 }
-.intro-contacts .intro-footer {
-  margin-top: 55px;
-}
-@media (max-width: 575px) {
-  .intro-contacts .intro-footer {
-    margin-top: 200px;
-  }
-}
-
 .intro-about {
   position: relative;
   overflow: hidden;
@@ -20308,6 +20317,11 @@ h3 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+@media (max-width: 1199px) {
+  .care-grid {
+    align-items: flex-end;
+  }
+}
 .care-grid-left {
   grid-column: 6 span;
   padding-bottom: 50px;
@@ -20333,6 +20347,30 @@ h3 {
     max-width: calc(100% - 100px);
     margin-left: auto;
   }
+}
+
+.care__btn-video {
+  right: unset;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  width: 146px;
+  height: 146px;
+  min-width: 146px;
+}
+@media (max-width: 991px) {
+  .care__btn-video {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.care__btn-video .video-text-btn__arrow {
+  background-color: #9F694F;
+}
+.care__btn-video .video-text-btn__arrow svg {
+  fill: #fff;
 }
 
 .rating-area {

@@ -487,20 +487,34 @@
 }
 
 .intro-contacts {
-    padding-top: 0;
+    // padding-top: 0;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    padding-bottom: 120px;
+    // padding-bottom: 120px;
     background-position: center;
     z-index: 1;
     @media(max-width: 767px){
+        z-index: unset;
+    }
+    .page-title {
+        margin-bottom: 50px;
+        @media(max-width: 767px){
+            margin-bottom: 20px;
+            margin-top: 200px;
+        }
+    }
+    @media(max-width: 767px){
         padding-bottom: 50px;
+        overflow: hidden;
     }
 
     .container {
         position: relative;
         z-index: 1;
+        @media(max-width: 767px){
+            z-index: unset;
+        }
     }
 
     &::after {
@@ -514,9 +528,9 @@
     }
 
     .intro-footer {
-        margin-top: 55px;
+        // margin-top: 55px;
         @media(max-width: 575px){
-            margin-top: 200px;
+            // margin-top: 200px;
         }
     }
 }
