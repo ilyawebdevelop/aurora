@@ -24,7 +24,8 @@
             background-color: #231F20;
             padding-left: 5px;
             padding-right: 5px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 font-size: 16px;
                 line-height: 32px;
             }
@@ -37,14 +38,16 @@
             padding-top: 50px;
             padding-bottom: 22px;
             min-width: 600px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 min-width: unset;
                 padding-top: 25px;
                 padding-bottom: 20px;
                 padding-bottom: 0;
             }
+
             .btn {
-                @media(max-width: 1500px){
+                @media(max-width: 1500px) {
                     margin-left: auto;
                     margin-right: auto;
                 }
@@ -64,24 +67,26 @@
             text-transform: uppercase;
             margin-top: 0px;
             margin-bottom: 2px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 font-size: 29px;
                 line-height: 32px;
             }
-            @media(max-width: 767px){
+
+            @media(max-width: 767px) {
                 font-size: 24px;
             }
         }
 
         &__round {
             height: auto;
-
             width: 100%;
-            height: auto;
             position: relative;
-            @media(max-width: 1500px){
+
+            @media(max-width: 1500px) {
                 width: fit-content;
             }
+
             &::before {
                 content: '';
                 width: calc(100% + 35px);
@@ -89,11 +94,12 @@
                 position: absolute;
                 left: -40px;
                 top: -13px;
-                background: url('@img/baner/baner-round.png') no-repeat center center / contain ;
-                @media(max-width: 1500px){
-                    background: url('@img/baner/baner-round-sm.svg') no-repeat center center / contain ;                   
+                background: url('@img/baner/baner-round.png') no-repeat center center / contain;
+
+                @media(max-width: 1500px) {
+                    background: url('@img/baner/baner-round-sm.svg') no-repeat center center / contain;
                     width: calc(100% + 16px);
-                    height: calc(100% + 8px);                  
+                    height: calc(100% + 8px);
                     left: -5px;
                     top: 5px;
                 }
@@ -102,19 +108,24 @@
             img {
                 top: -18px;
                 height: calc(100% + 34px);
-                position: relative;               
+                position: relative;
+                -o-object-fit: cover;
                 object-fit: cover;
                 -webkit-mask-image: url('@img/baner/border-img.svg');
                 mask-image: url('@img/baner/border-img.svg');
                 -webkit-mask-repeat: no-repeat;
-                -webkit-mask-size: contain;      
+                -webkit-mask-size: contain;
                 -webkit-mask-position: center;
-                @media(max-width: 1500px){
+
+                @media(max-width: 1500px) {
                     -webkit-mask-image: url('@img/baner/border-img-sm.svg');
                     mask-image: url('@img/baner/border-img-sm.svg');
                     top: 13px;
                     -webkit-mask-position: center;
-                }       
+                    height: -webkit-fit-content;
+                    height: -moz-fit-content;
+                    height: fit-content;
+                }
             }
         }
 
@@ -129,7 +140,8 @@
             background-color: #231F20;
             padding-left: 3px;
             padding-right: 3px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 font-size: 14px;
                 line-height: 20px;
                 display: block;
@@ -147,14 +159,16 @@
             column-gap: 50px;
             padding-left: 65px;
             height: 370px;
-            @media(max-width: 1500px){
+
+            @media(max-width: 1500px) {
                 flex-direction: column;
                 height: fit-content;
                 padding-right: 50px;
                 // width: fit-content;
                 align-items: center;
             }
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 padding-left: 20px;
                 padding-right: 20px;
             }
@@ -175,7 +189,8 @@
             border: 0.958px solid #9F694F;
             padding-left: 20px;
             padding-right: 30px;
-            @media(max-width: 991px){
+
+            @media(max-width: 991px) {
                 padding-left: 12px;
                 margin-bottom: 10px;
             }
@@ -186,7 +201,8 @@
         @media(max-width: 1700px) {
             left: -8px;
         }
-        @media(max-width: 767px){
+
+        @media(max-width: 767px) {
             left: -5px;
         }
     }
@@ -195,7 +211,8 @@
         @media(max-width: 1700px) {
             right: -12px;
         }
-        @media(max-width: 767px){
+
+        @media(max-width: 767px) {
             right: -5px;
         }
     }
