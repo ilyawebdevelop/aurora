@@ -79,6 +79,9 @@
                 padding-top: 0;
                 padding-bottom: 40px;
             }
+            @media(max-width: 575px){
+               padding-bottom: 20px; 
+            }
 
             p {
                 margin-top: 27px;

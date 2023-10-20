@@ -13495,6 +13495,11 @@ h3 {
     padding-bottom: 40px;
   }
 }
+@media (max-width: 575px) {
+  .department-slide__content {
+    padding-bottom: 20px;
+  }
+}
 .department-slide__content p {
   margin-top: 27px;
   margin-bottom: 30px;
