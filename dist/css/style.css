@@ -16758,6 +16758,16 @@ h3 {
   }
 }
 
+.map {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .map {
+    height: 300px;
+  }
+}
+
 .gallery {
   overflow: hidden;
 }

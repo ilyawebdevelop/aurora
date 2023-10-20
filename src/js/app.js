@@ -783,6 +783,56 @@ $('.modal-video').on('hide.bs.modal', function (e) {
     $(this).find('video').trigger('pause');  
 });
 
+let mapEl = document.getElementById('map');
+if (mapEl) {
+  ymaps.ready(init);
+  function init() {
+    // Создание карты.
+
+    var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [45.05492,38.970875],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 15
+    });
+    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('drag');
+    myMap.events.add('click', function () {
+      myMap.behaviors.enable('scrollZoom');
+      myMap.behaviors.enable('drag');
+    });
+
+    document.addEventListener('click', function (e) {
+      const target = e.target;
+
+      const its_map = target == mapEl || mapEl.contains(target);
+
+      if (!its_map) {
+        myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('drag');
+      }
+    });
+
+
+
+    myMap.geoObjects
+
+      .add(new ymaps.Placemark([45.05492,38.970875], {
+        balloonContent: '<strong>г.Москва</strong>'
+      }, {
+        iconLayout: 'default#image',
+        iconImageClipRect: [[0, 0], [47, 47]],
+        iconImageHref: '/img/icons/marker.svg',
+        iconImageSize: [41, 41],
+
+      }));
+  }
+}
+
 
 // let arrowMenuAll = document.querySelectorAll('.menu-item__button');
 // arrowMenuAll.forEach(el => {
