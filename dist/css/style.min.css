@@ -20543,6 +20543,7 @@ h3 {
   font-size: 32px;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.24);
+  margin-left: 4px;
 }
 
 .rating-area:not(:checked) > label:before {
