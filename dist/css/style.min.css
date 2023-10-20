@@ -15397,6 +15397,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   row-gap: 14px;
+  -webkit-backdrop-filter: blur(37px);
   backdrop-filter: blur(37px);
   min-height: 166px;
 }
