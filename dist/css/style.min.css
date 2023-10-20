@@ -20916,7 +20916,7 @@ h3 {
     bottom: 3px;
   }
 }
-.mobile-nav__item a {
+.mobile-nav__item-btn {
   display: flex;
   flex-direction: column;
   align-items: center;

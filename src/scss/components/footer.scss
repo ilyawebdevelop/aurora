@@ -315,12 +315,18 @@
     }
 
     &__item {
-
-        a {
+        &-btn {
             display: flex;
             flex-direction: column;
             align-items: center;
             row-gap: 7px;
+        }
+
+        a {
+          
+        }
+        button {
+
         }
 
         &-main {
