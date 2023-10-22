@@ -19854,31 +19854,31 @@ h3 {
   }
 }
 
-.steps {
+.department--flower {
   position: relative;
 }
-.steps .flower {
+.department--flower .flower {
   position: absolute;
   left: -200px;
   top: 0;
 }
 @media (max-width: 1199px) {
-  .steps .flower {
+  .department--flower .flower {
     display: none;
   }
 }
 @media (max-width: 1199px) {
-  .steps .count-number {
+  .department--flower .count-number {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  .steps .nav-arrow {
+  .department--flower .nav-arrow {
     top: 50%;
   }
 }
 @media (max-width: 991px) {
-  .steps .department-slide__content {
+  .department--flower .department-slide__content {
     padding-top: 40px;
     padding-bottom: 0;
   }
