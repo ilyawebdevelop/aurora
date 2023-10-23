@@ -14490,12 +14490,12 @@ h3 {
     line-height: 19px;
   }
 }
-.prices-sidebar ul li a.mPS2id-highlight {
+.prices-sidebar ul li a.mPS2id-highlight-first {
   color: #9F694F;
   padding-left: 16px;
   position: relative;
 }
-.prices-sidebar ul li a.mPS2id-highlight::before {
+.prices-sidebar ul li a.mPS2id-highlight-first::before {
   content: "";
   position: absolute;
   left: 0;
@@ -18341,7 +18341,7 @@ h3 {
   z-index: 2;
 }
 
-.result-service .tabs__content::before {
+.result-button-hidden .tabs__content::before {
   content: "";
   position: absolute;
   width: 100%;

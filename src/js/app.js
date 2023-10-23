@@ -668,7 +668,8 @@ $('body').on('click', '.comparison-slider', function (e) {
 
         /* Page Scroll to id fn call */
         $("#navigation-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-            highlightSelector: "#navigation-menu a"
+            highlightSelector: "#navigation-menu a",
+            scrollSpeed: 50,          
         });
 
         /* demo functions */
@@ -832,22 +833,3 @@ if (mapEl) {
       }));
   }
 }
-
-
-// let arrowMenuAll = document.querySelectorAll('.menu-item__button');
-// arrowMenuAll.forEach(el => {
-//   let elPar = el.closest('li');
-//   let elContent = elPar.querySelector('.sub-menu');
-//   el.addEventListener('click', () => {
-//     elContent.classList.toggle('active');
-//   });
-// });
-
-// let btnCloseSubcat = document.querySelectorAll('.subcat-close');
-// btnCloseSubcat.forEach(el => {
-//   let elPar = el.closest('li');
-//   let elContent = elPar.querySelector('.header__nav-subcat-wrapper ');
-//   el.addEventListener('click', () => {
-//     elContent.classList.toggle('active');
-//   });
-// });
