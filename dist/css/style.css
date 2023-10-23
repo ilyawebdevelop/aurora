@@ -16911,7 +16911,11 @@ h3 {
 }
 @media (max-width: 1500px) {
   .baner-slide__round {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    height: 59vw;
+    width: 100%;
   }
 }
 .baner-slide__round::before {
@@ -16925,11 +16929,12 @@ h3 {
 }
 @media (max-width: 1500px) {
   .baner-slide__round::before {
-    background: url("../img/baner/baner-round-sm.svg") no-repeat center center/contain;
+    background: url("../img/baner/baner-round-sm.svg") no-repeat center bottom/contain;
     width: calc(100% + 16px);
     height: calc(100% + 8px);
     left: -5px;
-    top: 5px;
+    top: unset;
+    bottom: 0;
   }
 }
 .baner-slide__round img {
@@ -16953,6 +16958,7 @@ h3 {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    height: 100%;
   }
 }
 .baner-slide__descr {
@@ -16977,20 +16983,32 @@ h3 {
   }
 }
 .baner-slide__inner {
+  -webkit-box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.16);
   box-shadow: 0px 21px 16px 0px rgba(158, 166, 179, 0.16);
   border: 12px solid #fff;
   background-color: #231F20;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 50px;
+  -moz-column-gap: 50px;
   column-gap: 50px;
   padding-left: 65px;
   height: 370px;
 }
 @media (max-width: 1500px) {
   .baner-slide__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     padding-right: 50px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
