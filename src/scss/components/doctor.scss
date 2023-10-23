@@ -1,7 +1,7 @@
 .doctor {
   overflow: hidden;
 }
-.doctor-slider {
+.gallery-autowidth-slider {
   overflow: visible;
   @media(max-width: 575px){
     padding-left: 20px;
@@ -9,7 +9,7 @@
   }
 }
 
-.doctor-slide {
+.gallery-autowidth-slide {
   &:nth-child(odd) {
     width: 530px;
 
@@ -36,7 +36,7 @@
     }
   }
 }
-.doctor{
+.gallery--doctor{
   padding-top: 0;
   padding-bottom: 0;
   padding-top: 12px;

@@ -510,17 +510,17 @@ var mySwiperSystem = new Swiper(systemSlider, {
 });
 
 // Инициализация слайдера doctor-slider
-const doctorSlider = document.querySelector('.doctor-slider');
+const doctorSlider = document.querySelector('.gallery-autowidth-slider');
 var mySwiperDoctor = new Swiper(doctorSlider, {
     slidesPerView: 'auto',
     spaceBetween: 8,
     speed: 800,
     navigation: {
-        prevEl: document.querySelector('.doctor .nav-arrow--prev'),
-        nextEl: document.querySelector('.doctor .nav-arrow--next'),
+        prevEl: document.querySelector('.gallery-autowidth-slider .nav-arrow--prev'),
+        nextEl: document.querySelector('.gallery-autowidth-slider .nav-arrow--next'),
     },
     pagination: {
-        el: document.querySelector('.doctor .pagination'),
+        el: document.querySelector('.gallery-autowidth-slider .pagination'),
         clickable: true,
         type: 'bullets',
     },

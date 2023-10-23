@@ -12734,6 +12734,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  background-position: center;
 }
 @media (max-width: 991px) {
   .intro-main {
@@ -13270,7 +13271,7 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
-  padding-top: 240px;
+  z-index: 1;
 }
 @media (max-width: 767px) {
   .intro-about {
@@ -19929,53 +19930,53 @@ h3 {
   overflow: hidden;
 }
 
-.doctor-slider {
+.gallery-autowidth-slider {
   overflow: visible;
 }
 @media (max-width: 575px) {
-  .doctor-slider {
+  .gallery-autowidth-slider {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-.doctor-slide:nth-child(odd) {
+.gallery-autowidth-slide:nth-child(odd) {
   width: 530px;
 }
-.doctor-slide:nth-child(odd) img {
+.gallery-autowidth-slide:nth-child(odd) img {
   width: 100%;
   object-fit: cover;
   height: 350px;
 }
 @media (max-width: 575px) {
-  .doctor-slide:nth-child(odd) img {
+  .gallery-autowidth-slide:nth-child(odd) img {
     height: 65vw;
   }
 }
-.doctor-slide:nth-child(even) {
+.gallery-autowidth-slide:nth-child(even) {
   width: 235px;
 }
-.doctor-slide:nth-child(even) img {
+.gallery-autowidth-slide:nth-child(even) img {
   width: 100%;
   height: 350px;
   object-fit: cover;
 }
 @media (max-width: 575px) {
-  .doctor-slide:nth-child(even) img {
+  .gallery-autowidth-slide:nth-child(even) img {
     height: 65vw;
   }
 }
 
-.doctor {
+.gallery--doctor {
   padding-top: 0;
   padding-bottom: 0;
   padding-top: 12px;
 }
-.doctor .pagination {
+.gallery--doctor .pagination {
   margin-top: 60px;
 }
 @media (max-width: 991px) {
-  .doctor .pagination {
+  .gallery--doctor .pagination {
     margin-top: 40px;
   }
 }

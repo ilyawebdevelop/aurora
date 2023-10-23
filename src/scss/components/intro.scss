@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-position: center;
 
     @media(max-width: 991px) {
         background-position: center;
@@ -541,7 +542,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
-    padding-top: 240px;
+    z-index: 1;
     @media(max-width: 767px){
         padding-top: 90px!important;
         background-position: top 65px right -67px;
