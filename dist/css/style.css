@@ -13608,11 +13608,13 @@ h3 {
   background-position: center;
   position: relative;
   overflow: hidden;
+  padding-top: 150px;
 }
 @media (max-width: 767px) {
   .intro-prices {
     padding-bottom: 50px;
     background-position: right -348px center;
+    padding-top: 84px;
   }
 }
 @media (max-width: 991px) {
