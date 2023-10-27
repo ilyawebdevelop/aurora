@@ -483,6 +483,13 @@
         font-weight: 500;
         line-height: 16px;
         position: relative;
+        a {
+            display: inline-block;
+            transition: color .2s linear;
+            &:hover {
+                color: #9F694F;
+            }
+        }
 
         &::after {
             content: '|';

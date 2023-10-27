@@ -11155,6 +11155,10 @@ h3 {
   }
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 .form-input {
   background-color: #fff;
   border-radius: 60px;
@@ -11164,6 +11168,7 @@ h3 {
   color: #57565C;
   font-size: 24px;
   padding-left: 50px;
+  padding-right: 50px;
 }
 @media (max-width: 991px) {
   .form-input {
@@ -11172,6 +11177,20 @@ h3 {
     font-size: 20px;
   }
 }
+.form-input.error {
+  border-color: #EC2327;
+  background: url("../img/icons/error-icon.svg");
+}
+.form-input.error::placeholder {
+  color: #EC2327;
+}
+.form-input.success {
+  background: url("../img/icons/success-icon.svg") no-repeat right 21px center/32px;
+  border-color: #9F694F;
+}
+.form-input.success::placeholder {
+  color: #9F694F;
+}
 .form-textarea {
   border: 1px solid #9EA6B3;
   border-radius: 40px;
@@ -11179,6 +11198,12 @@ h3 {
   width: 100%;
   padding-left: 50px;
   padding-top: 35px;
+}
+.form-textarea.error {
+  border-color: #EC2327;
+}
+.form-textarea.error::placeholder {
+  color: #EC2327;
 }
 .form-btn__text--sm {
   font-size: 16px;
@@ -11191,6 +11216,15 @@ h3 {
 }
 .form .input-wrapper {
   margin-bottom: 20px;
+}
+
+.error-label {
+  line-height: normal;
+  color: #EC2327;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+  right: 46px;
 }
 
 @keyframes shows {
@@ -11841,15 +11875,38 @@ h3 {
   background: #FFF;
   width: 100%;
   display: flex;
-  column-gap: 10px;
+  column-gap: 25px;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  transition: background-color 0.2s linear;
+}
+.loadmore:hover {
+  background-color: #EADED9;
+}
+.loadmore:hover svg {
+  fill: #9F694F;
+  background-color: #EADED9;
+}
+.loadmore:focus {
+  background-color: #D0B5A9;
+}
+.loadmore:focus svg {
+  background-color: #D0B5A9;
+  fill: #9F694F;
 }
 @media (max-width: 767px) {
   .loadmore {
     height: 70px;
   }
+}
+.loadmore svg {
+  width: 42px;
+  height: 42px;
+  border-radius: 42px;
+  transition: fill 0.2s linear, background-color 0.2s linear;
+  padding: 14px;
+  fill: #D0B5A9;
 }
 .loadmore span {
   color: #9F694F;
@@ -12386,6 +12443,7 @@ h3 {
   }
 }
 .tabs__nav-select {
+  cursor: pointer;
   border-radius: 60px;
   border: 1px solid #D0B5A9;
   background: rgba(255, 255, 255, 0.36);
@@ -14843,6 +14901,13 @@ h3 {
   line-height: 16px;
   position: relative;
 }
+.price-param a {
+  display: inline-block;
+  transition: color 0.2s linear;
+}
+.price-param a:hover {
+  color: #9F694F;
+}
 .price-param::after {
   content: "|";
 }
@@ -16210,6 +16275,12 @@ h3 {
   background: rgba(255, 255, 255, 0.36);
   backdrop-filter: blur(2px);
 }
+.reviews-form .form-input.error {
+  background: url("../img/icons/error-icon.svg") no-repeat right 21px center/32px;
+}
+.reviews-form .form-input.success {
+  background: url("../img/icons/success-icon.svg") no-repeat right 21px center/32px;
+}
 @media (max-width: 1199px) {
   .reviews-form .form-input {
     font-size: 16px;
@@ -16219,6 +16290,9 @@ h3 {
   padding-left: 40px;
   background: rgba(255, 255, 255, 0.36);
   backdrop-filter: blur(2px);
+}
+.reviews-form .form-textarea.error {
+  background: url("../img/icons/error-icon.svg") no-repeat right 21px top 25px/32px;
 }
 .reviews-form__subtitle {
   font-size: 27px;
@@ -20878,6 +20952,15 @@ h3 {
 .content-head__reviews-right {
   position: relative;
   z-index: 1;
+}
+
+.reviews-item__person-rating .rating-area:not(:checked) > label {
+  font-size: 30px;
+  line-height: 30px;
+}
+.reviews-item__person-rating .rating-area:not(:checked) > label {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .footer {

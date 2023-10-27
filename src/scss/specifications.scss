@@ -41,6 +41,7 @@ html {
 body.hidden {
   overflow: hidden
 }
+
 body.modal-open {
   overflow: hidden;
 }
@@ -340,6 +341,10 @@ h5 {
   }
 }
 
+.input-wrapper {
+  position: relative;
+}
+
 .form {
   &-input {
     background-color: #fff;
@@ -349,14 +354,30 @@ h5 {
     width: 100%;
     color: #57565C;
     font-size: 24px;
-    // text-transform: uppercase;
     padding-left: 50px;
+    padding-right: 50px;
 
     @media(max-width: 991px) {
       height: 74px;
       padding-left: 39px;
       font-size: 20px;
+    }
 
+    &.error {
+      border-color: #EC2327;
+      background: url('@img/icons/error-icon.svg');
+
+      &::placeholder {
+        color: #EC2327;
+      }
+    }
+
+    &.success {
+      background: url('@img/icons/success-icon.svg') no-repeat right 21px center / 32px;
+      border-color: #9F694F;
+      &::placeholder {
+        color: #9F694F;
+      }
     }
   }
 
@@ -367,6 +388,14 @@ h5 {
     width: 100%;
     padding-left: 50px;
     padding-top: 35px;
+
+    &.error {
+      border-color: #EC2327;
+
+      &::placeholder {
+        color: #EC2327;
+      }
+    }
   }
 
   &-btn {
@@ -387,6 +416,15 @@ h5 {
   .input-wrapper {
     margin-bottom: 20px;
   }
+}
+
+.error-label {
+  line-height: normal;
+  color: #EC2327;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+  right: 46px;
 }
 
 @keyframes shows {
@@ -690,17 +728,18 @@ h5 {
 }
 
 .content-text--hide {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     overflow: hidden;
     -webkit-line-clamp: 10;
     display: -webkit-box;
     /* Включаем флексбоксы */
     -webkit-box-orient: vertical;
   }
+
   /* Вертикальная ориентация */
 
   &.active {
-    @media(max-width: 575px){
+    @media(max-width: 575px) {
       overflow: unset;
       -webkit-line-clamp: unset;
       display: block;
@@ -737,7 +776,7 @@ h5 {
   border-radius: 40px;
   border: 1px solid #D0B5A9;
   background: rgba(255, 255, 255, 0.06);
-  padding-left: 25px; 
+  padding-left: 25px;
   height: 74px;
   display: none;
   align-items: center;
@@ -758,6 +797,7 @@ h5 {
     height: 100%;
   }
 }
+
 #menu-modal-close {
   width: fit-content;
   height: fit-content;

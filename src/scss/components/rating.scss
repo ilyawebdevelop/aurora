@@ -106,3 +106,14 @@
   position: relative;
   z-index: 1;
 }
+.reviews-item__person-rating {
+  .rating-area:not(:checked)>label {
+   
+    font-size: 30px;
+    line-height: 30px;    
+  }
+  .rating-area:not(:checked)>label {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

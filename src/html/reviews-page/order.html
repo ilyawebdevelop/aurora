@@ -21,14 +21,18 @@
             </div>
             <div class="reviews-form__content">
                 <div class="input-wrapper input-wrapper--lg">
-                    <textarea name="reviews-text" id="reviews-text" cols="30" rows="10" class="form-textarea"
+                    <textarea name="reviews-text" id="reviews-text" cols="30" rows="10" class="form-textarea error"
                         placeholder="Текст отзыва"></textarea>
+                        <label class="error-label">Поле не заполнено</label>
+                        
                 </div>
                 <div class="input-wrapper">
-                    <input type="tel" class="form-input" placeholder="+7  000 000-00-00">
+                    <input type="tel" class="form-input success" placeholder="+7  000 000-00-00">
+
                 </div>
                 <div class="input-wrapper">
-                    <input type="text" class="form-input" placeholder="Имя">
+                    <input type="text" class="form-input error" placeholder="Имя">
+                    <label class="error-label">Поле не заполнено</label>
                 </div>
                 <div class="input-wrapper">
                     <input hidden type="file" class="form-input" id="reviews-file" placeholder="Прикрепить видео">
