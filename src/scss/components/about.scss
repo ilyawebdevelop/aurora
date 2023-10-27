@@ -131,19 +131,11 @@
     }
 }
 
-.about-stat {
+.stat-paddingTop {
     padding-top: 80px;
     @media(max-width: 991px){
         padding-top: 45px;
-    }
-    .flower {
-        @media(max-width: 991px){
-            display: block;
-            width: 100px;
-            left: -20px;
-            top: 230px;
-        }
-    }
+    }  
 }
 
 .about-stat .section-title {

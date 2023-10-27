@@ -1,109 +1,117 @@
-<section class="order" id="order" style="background-image: url('@img/order/order.png');">
-  <div class="container">
-      <div class="order__content">
-          <h2 class="section-title section-title--white"> <span>Давайте пообщаемся</span> и начнем создавать здоровую голливудскую улыбку
-              вашей мечты<span>.</span>
-          </h2>
-          <div class="order-form__wrapper">
-              <form action="#" class="order-form form d-none d-lg-block">
-                  <div class="input-wrapper">
-                      <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
-                  </div>
-                  <button class="form-btn btn btn--bg-brown">
-                      <div class="d-flex flex-column align-items-start">
-                          <span class="btn__text btn__text--lg">Забронировать время консультации</span>
-                          <span class="btn__text btn__text--sm">в клиние или онлайн</span>
-                      </div>
-                      <div class="btn-arrow-wrapper">
-                          <svg class="btn-arrow">
-                              <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                          </svg>
-                      </div>
-                  </button>
-                  <div class="agreement">                       
-                      Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
-                  </div>
-              </form>
-              <div class="order-dir">
-                  <div class="order-dir__name">Главный врач<br> челюстно-лицевой хирург</div>
-                  <div class="order-dir__text">
-                      Ишханян Нарек Нораирович
-                  </div>
-                  <div class="line--top"></div>
-                  <div class="line--right"></div>
-                  <div class="line--bottom"></div>
-                  <div class="line--left"></div>   
-                  <div class="round"></div>            
-              </div>
+<section class="order order--bg-sm" id="order">
+    <style>
+        .order {
+            background-image: url('@img/admin/order/order-1.jpg');
+        }
 
-          </div>
-          <div class="order-contacts d-none d-lg-flex">
-              <div class="order-contacts__left">
-                  <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
-                  <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
-              </div>
-              <div class="order-contacts__right">
-                  <a href="#" class="order-contacts__social contacts-social">
-                      <span class="contacts-social__img">
-                          <img class="static-social" src="@img/icons/whatsapp.svg" alt="icon">
-                          <img class="focus-social" src="@img/icons/whatsapp-focus.svg" alt="icon">
-                      </span>
-                      <div class="contacts-social__name">
-                          спросить в
-                          <span>WhatsApp</span>
-                      </div>
-                  </a>
-              </div>
-          </div>
+        @media(max-width: 767px) {
+            .order {
+                background-image: url('@img/admin/order/order-sm.jpg');
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="order__content">
+            <h2 class="section-title section-title--white"> <span>Давайте пообщаемся</span> и начнем создавать здоровую
+                голливудскую улыбку
+                вашей мечты<span>.</span>
+            </h2>
+            <div class="order-form__wrapper">
+                <form action="#" class="order-form form d-none d-lg-block">
+                    <div class="input-wrapper">
+                        <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
+                    </div>
+                    <button class="form-btn btn btn--bg-brown">
+                        <div class="d-flex flex-column align-items-start">
+                            <span class="btn__text btn__text--lg">Забронировать время консультации</span>
+                            <span class="btn__text btn__text--sm">в клиние или онлайн</span>
+                        </div>
+                        <div class="btn-arrow-wrapper">
+                            <svg class="btn-arrow">
+                                <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="agreement">
+                        Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                    </div>
+                </form>
+                <div class="order-dir">
+                    <div class="order-dir__name">Главный врач<br> челюстно-лицевой хирург</div>
+                    <div class="order-dir__text">
+                        Ишханян Нарек Нораирович
+                    </div>
+                    <div class="line--top"></div>
+                    <div class="line--right"></div>
+                    <div class="line--bottom"></div>
+                    <div class="line--left"></div>
+                    <div class="round"></div>
+                </div>
 
-      </div>
-      
+            </div>
+            <div class="order-contacts d-none d-lg-flex">
+                <div class="order-contacts__left">
+                    <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
+                    <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
+                </div>
+                <div class="order-contacts__right">
+                    <a href="#" class="btn-rounded">
+                        <span class="btn-rounded__img">
+                            <img class="static-social" src="@img/icons/whatsapp.svg" alt="icon">
+                        </span>
+                        <div class="btn-rounded__name">
+                            спросить в
+                            <span>WhatsApp</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-  </div>
-  <img src="@img/order/flower.png" alt="flower" class="flower">
+    </div>
+    <img src="@img/order/flower.png" alt="flower" class="flower">
 </section>
 
 <section class="order--sm d-block d-lg-none">
-  <div class="container">
-      <div class="order-form__wrapper">
-          <form action="#" class="order-form form">
-              <div class="input-wrapper">
-                  <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
-              </div>
-              <button class="form-btn btn btn--bg-brown">
-                  <div class="d-flex flex-column align-items-start">
-                      <span class="btn__text btn__text--lg">Забронировать время консультации</span>
-                      <span class="btn__text btn__text--sm">в клиние или онлайн</span>
-                  </div>
-                  <div class="btn-arrow-wrapper">
-                      <svg class="btn-arrow">
-                          <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
-                      </svg>
-                  </div>
-              </button>
-              <div class="agreement">                       
-                  Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
-              </div>
-          </form>     
+    <div class="container">
+        <div class="order-form__wrapper">
+            <form action="#" class="order-form form">
+                <div class="input-wrapper">
+                    <input type="tel" class="form-input" placeholder="+7 000 000-00-00">
+                </div>
+                <button class="form-btn btn btn--bg-brown">
+                    <div class="d-flex flex-column align-items-start">
+                        <span class="btn__text btn__text--lg">Забронировать время консультации</span>
+                        <span class="btn__text btn__text--sm">в клиние или онлайн</span>
+                    </div>
+                    <div class="btn-arrow-wrapper">
+                        <svg class="btn-arrow">
+                            <use xlink:href="img/icons/icons.svg#btn-arrow"></use>
+                        </svg>
+                    </div>
+                </button>
+                <div class="agreement">
+                    Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
+                </div>
+            </form>
 
-      </div>
-      <div class="order-contacts">
-          <div class="order-contacts__left">
-              <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
-              <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
-          </div>
-          <div class="order-contacts__right">
-              <a href="#" class="order-contacts__social contacts-social">
-                  <span class="contacts-social__img">
-                      <img class="static-social" src="@img/icons/whatsapp.svg" alt="icon">
-                      <img class="focus-social" src="@img/icons/whatsapp-focus.svg" alt="icon">
-                  </span>
-                  <div class="contacts-social__name">
-                      спросить в
-                      <span>WhatsApp</span>
-                  </div>
-              </a>
-          </div>
-      </div>
-  </div>
+        </div>
+        <div class="order-contacts">
+            <div class="order-contacts__left">
+                <a href="tel:+7861211-4830" class="order-contacts__phone">+7 (861) 211-48-30</a>
+                <span class="order-contacts__time">Ежедневно — 9:00 до 21:00</span>
+            </div>
+            <div class="order-contacts__right">
+                <a href="#" class="btn-rounded">
+                    <span class="btn-rounded__img">
+                        <img class="static-social" src="@img/icons/whatsapp.svg" alt="icon">
+                    </span>
+                    <div class="btn-rounded__name">
+                        спросить в
+                        <span>WhatsApp</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </section>

@@ -28,6 +28,10 @@
         position: relative;
         background: #231F20;
         z-index: 1;
+        padding-top: 150px;
+        @media(max-width: 575px){
+            padding-top: 90px;
+        }
 
         &__reviews {
             display: flex;
@@ -92,10 +96,7 @@
                 }
             }
         }
-
-        &.gradient {
-            position: relative;
-
+        &--percent {
             &::after {
                 content: '';
                 position: absolute;
@@ -108,6 +109,11 @@
                     background: url('@img/content/quest.svg') no-repeat bottom center / cover;
                 }
             }
+        }
+        &--gradient {
+            position: relative;
+
+       
 
             &::before {
                 content: '';

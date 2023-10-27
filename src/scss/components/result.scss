@@ -89,7 +89,9 @@
             left: 0;
             top: 215px;
             background: linear-gradient(0deg, #FBF8F3 0%, #FBF8F3 100%), #231F20;
-
+            @media(max-width: 1700px){
+                height: 100%;
+            }
             @media(max-width: 767px) {
                 box-shadow: none;
             }

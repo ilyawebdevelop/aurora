@@ -82,11 +82,20 @@
 .contacts-page-slider {
   width: 100%;
   padding-bottom: 30px;
+  @media(max-width: 991px){
+    height: fit-content;
+  }
 
   .pagination {
     position: absolute;
     bottom: 0;
     column-gap: 12px;
+    @media(max-width: 991px){
+      position: relative;
+      bottom: unset;
+      top: 0;
+     
+    }
   }
 
 }
@@ -99,12 +108,13 @@
   .nav-arrow {
     position: unset;
     transform: none;
-    width: 45px;
+    width: 52px;
 
     @media(max-width: 991px) {
       position: absolute;
       z-index: 2;
       top: 50%;
+      width: 38px;
       transform: translateY(-50%);
     }
   }

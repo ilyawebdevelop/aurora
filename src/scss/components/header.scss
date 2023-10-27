@@ -19,6 +19,8 @@
             @media(max-width: 767px) {
                 position: absolute;
                 z-index: 1;
+                right: 0;
+                left: 0;
 
             }
         }
@@ -267,6 +269,9 @@
 
     .header__nav-list {
         column-gap: 30px;
+        @media(max-width: 1500px){
+            column-gap: 12px;
+        }
 
         a {
             color: #fff;
@@ -310,6 +315,7 @@
 
 .catalog-header-wrapper {
     position: relative;
+    overflow: hidden;
 
     &::after {
         content: '';
@@ -451,6 +457,10 @@
     display: flex;
     column-gap: 5px;
     align-items: center;
+    img {
+        position: relative;
+        top: -3px;
+    }
 }
 
 .menu-contacts__address {
@@ -547,4 +557,18 @@
     position: relative;
 
     &::after {}
+}
+.header__wrapper  {
+    .container {
+        grid-column: 12 span;
+      
+        @media(max-width: 575px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }    
+    .header__wrapper-grid {
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+    }
 }

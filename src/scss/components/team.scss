@@ -52,6 +52,7 @@
         margin: auto;
         text-align: center;
         bottom: 45px;
+        z-index: 5;
         @media(max-width: 1700px){
             display: flex;
         }

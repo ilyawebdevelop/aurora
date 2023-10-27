@@ -1,5 +1,5 @@
 .intro-main {
-    padding-top: 0;
+    padding-top: 150px;
     padding-bottom: 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@
 
     @media(max-width: 991px) {
         background-position: center;
+        padding-top: 360px;
     }
 
     .title-wrapper {
@@ -167,8 +168,7 @@
         }
         @media(max-width: 991px){
             padding-bottom: 70px;
-            min-height: unset;
-            padding-top: 337px!important;
+            min-height: unset;           
         }
     }
 }
@@ -308,7 +308,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
+    padding-top: 170px;
     @media(max-width: 767px){
+        padding-top: 85px;
         overflow: hidden;
         background-size: 1115px;
         background-position: top 60px right -140px;
@@ -495,8 +497,10 @@
     // padding-bottom: 120px;
     background-position: center;
     z-index: 1;
+    padding-top: 150px;
     @media(max-width: 767px){
         z-index: unset;
+        padding-top: 80px;
     }
     .page-title {
         margin-bottom: 50px;
@@ -543,11 +547,13 @@
     background-repeat: no-repeat;
     background-position: right;
     z-index: 1;
+    padding-top: 244px;
     @media(max-width: 767px){
-        padding-top: 90px!important;
+        padding-top: 90px;
         background-position: top 65px right -67px;
         background-size: 700px;
         background-color: #393638;
+        z-index: unset;
     }
 
     .page-descr {

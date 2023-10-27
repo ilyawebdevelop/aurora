@@ -17,7 +17,11 @@
   line-height: 32px;
   color: rgba(255, 255, 255, 0.24);
   margin-left: 4px;
-
+  @media(max-width: 1500px){
+    width: 22px;
+    font-size: 25px;
+    line-height: 25px;
+  }
 }
 
 .rating-area:not(:checked)>label:before {
@@ -26,7 +30,6 @@
 
 .rating-area>input:checked~label {
   color: #fff;
-
 }
 
 .rating-area:not(:checked)>label:hover,
@@ -45,7 +48,6 @@
 .rate-area>label:active {
   position: relative;
 }
-
 
 .reviews-form__rating {
   .rating-area:not(:checked)>label {
