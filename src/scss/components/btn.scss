@@ -277,6 +277,33 @@
         }
     }
 
+    &-opacity--round {
+        background-color: transparent;
+        height: 42px;
+        padding-right: 0;
+
+        &:hover {
+            background-color: #9F694F;
+
+            .btn-arrow-wrapper {
+                background-color: #9F694F;
+            }
+
+            svg {
+                fill: #fff;
+
+            }
+        }
+
+        &:focus {
+            background-color: rgba(255, 255, 255, 0.12);
+
+            .btn-arrow-wrapper {
+                background-color: rgba(255, 255, 255, 0.12);
+            }
+        }
+    }
+
 }
 
 .header__btn-catalog {
@@ -415,6 +442,9 @@
 }
 
 .team-page__item-bottom-wrapper {
+    transition: background-color .2s linear;
+ 
+
     .btn-arrow {
         width: 14px;
         height: 41px;

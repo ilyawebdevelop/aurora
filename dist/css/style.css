@@ -11810,6 +11810,26 @@ h3 {
     line-height: normal;
   }
 }
+.btn-opacity--round {
+  background-color: transparent;
+  height: 42px;
+  padding-right: 0;
+}
+.btn-opacity--round:hover {
+  background-color: #9F694F;
+}
+.btn-opacity--round:hover .btn-arrow-wrapper {
+  background-color: #9F694F;
+}
+.btn-opacity--round:hover svg {
+  fill: #fff;
+}
+.btn-opacity--round:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+.btn-opacity--round:focus .btn-arrow-wrapper {
+  background-color: rgba(255, 255, 255, 0.12);
+}
 
 .header__btn-catalog {
   border: 0.5px solid rgba(255, 255, 255, 0.1294117647);
@@ -11940,6 +11960,9 @@ h3 {
   }
 }
 
+.team-page__item-bottom-wrapper {
+  transition: background-color 0.2s linear;
+}
 .team-page__item-bottom-wrapper .btn-arrow {
   width: 14px;
   height: 41px;
@@ -19109,6 +19132,13 @@ h3 {
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
+}
+.team-page__item-bottom-wrapper:hover {
+  background: #9F694F;
+  backdrop-filter: 10px;
+}
+.team-page__item-bottom-wrapper:focus {
+  background: #2D2423;
 }
 @media (max-width: 575px) {
   .team-page__item-bottom-wrapper {
