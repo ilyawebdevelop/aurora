@@ -63,8 +63,7 @@ document.querySelectorAll('.department .slider-wrapper').forEach(n => {
 
         setTimeout(function () {
             var slides_count = n.querySelectorAll(".swiper-slide"); // <- add this
-            let offer_1 = n.querySelector('.count-number');
-            console.log(offer_1);
+            let offer_1 = n.querySelector('.count-number');           
             if (offer_1) {
                 offer_1.innerHTML = '0' + (mySwiperDepartment.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
             }
@@ -91,8 +90,7 @@ var mySwiperAbout = new Swiper(aboutSlider, {
     on: {
         slideChange: function () {
             var slides_count = document.querySelectorAll(".about-slider .swiper-slide"); // <- add this
-            let offer = document.querySelector('.about-slider-sect .count-number');
-            console.log(offer);
+            let offer = document.querySelector('.about-slider-sect .count-number');         
             offer.innerHTML = `<span class="count-first">` + '0' + (this.activeIndex + 1) + `</span>` + '' + `<span class="separator"></span>` + `<span class="count-second">` + '0' + slides_count.length + `</span>`;
         }
     },
@@ -114,10 +112,8 @@ var mySwiperAbout = new Swiper(aboutSlider, {
 function change_about_slider() {
 
     setTimeout(function () {
-        var slides_count = document.querySelectorAll(".about-slider-sect .swiper-slide"); // <- add this
-        console.log(slides_count);
-        let offer_1 = document.querySelector('.about-slider-sect .count-number');
-        console.log(offer_1);
+        var slides_count = document.querySelectorAll(".about-slider-sect .swiper-slide"); // <- add this    
+        let offer_1 = document.querySelector('.about-slider-sect .count-number');     
         if (offer_1) {
             offer_1.innerHTML = `<span class="count-first">` + '0' + (mySwiperAbout.activeIndex + 1) + `</span>` + '' + `<span class="separator"></span>` + `<span class="count-second">` + '0' + slides_count.length + `</span>`;
         }
@@ -246,8 +242,7 @@ document.querySelectorAll('.reviews-page .slider-wrapper').forEach(n => {
 
         setTimeout(function () {
             var slides_count = n.querySelectorAll(".swiper-slide"); // <- add this
-            let offer_1 = n.querySelector('.count-number');
-            console.log(offer_1);
+            let offer_1 = n.querySelector('.count-number');           
             if (offer_1) {
                 offer_1.innerHTML = '0' + (mySwiperDepartment.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
             }
@@ -301,8 +296,7 @@ var mySwiperTeam = new Swiper(teamSlider, {
     on: {
         slideChange: function () {
             var slides_count = document.querySelectorAll(".team-photo-slider .swiper-slide"); // <- add this
-            let offer = document.querySelector('.team .count-number');
-            console.log(offer);
+            let offer = document.querySelector('.team .count-number');           
             offer.innerHTML = '0' + (mySwiperTeam.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
     },
@@ -311,8 +305,7 @@ var mySwiperTeam = new Swiper(teamSlider, {
 function change_team() {
     setTimeout(function () {
         var slides_count = document.querySelectorAll(".team-photo-slider .swiper-slide"); // <- add this
-        let offer_1 = document.querySelector('.team .count-number');
-        console.log(offer_1);
+        let offer_1 = document.querySelector('.team .count-number');       
         if (offer_1) {
             offer_1.innerHTML = '0' + (mySwiperTeam.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
@@ -368,8 +361,7 @@ var mySwiperReviewsTop = new Swiper(reviewsSliderTop, {
     on: {
         slideChange: function () {
             var slides_count = document.querySelectorAll(".reviews-top .reviews-text-slider .swiper-slide"); // <- add this
-            let offer = document.querySelector('.reviews-top .count-number');
-            console.log(offer);
+            let offer = document.querySelector('.reviews-top .count-number');           
             offer.innerHTML = '0' + (mySwiperReviewsTop.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
     },
@@ -378,8 +370,7 @@ var mySwiperReviewsTop = new Swiper(reviewsSliderTop, {
 function change_reviews_top() {
     setTimeout(function () {
         var slides_count = document.querySelectorAll(".reviews-top .reviews-text-slider .swiper-slide"); // <- add this
-        let offer_1 = document.querySelector('.reviews-top .count-number');
-        console.log(offer_1);
+        let offer_1 = document.querySelector('.reviews-top .count-number');       
         if (offer_1) {
             offer_1.innerHTML = '0' + (mySwiperReviewsTop.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
@@ -425,8 +416,7 @@ var mySwiperReviewsBottom = new Swiper(reviewsSliderBottom, {
     on: {
         slideChange: function () {
             var slides_count = document.querySelectorAll(".reviews-bottom .reviews-text-slider .swiper-slide"); // <- add this
-            let offer = document.querySelector('.reviews-bottom .count-number');
-            console.log(offer);
+            let offer = document.querySelector('.reviews-bottom .count-number');           
             offer.innerHTML = '0' + (mySwiperReviewsBottom.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
     },
@@ -434,8 +424,7 @@ var mySwiperReviewsBottom = new Swiper(reviewsSliderBottom, {
 function change_reviews_bottom() {
     setTimeout(function () {
         var slides_count = document.querySelectorAll(".reviews-bottom .reviews-text-slider .swiper-slide"); // <- add this
-        let offer_1 = document.querySelector('.reviews-bottom .count-number');
-        console.log(offer_1);
+        let offer_1 = document.querySelector('.reviews-bottom .count-number');      
         if (offer_1) {
             offer_1.innerHTML = '0' + (mySwiperReviewsBottom.activeIndex + 1) + '' + `<span>` + '0' + (slides_count.length) + `</span>`;
         }
@@ -826,7 +815,7 @@ if (mapEl) {
         balloonContent: '<strong>г.Москва</strong>'
       }, {
         iconLayout: 'default#image',
-        iconImageClipRect: [[0, 0], [47, 47]],
+        iconImageClipRect: [[0, 0], [45, 45]],
         iconImageHref: '/img/icons/marker.svg',
         iconImageSize: [41, 41],
 

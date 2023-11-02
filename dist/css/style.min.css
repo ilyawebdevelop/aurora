@@ -13245,7 +13245,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 100vh;
+  min-height: calc(100vh - 150px);
   padding-bottom: 95px;
 }
 @media (max-width: 1500px) {
@@ -13283,6 +13283,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes rotate {
@@ -13301,6 +13303,8 @@ h3 {
   margin-left: 20px;
   font-family: "Mont";
   right: 200px;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1500px) {
   .intro-main__video-btn {
@@ -13384,7 +13388,7 @@ h3 {
   line-height: 16px;
 }
 .intro-rate--sm > img {
-  width: 73px;
+  width: 230px;
 }
 .intro-rate--sm .intro-main__rate-name {
   width: 150px;
@@ -19253,6 +19257,10 @@ h3 {
   top: 0;
 }
 
+.team__title-wrapper {
+  position: relative;
+}
+
 .intro-services {
   background-size: cover;
   background-repeat: no-repeat;
@@ -21322,7 +21330,7 @@ h3 {
   position: fixed;
   bottom: -8px;
   left: 0;
-  z-index: 4;
+  z-index: 5;
 }
 .mobile-nav .rec {
   width: 70px;
